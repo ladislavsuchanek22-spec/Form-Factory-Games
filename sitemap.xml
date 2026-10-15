@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://formfactorygames.cz/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/en/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/pl/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/de/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/"/>
+  </url>
+</urlset>

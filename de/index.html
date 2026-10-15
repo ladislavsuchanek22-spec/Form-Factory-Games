@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Factory Games · Wettkampf 5.12.2026 · Form Factory Prag</title>
+<meta name="description" content="Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.">
+<meta name="google-site-verification" content="abf25QrYbQI8uNUvQ5bWpJksa7UN_hBxoRfm9DcwIHs" />
+<link rel="canonical" href="https://formfactorygames.cz/de/">
+<link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/">
+<link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/">
+<link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/">
+<link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/">
+<link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Factory Games · Wettkampf 5.12.2026 · Form Factory Prag">
+<meta property="og:description" content="Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.">
+<meta property="og:url" content="https://formfactorygames.cz/de/">
+<meta property="og:image" content="https://formfactorygames.cz/img/hero.jpg">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" href="/img/ff-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}
+/* Layout: závodní scorecard — černá hala, bílé čáry stanovišť A→B→C→D, červená jen tam, kde se jde na start nebo se boduje. Barvy podle zadání: červená / bílá / černá */
+:root{
+  --bg:#0B0B0C;
+  --surface:#151517;
+  --surface-2:#1E1E21;
+  --line:#2C2C31;
+  --fg:#F4F4F2;
+  --muted:#A6A6AC;
+  --red:#D71F17;
+  --red-hi:#FF4A3D;
+  --f-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --wrap:1180px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red-hi);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-transform:uppercase;line-height:.95;margin:0;text-wrap:balance;letter-spacing:.01em}
+h2{font-size:clamp(40px,6vw,72px);font-weight:800}
+h3{font-size:28px;font-weight:700}
+p{margin:0}
+.eyebrow{font:600 13px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--red-hi);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red-hi)}
+.lead{color:var(--muted);font-size:19px;max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 17px/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:16px 26px;border:2px solid transparent;transition:background .2s,transform .2s;cursor:pointer}
+.btn-red{background:var(--red);color:var(--fg)}
+.btn-red:hover{background:var(--red-hi);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--fg);color:var(--fg);background:transparent}
+.btn-ghost:hover{background:var(--fg);color:var(--bg)}
+section{padding-block:clamp(72px,10vw,120px)}
+.alt{background:var(--surface)}
+.sec-head{display:grid;gap:18px;margin-bottom:44px}
+.ph{font-family:var(--f-mono);font-size:.82em;color:var(--fg);border:1px dashed var(--red-hi);padding:1px 6px;white-space:nowrap}
+.note{margin-top:18px;color:var(--muted);font-size:15px;max-width:72ch}
+
+/* NAV */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,11,12,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:40px}
+.brand b{font:800 20px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
+.brand small{display:block;font:500 11px/1.3 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font:600 15px/1 var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav ul a:hover{color:var(--fg)}
+.nav .btn{padding:11px 18px;font-size:15px}
+@media (max-width:960px){.nav ul{display:none}}
+@media (max-width:420px){.brand small{display:none}.nav .btn{padding:10px 12px;font-size:13px}}
+
+/* HERO */
+.hero{position:relative;padding-block:0;overflow:hidden;isolation:isolate;border-bottom:6px solid var(--red)}
+.hero-img{position:absolute;inset:0;z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:grayscale(1) contrast(1.1)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.85) 50%,rgba(11,11,12,.4) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 40%)}
+.hero .wrap{padding-block:clamp(80px,12vw,150px) clamp(48px,7vw,80px);display:grid;gap:26px}
+.when{display:flex;flex-wrap:wrap;gap:10px 22px;font:500 14px/1.4 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.when b{color:var(--fg);font-weight:500}
+.hero h1{font-size:clamp(66px,13vw,176px);font-weight:800;font-style:italic;line-height:.84}
+.hero h1 span{display:block}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--fg)}
+.hero h1 .r{color:var(--red-hi)}
+.hero .lead{color:#D2D2D6;max-width:52ch;font-size:20px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+
+/* STATS */
+.stats{border-bottom:1px solid var(--line);background:var(--surface)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:26px 20px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat strong{display:block;font:800 clamp(40px,5vw,58px)/1 var(--f-display);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:15px}
+@media (max-width:700px){.stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* O ZÁVODĚ */
+.concept .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,80px);align-items:center}
+.concept-text{display:grid;gap:22px;min-width:0}
+.concept-text p{color:var(--muted);max-width:60ch}
+.concept-text p strong{color:var(--fg);font-weight:600}
+.concept figure{margin:0;position:relative;min-width:0}
+.concept figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.concept figcaption{position:absolute;left:0;bottom:0;background:var(--red);color:var(--fg);font:600 13px/1.3 var(--f-mono);letter-spacing:.06em;padding:10px 14px;text-transform:uppercase}
+@media (max-width:860px){.concept .wrap{grid-template-columns:1fr}.concept figure img{aspect-ratio:4/3}}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.cats div{background:var(--bg);padding:16px 18px;display:grid;gap:2px}
+.cats b{font:700 22px/1.1 var(--f-display);text-transform:uppercase}
+.cats span{font:500 12px/1.3 var(--f-mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+
+/* WORKOUTY */
+.wods{display:grid;gap:16px}
+.wod{border:1px solid var(--line);background:var(--bg);display:grid;grid-template-columns:300px 1fr}
+@media (max-width:860px){.wod{grid-template-columns:1fr}}
+.wod-id{padding:26px;border-right:1px solid var(--line);display:grid;gap:10px;align-content:start;min-width:0}
+@media (max-width:860px){.wod-id{border-right:0;border-bottom:1px solid var(--line)}}
+.wod-id .k{font:700 14px/1 var(--f-mono);color:var(--red-hi);letter-spacing:.1em}
+.wod-id h3{font-size:clamp(40px,4.4vw,54px);font-weight:800;font-style:italic}
+.wod-id .fmt{display:flex;flex-wrap:wrap;gap:6px}
+.wod-id .fmt span{font:500 12px/1 var(--f-mono);letter-spacing:.04em;padding:7px 9px;border:1px solid var(--line);color:var(--fg)}
+.wod-id .t{font:500 14px/1.4 var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.stations{display:grid;grid-template-columns:repeat(4,1fr);min-width:0}
+@media (max-width:700px){.stations{grid-template-columns:1fr 1fr}}
+.st{padding:22px 20px;border-right:1px solid var(--line);display:grid;gap:6px;align-content:start;min-width:0}
+.st:last-child{border-right:0}
+@media (max-width:700px){.st:nth-child(2){border-right:0}.st:nth-child(n+3){border-top:1px solid var(--line)}}
+.st .l{font:800 56px/.85 var(--f-display);font-style:italic;color:var(--fg)}
+.st b{font:700 22px/1.1 var(--f-display);text-transform:uppercase}
+.st span{font:500 13px/1.3 var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.amrap{padding:26px;display:grid;gap:18px;align-content:center;min-width:0}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.chain div{display:grid;gap:2px}
+.chain strong{font:800 clamp(44px,5vw,60px)/.9 var(--f-display);font-variant-numeric:tabular-nums}
+.chain b{font:700 20px/1 var(--f-display);text-transform:uppercase}
+.chain i{font:700 24px/1 var(--f-display);font-style:normal;color:var(--red-hi)}
+.amrap p{color:var(--muted);font-size:16px;max-width:60ch}
+
+/* ZÁTĚŽE */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-variant-numeric:tabular-nums}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{font:600 13px/1.2 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:var(--surface-2)}
+th.cat{color:var(--fg)}
+td{font:500 16px/1.3 var(--f-mono)}
+td:first-child{font:700 20px/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--surface-2)}
+
+/* VLNY */
+.wave-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:end;margin-bottom:40px}
+@media (max-width:860px){.wave-head{grid-template-columns:1fr}}
+.rot{display:grid;grid-template-columns:120px repeat(4,1fr);border:1px solid var(--line);min-width:560px}
+.rot div{padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font:500 14px/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
+.rot div:nth-child(5n){border-right:0}
+.rot .h{background:var(--surface-2);color:var(--muted);font:600 13px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase}
+.rot .h.l{color:var(--fg);font:800 24px/1 var(--f-display);font-style:italic}
+.rot .w1{background:var(--red);color:var(--fg)}
+.rot .wx{background:var(--surface-2)}
+.rot .last{border-bottom:0}
+.rot-wrap{overflow-x:auto}
+.cd-row{margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:860px){.cd-row{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.cd-row{grid-template-columns:1fr}}
+.cd{border-top:2px solid var(--fg);padding-top:14px;display:grid;gap:6px;align-content:start}
+.cd .t{font:700 15px/1 var(--f-mono);color:var(--red-hi);font-variant-numeric:tabular-nums}
+.cd b{font:700 22px/1.1 var(--f-display);text-transform:uppercase}
+.cd p{color:var(--muted);font-size:15px}
+
+/* FINDER */
+.finder{margin-top:48px;background:var(--surface);border:1px solid var(--line);display:grid;grid-template-columns:.9fr 1.1fr}
+@media (max-width:860px){.finder{grid-template-columns:1fr}}
+.finder-in{padding:28px;display:grid;gap:16px;align-content:start;border-right:1px solid var(--line);min-width:0}
+@media (max-width:860px){.finder-in{border-right:0;border-bottom:1px solid var(--line)}}
+.finder-in h3{font-size:30px}
+.fld{display:grid;gap:8px}
+.fld label{font:600 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ctl{display:flex;align-items:center;gap:8px}
+.ctl button{width:48px;height:48px;background:var(--bg);border:1px solid var(--line);color:var(--fg);font:800 26px/1 var(--f-display);cursor:pointer}
+.ctl button:hover{border-color:var(--fg)}
+.ctl input{width:84px;height:48px;background:var(--bg);border:1px solid var(--line);color:var(--fg);font:800 28px/1 var(--f-display);text-align:center;font-variant-numeric:tabular-nums}
+.seg{display:flex;gap:0}
+.seg button{flex:1;height:48px;min-width:48px;background:var(--bg);border:1px solid var(--line);margin-left:-1px;color:var(--muted);font:800 22px/1 var(--f-display);cursor:pointer}
+.seg button:first-child{margin-left:0}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg);position:relative}
+.finder-in small{color:var(--muted);font-size:14px}
+.finder-out{min-width:0}
+.fo{display:grid;grid-template-columns:110px 1fr 1fr;gap:12px;align-items:baseline;padding:18px 28px;border-bottom:1px solid var(--line)}
+.fo:last-child{border-bottom:0}
+.fo .w{font:800 26px/1 var(--f-display);font-style:italic;text-transform:uppercase}
+.fo .w small{display:block;font:500 11px/1.3 var(--f-mono);font-style:normal;letter-spacing:.08em;color:var(--muted);margin-top:4px}
+.fo div{display:grid;gap:2px}
+.fo span{font:600 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fo strong{font:800 clamp(30px,4vw,44px)/1 var(--f-display);font-variant-numeric:tabular-nums}
+.fo strong.hi{color:var(--red-hi)}
+@media (max-width:480px){.fo{grid-template-columns:1fr 1fr;padding:16px}.fo .w{grid-column:span 2}}
+
+/* PROGRAM */
+.day .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,80px);align-items:start}
+@media (max-width:860px){.day .wrap{grid-template-columns:1fr}}
+.day-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sched{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.sched li{display:grid;grid-template-columns:128px 1fr;gap:18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.sched .t{font:700 16px/1.45 var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.sched b{display:block;font:700 22px/1.15 var(--f-display);text-transform:uppercase}
+.sched p{color:var(--muted);font-size:15px}
+.sched li.key .t{color:var(--red-hi)}
+.sched li.brk b{color:var(--muted)}
+@media (max-width:420px){.sched li{grid-template-columns:1fr;gap:4px}}
+
+/* BODOVÁNÍ */
+.score{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:860px){.score{grid-template-columns:1fr}}
+.formula{border:1px solid var(--line);background:var(--bg);padding:28px;display:grid;gap:18px}
+.formula .eq{font:700 clamp(26px,3.6vw,40px)/1.15 var(--f-mono);letter-spacing:-.01em}
+.formula .eq em{font-style:normal;color:var(--red-hi)}
+.formula dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px;color:var(--muted)}
+.formula dt{font:700 15px/1.5 var(--f-mono);color:var(--fg)}
+.formula dd{margin:0}
+.ex{border-top:1px solid var(--line);padding-top:16px;display:grid;gap:8px}
+.ex span{font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ex p{font:500 15px/1.5 var(--f-mono);font-variant-numeric:tabular-nums}
+.sum{display:grid;gap:0;border-top:1px solid var(--line)}
+.sum div{display:grid;grid-template-columns:80px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.sum b{font:800 26px/1 var(--f-display);font-style:italic;text-transform:uppercase}
+.sum p{color:var(--muted);font-size:16px}
+.sum span{font:700 16px/1 var(--f-mono);font-variant-numeric:tabular-nums}
+.sum .tot b,.sum .tot span{color:var(--red-hi)}
+.sum .tot p{color:var(--fg)}
+
+/* STANDARDY */
+.std{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:860px){.std{grid-template-columns:1fr}}
+.std div{display:grid;gap:8px;align-content:start;border-top:2px solid var(--fg);padding-top:16px}
+.std b{font:700 24px/1.1 var(--f-display);text-transform:uppercase}
+.std p{color:var(--muted);font-size:16px}
+
+/* TÝM */
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.crew{grid-template-columns:1fr}}
+.crew article{border:1px solid var(--line);background:var(--surface);padding:26px;display:grid;gap:10px;align-content:start}
+.crew .role{font:700 13px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi)}
+.crew h3{font-size:34px}
+.crew p{color:var(--muted);font-size:16px}
+.crew-wide{margin-top:16px;border:1px solid var(--line);padding:18px 22px;color:var(--muted);font-size:16px;display:flex;flex-wrap:wrap;gap:8px 28px}
+.crew-wide b{color:var(--fg);font:700 20px/1.2 var(--f-display);text-transform:uppercase}
+
+/* FAQ */
+.faq-list{border-top:1px solid var(--line);max-width:860px}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative;font:700 22px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";position:absolute;right:4px;top:16px;font:700 28px/1 var(--f-display);color:var(--red-hi)}
+.faq-list details[open] summary::after{content:"–"}
+.faq-list details p{color:var(--muted);padding:0 0 22px;max-width:68ch}
+
+/* CTA */
+.cta{position:relative;overflow:hidden;isolation:isolate;border-top:6px solid var(--red)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.jpg") center 60%/cover;filter:grayscale(1)}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.96),rgba(11,11,12,.74))}
+.cta .wrap{display:grid;gap:24px}
+.cta h2{font-size:clamp(50px,9vw,120px);font-style:italic}
+.cta .lead{color:#D2D2D6}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.mail{font:500 15px/1.4 var(--f-mono);color:var(--muted);user-select:all}
+.mail b{color:var(--fg);font-weight:500}
+
+footer{border-top:1px solid var(--line);padding-block:36px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{color:var(--fg)}
+
+/* jazykový přepínač */
+.nav-r{display:flex;align-items:center;gap:12px}
+.lsw{display:flex;border:1px solid var(--line)}
+.lsw a{border-left:1px solid var(--line);color:var(--muted);font:700 13px/1 var(--f-mono);letter-spacing:.06em;padding:9px 9px;text-decoration:none}
+.lsw a:first-child{border-left:0}
+.lsw a:hover{color:var(--fg)}
+.lsw a[aria-current]{background:var(--fg);color:var(--bg)}
+.lbl{font:600 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:560px){.nav-r .btn{display:none}}
+@media (max-width:360px){.brand b{font-size:17px}.lsw a{padding:8px 6px}}
+
+/* weby STR2G v patičce */
+.net{flex-basis:100%;padding-bottom:24px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.net-h{margin:0 0 14px;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.net ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px 24px}
+.net a{display:grid;gap:3px;text-decoration:none;color:var(--fg)}
+.net b{font:700 20px/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.net span{font-size:14px;line-height:1.35;color:var(--muted)}
+.net i{font:500 12px/1.2 var(--f-mono);font-style:normal;color:var(--muted)}
+.net a:hover b{color:var(--red-hi)}
+.team-link{font:500 13px/1.3 var(--f-mono);color:var(--red-hi);text-decoration:none;margin-top:4px}
+.team-link:hover{text-decoration:underline}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SportsEvent", "@id": "https://formfactorygames.cz/#event", "name": "Factory Games 2026", "description": "Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.", "url": "https://formfactorygames.cz/de/", "inLanguage": "de", "image": ["https://formfactorygames.cz/img/hero.jpg"], "startDate": "2026-12-05T10:00:00+01:00", "endDate": "2026-12-05T17:40:00+01:00", "doorTime": "2026-12-05T09:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "maximumAttendeeCapacity": 100, "location": {"@type": "SportsActivityLocation", "name": "Form Factory Vinohradská", "url": "https://hyroxtrainingclub.cz/", "address": {"@type": "PostalAddress", "streetAddress": "Vinohradská 190", "postalCode": "130 00", "addressLocality": "Praha 3", "addressCountry": "CZ"}}, "organizer": [{"@type": "Organization", "@id": "https://str2g.com/#org", "name": "STR2G HYROX", "url": "https://str2g.com/"}, {"@type": "Organization", "name": "Form Factory", "url": "https://www.formfactory.cz/"}]}, {"@type": "Person", "@id": "https://hyrox-prague.eu/#lada", "name": "Ladislav Suchánek", "url": "https://hyrox-prague.eu/", "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"]}]}</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/de/">
+      <img src="/img/ff-logo.jpg" alt="Form Factory">
+      <span><b>Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
+    </a>
+    <ul>
+      <li><a href="#workouty">Workouts</a></li>
+      <li><a href="#zateze">Gewichte</a></li>
+      <li><a href="#vlny">Heats</a></li>
+      <li><a href="#program">Zeitplan</a></li>
+      <li><a href="#bodovani">Wertung</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-r">
+      <nav class="lsw" aria-label="Sprache"><a href="/" hreflang="cs" lang="cs">CZ</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/pl/" hreflang="pl" lang="pl">PL</a><a href="/de/" hreflang="de" lang="de" aria-current="page">DE</a></nav>
+      <a class="btn btn-red" href="#registrace">Anmeldung</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-img"><img src="/img/hero.jpg" alt="Athleten-Briefing bei Form Factory"></div>
+    <div class="wrap">
+      <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Samstag, 5.12.2026</b> <span>·</span> <span>Treffpunkt 9:30 · erster Start 10:00</span></p>
+      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
+      <p class="lead">Eintägiger Einzelwettkampf. Kraft, Ausdauer und Technik in drei Workouts. Jeder absolviert alle drei, gewertet wird getrennt in vier Kategorien.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="#registrace">Ich bin dabei →</a>
+        <a class="btn btn-ghost" href="#workouty">Was erwartet mich</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><strong>100</strong><span>Athleten</span></div>
+      <div class="stat"><strong>3</strong><span>Workouts für alle</span></div>
+      <div class="stat"><strong>4</strong><span>Kategorien</span></div>
+      <div class="stat"><strong>300</strong><span>Punkte maximal</span></div>
+    </div>
+  </div>
+
+  <section class="concept">
+    <div class="wrap">
+      <div class="concept-text">
+        <p class="eyebrow">Der Wettkampf</p>
+        <h2>Drei Workouts. Ein Ergebnis.</h2>
+        <p><strong>Factory Games ist ein Einzelwettkampf.</strong> Morgens Power Grid, mittags ein sechsminütiges AMRAP, nachmittags Final Grind. Dazwischen jeweils 38 Minuten für Erholung und Reset.</p>
+        <p>Du meldest dich in der Frauen- oder Männerkategorie an und wählst Open oder Pro. Keine Quoten pro Kategorie, nur ein Gesamtlimit von 100 Athleten. Wer zuerst kommt, startet.</p>
+        <div class="cats">
+          <div><span>Frauen</span><b>Women Open</b></div>
+          <div><span>Frauen</span><b>Women Pro</b></div>
+          <div><span>Männer</span><b>Men Open</b></div>
+          <div><span>Männer</span><b>Men Pro</b></div>
+        </div>
+      </div>
+      <figure>
+        <img src="/img/stations.jpg" alt="Athletin an den Stationen während einer Simulation bei Form Factory">
+        <figcaption>Veranstalter: Form Factory × STR2G</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="alt" id="workouty">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Workouts</p>
+        <h2>Kraft. Motor. Kopf.</h2>
+        <p class="lead">In W1 und W3 absolvierst du vier Stationen A → B → C → D. Drei Minuten Vollgas pro Station, dann eine Minute für Eintragen und Wechsel. Gewertet wird in Metern, Kalorien oder Wiederholungen. Mehr ist besser.</p>
+      </div>
+      <div class="wods">
+        <article class="wod">
+          <div class="wod-id">
+            <span class="k">W1 · 10:00</span>
+            <h3>Power Grid</h3>
+            <div class="fmt"><span>4 × 3 min Arbeit</span><span>1 min Wechsel</span><span>4 Athleten pro Heat</span></div>
+          </div>
+          <div class="stations">
+            <div class="st"><span class="l">A</span><b>SkiErg</b><span>Meter</span></div>
+            <div class="st"><span class="l">B</span><b>Sled Push</b><span>Meter</span></div>
+            <div class="st"><span class="l">C</span><b>RowErg</b><span>Meter</span></div>
+            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>Wiederholungen</span></div>
+          </div>
+        </article>
+        <article class="wod">
+          <div class="wod-id">
+            <span class="k">W2 · 12:30</span>
+            <h3>The Engine</h3>
+            <div class="fmt"><span>6 min AMRAP</span><span>8 Athleten gleichzeitig</span></div>
+          </div>
+          <div class="amrap">
+            <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
+              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
+              <div><strong>10</strong><b>Burpees</b></div><i>→</i>
+              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
+            </div>
+            <p>Wiederhole in dieser Reihenfolge, bis die Zeit abläuft. Eine Runde sind 50 Wiederholungen. Jede gültige Wiederholung zählt, also 3 Runden plus 12 = 162.</p>
+          </div>
+        </article>
+        <article class="wod">
+          <div class="wod-id">
+            <span class="k">W3 · 14:50</span>
+            <h3>Final Grind</h3>
+            <div class="fmt"><span>4 × 3 min Arbeit</span><span>1 min Wechsel</span><span>4 Athleten pro Heat</span></div>
+          </div>
+          <div class="stations">
+            <div class="st"><span class="l">A</span><b>Echo Bike</b><span>Kalorien</span></div>
+            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>Wiederholungen</span></div>
+            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>Meter, mit Gewicht</span></div>
+            <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>Meter</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="zateze">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Gewichte</p>
+        <h2>Open oder Pro?</h2>
+        <p class="lead">Die Kategorie wählst du selbst. Schau dir die Gewichte an und sei ehrlich zu dir. Pro ist für alle, die diese Lasten wiederholt und unter Ermüdung bewegen.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>Übung</th><th class="cat">Women Open</th><th class="cat">Women Pro</th><th class="cat">Men Open</th><th class="cat">Men Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sled Push</td><td>100 kg</td><td>150 kg</td><td>150 kg</td><td>200 kg</td></tr>
+            <tr><td>KB Deadlift</td><td>2 × 16 kg</td><td>2 × 24 kg</td><td>2 × 24 kg</td><td>2 × 32 kg</td></tr>
+            <tr><td>Wall Balls</td><td>4 kg</td><td>6 kg</td><td>6 kg</td><td>9 kg</td></tr>
+            <tr><td>KB Swings</td><td>12 kg</td><td>16 kg</td><td>16 kg</td><td>20 kg</td></tr>
+            <tr><td>DB Thrusters</td><td>2 × 10 kg</td><td>2 × 15 kg</td><td>2 × 15 kg</td><td>2 × 20 kg</td></tr>
+            <tr><td>Walking Lunges</td><td>10 kg</td><td>20 kg</td><td>20 kg</td><td>30 kg</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">„2 ×“ bedeutet zwei einzelne Geräte. Bei den Lunges ist das gesamte getragene Gewicht angegeben. Wall-Ball-Zielhöhe, Swing-Variante, Trageposition bei den Lunges und Shuttle-Distanz stehen vor Anmeldestart im Regelwerk.</p>
+    </div>
+  </section>
+
+  <section class="alt" id="vlny">
+    <div class="wrap">
+      <div class="wave-head">
+        <div class="sec-head" style="margin:0">
+          <p class="eyebrow">So läuft der Start</p>
+          <h2>Heats zu viert. Alle 4 Minuten.</h2>
+        </div>
+        <p class="lead">In W1 und W3 hat ein Heat höchstens vier Athleten. Alle starten an A auf ihrer eigenen Bahn 1–4 und behalten sie das ganze Workout. Der nächste Heat startet vier Minuten später an A. Im Vollbetrieb arbeiten 16 Leute gleichzeitig.</p>
+      </div>
+      <div class="rot-wrap">
+        <div class="rot">
+          <div class="h">Minute</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div>
+          <div>0:00–3:00</div><div class="w1">Heat 1</div><div></div><div></div><div></div>
+          <div>4:00–7:00</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div><div></div>
+          <div>8:00–11:00</div><div class="wx">Heat 3</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div>
+          <div class="last">12:00–15:00</div><div class="wx last">Heat 4</div><div class="wx last">Heat 3</div><div class="wx last">Heat 2</div><div class="w1 last">Heat 1</div>
+        </div>
+      </div>
+      <p class="note">Zwischen den Arbeitsintervallen gibt es immer eine volle Minute zum Eintragen, Wechseln und Zurücksetzen. Heat 1 endet in Minute 15 und verlässt Station D in Minute 16. In W2 starten acht Athleten gemeinsam alle 8 Minuten.</p>
+
+      <div class="cd-row">
+        <div class="cd"><span class="t">−8 min</span><b>Call-up</b><p>Der Speaker ruft deinen Heat auf. Sei in der Call-up-Zone.</p></div>
+        <div class="cd"><span class="t">Check</span><b>Nummer und Gewicht</b><p>Dein Judge prüft Nummer, Kategorie und Gewicht auf deiner Bahn.</p></div>
+        <div class="cd"><span class="t">Signal</span><b>Start und Stopp</b><p>Ein zentrales Tonsignal steuert jeden Heat.</p></div>
+        <div class="cd"><span class="t">+1 min</span><b>Eintragen und Wechsel</b><p>Der Judge bestätigt dein Ergebnis laut, du gehst zur nächsten Station.</p></div>
+      </div>
+
+      <div class="finder" data-wave-word="Heat">
+        <div class="finder-in">
+          <h3>Wann starte ich?</h3>
+          <div class="fld">
+            <label for="wave">Dein Heat in W1</label>
+            <div class="ctl">
+              <button type="button" class="wm" aria-label="−1">−</button>
+              <input id="wave" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
+              <button type="button" class="wp" aria-label="+1">+</button>
+            </div>
+          </div>
+          <div class="fld">
+            <span class="lbl" id="lane-l">Deine Bahn</span>
+            <div class="seg" role="group" aria-labelledby="lane-l">
+              <button type="button" data-lane="1" aria-pressed="true">1</button>
+              <button type="button" data-lane="2" aria-pressed="false">2</button>
+              <button type="button" data-lane="3" aria-pressed="false">3</button>
+              <button type="button" data-lane="4" aria-pressed="false">4</button>
+            </div>
+          </div>
+          <small>Heat und Bahn bekommst du nach Anmeldeschluss per E-Mail. Die Heats werden aus den Anmeldungen in der Reihenfolge Women Open → Women Pro → Men Open → Men Pro gebildet.</small>
+        </div>
+        <div class="finder-out" aria-live="polite">
+          <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
+          <div class="fo"><span class="w">W2<small data-o="w2n">Heat 1</small></span><div><span>Call-up</span><strong data-o="c2">12:22</strong></div><div><span>Start</span><strong data-o="s2" class="hi">12:30</strong></div></div>
+          <div class="fo"><span class="w">W3<small>Final Grind</small></span><div><span>Call-up</span><strong data-o="c3">14:42</strong></div><div><span>Start</span><strong data-o="s3" class="hi">14:50</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="day" id="program">
+    <div class="wrap">
+      <div class="day-img"><img src="/img/ria-mic.jpg" alt="Die Speakerin pusht die Athleten auf der Fläche"></div>
+      <div>
+        <div class="sec-head">
+          <p class="eyebrow">Zeitplan</p>
+          <h2>Wettkampftag</h2>
+        </div>
+        <ul class="sched">
+          <li><span class="t">09:30</span><div><b>Treffpunkt und Check-in</b><p>Startnummer, Heatliste und eigenes Aufwärmen.</p></div></li>
+          <li><span class="t">09:45</span><div><b>Briefing</b><p>Standards, Heats, Wertung und sichere Wechsel.</p></div></li>
+          <li class="key"><span class="t">10:00–11:52</span><div><b>W1 Power Grid</b><p>25 Heats, der letzte startet um 11:36.</p></div></li>
+          <li class="brk"><span class="t">11:52–12:30</span><div><b>Pause · effiziente Bewegung</b><p>Erholung und optionale Coach-Demo: Wall-Ball-Rhythmus und sicherer KB-Swing.</p></div></li>
+          <li class="key"><span class="t">12:30–14:12</span><div><b>W2 The Engine</b><p>13 Heats zu acht, der letzte startet um 14:06.</p></div></li>
+          <li class="brk"><span class="t">14:12–14:50</span><div><b>Pause · Technik unter Ermüdung</b><p>Optionale Demo: Shuttle-Wenden, Knie bei den Lunges, Thruster-Timing.</p></div></li>
+          <li class="key"><span class="t">14:50–16:42</span><div><b>W3 Final Grind</b><p>25 Heats, der letzte startet um 16:26.</p></div></li>
+          <li><span class="t">16:42–17:10</span><div><b>Ergebnisse</b><p>Veröffentlichung aller Ranglisten und 10 Minuten für Rückfragen zum Score.</p></div></li>
+          <li class="key"><span class="t">17:20–17:40</span><div><b>Siegerehrung</b><p>Vier Kategorien, Gruppenfoto, Schluss.</p></div></li>
+        </ul>
+        <p class="note">Die Demos in den Pausen sind ohne Wertung und freiwillig. Bei Verzögerung kürzen wir sie, zwischen Blockende und nächstem Start bleiben aber immer mindestens 30 Minuten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="bodovani">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Wertung</p>
+        <h2>Jedes Workout zählt gleich.</h2>
+        <p class="lead">Meter, Kalorien und Wiederholungen werden nicht addiert. In jeder Kategorie wird die Leistung zum Rang und der Rang zu Punkten. Gewertet wird nur innerhalb deiner Kategorie.</p>
+      </div>
+      <div class="score">
+        <div class="formula">
+          <p class="eq">Punkte = 100 × <em>(N − r)</em> / (N − 1)</p>
+          <dl>
+            <dt>N</dt><dd>Anzahl Athleten in der Kategorie</dd>
+            <dt>r</dt><dd>dein Rang an der Station oder im Workout</dd>
+          </dl>
+          <div class="ex">
+            <span>Beispiel · Men Open, 21 Athleten</span>
+            <p>Platz 1 = 100 P. · Platz 11 = 50 P. · Platz 21 = 0 P.</p>
+          </div>
+        </div>
+        <div class="sum">
+          <div><b>W1</b><p>Durchschnitt aus vier Stationen: Ski, Sled, Row, Deadlift</p><span>0–100</span></div>
+          <div><b>W2</b><p>Rang nach Gesamtzahl gültiger Wiederholungen</p><span>0–100</span></div>
+          <div><b>W3</b><p>Durchschnitt aus vier Stationen: Bike, Thrusters, Lunges, Shuttle</p><span>0–100</span></div>
+          <div class="tot"><b>Gesamt</b><p>W1 + W2 + W3</p><span>max 300</span></div>
+        </div>
+      </div>
+      <p class="note">Gleiche Leistungen teilen sich den gemittelten Rang, z. B. Gleichstand auf Platz 2–3 = 2,5. Bei Gleichstand in der Gesamtwertung entscheidet das höhere Ergebnis in W3, dann in W2. Punkte werden nicht zwischengerundet und mit zwei Dezimalstellen angezeigt. Live-Ranking im Web per QR-Code.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Regeln</p>
+        <h2>Ein Standard für alle</h2>
+      </div>
+      <div class="std">
+        <div><b>Das Signal entscheidet</b><p>Start und Stopp gibt ein zentrales Tonsignal. Es zählen nur Wiederholungen oder Meter, die vor dem Stopp fertig sind.</p></div>
+        <div><b>No-Rep sofort</b><p>Dein Judge gibt ein No-Rep sofort mit Begründung. In W2 schließt du die vorgegebenen gültigen Wiederholungen ab, bevor du zur nächsten Übung wechselst.</p></div>
+        <div><b>Scorecard</b><p>Nach jeder Station bestätigt der Judge dein Ergebnis laut. Die Karte unterschreibst du nach Verlassen der Wettkampfzone.</p></div>
+      </div>
+      <p class="note">Genauer Bewegungsumfang bei Deadlift, Thruster und Burpee sowie Regeln zu Verspätung, DNF und Einsprüchen stehen im Regelwerk. Vor dem Event gibt es dazu ein Demo-Video.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Wer leitet</p>
+        <h2>Das Team vor Ort</h2>
+        <p class="lead">Zwanzig Leute, davon zwölf Judges. Du erkennst sie an der Aufschrift auf dem Rücken.</p>
+      </div>
+      <div class="crew">
+        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Hauptorganisator. Leitet den gesamten Wettkampf: Zeitsignale, Aufrufe und Wechsel.</p><a class="team-link" href="https://hyrox-prague.eu/de/" target="_blank" rel="noopener">Coaching und Wettkampfvorbereitung · hyrox-prague.eu →</a></article>
+        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Ruft die Heats auf, hält die Stimmung hoch und moderiert die Siegerehrung.</p><a class="team-link" href="https://www.instagram.com/riahrusovskaofficial/" target="_blank" rel="noopener">@riahrusovskaofficial</a></article>
+        <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standards, Judges-Briefing und Entscheidung strittiger Situationen.</p></article>
+      </div>
+      <p class="note">Der Wettkampf findet bei Form Factory Vinohradská statt, einem von vier HYROX Training Clubs. <a href="https://hyroxtrainingclub.cz/de/" target="_blank" rel="noopener">Kurse und Stundenplan →</a></p>
+      <div class="crew-wide"><span><b>12</b> Judges</span><span><b>1</b> Sanitäter</span><span><b>1</b> Score-Erfassung</span><span><b>DJ</b>, Kameramann, Fotograf</span></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Bevor du dich anmeldest</h2>
+      </div>
+      <div class="faq-list">
+        <details open><summary>Open oder Pro: wie entscheide ich?</summary><p>Nach den Gewichten. Wenn 2 × 24 kg beim Deadlift oder ein 9-kg-Wall-Ball für dich Kampf um jede Wiederholung bedeutet, nimm Open. Open heißt nicht weniger Einsatz, sondern ein Gewicht, mit dem du drei Minuten Vollgas geben kannst.</p></details>
+        <details><summary>Muss ich alle drei Workouts machen?</summary><p>Ja. Dein Ergebnis ist die Summe aller drei. Jedes Workout zählt gleich, maximal 100 Punkte.</p></details>
+        <details><summary>Was kostet die Startgebühr?</summary><p>Die Startgebühr beträgt <span class="ph">[CZK __]</span> und wird bei der Anmeldung bezahlt. Kapazität 100 Athleten insgesamt, ohne Quoten pro Kategorie.</p></details>
+        <details><summary>Wie lange bin ich vor Ort?</summary><p>Treffpunkt 9:30, die Siegerehrung endet um 17:40. Zwischen den Workouts hast du je nach Heat etwa zwei Stunden. Nimm Essen und Trinken für den ganzen Tag mit.</p></details>
+        <details><summary>Was soll ich mitbringen?</summary><p>Schuhe zum Laufen und für Squats, Getränke, Essen, ein Handtuch und warme Kleidung für die Pausen. Deine Startnummer bekommst du beim Check-in.</p></details>
+        <details><summary>Wo sehe ich die Ergebnisse?</summary><p>Live-Ranking im Web per QR-Code am Check-in und in der Halle. Endergebnisse nach 17:00, nach dem 10-minütigen Fenster für Rückfragen.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="registrace">
+    <div class="wrap">
+      <p class="eyebrow">Anmeldung</p>
+      <h2>100 Plätze.<br>Einer gehört dir.</h2>
+      <p class="lead">Samstag, 5. Dezember, Form Factory Vinohradská, Prag. Kategorie wählen, Startgebühr zahlen, und vor dem Event schicken wir dir Heat und Bahn für alle drei Workouts.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="#registrace">Jetzt anmelden <span class="ph">[LINK]</span></a>
+        <span class="mail">Fragen: <b>info@hyrox-czech.cz</b> · <b>+420 722 077 070</b></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="net" aria-label="STR2G-Websites"><p class="net-h">STR2G-Websites</p><ul><li><a href="https://hyrox-prague.eu/de/" target="_blank" rel="noopener"><b>HYROX Prague</b><span>HYROX-Training und Wettkampfvorbereitung</span><i>hyrox-prague.eu</i></a></li><li><a href="https://str2g.com/de/" target="_blank" rel="noopener"><b>STR2G Online</b><span>Online-HYROX-Programme</span><i>str2g.com</i></a></li><li><a href="https://hyroxtrainingclub.cz/de/" target="_blank" rel="noopener"><b>HYROX Training Club</b><span>HYROX-Training in Prag, Brno und Ostrava</span><i>hyroxtrainingclub.cz</i></a></li><li><a href="https://www.ladislavsuchanek.cz/" target="_blank" rel="noopener"><b>Ladislav Suchánek</b><span>Personal Training, Ernährung &amp; Massage</span><i>ladislavsuchanek.cz</i></a></li></ul></nav>
+    <span>Factory Games · Form Factory × STR2G · Vinohradská 190, Prag 3</span>
+    <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
+  </div>
+</footer>
+<script>
+(function(){
+
+  var W1=600, W2=750, W3=890, CALL=8;
+  function fmt(m){var h=Math.floor(m/60),mm=m%60;return (h<10?'0':'')+h+':'+(mm<10?'0':'')+mm;}
+  document.querySelectorAll('.finder').forEach(function(f){
+    var inp=f.querySelector('.wi'), lane=1, word=f.dataset.waveWord;
+    function o(k,v){f.querySelector('[data-o="'+k+'"]').textContent=v;}
+    function upd(){
+      var n=parseInt(inp.value,10); if(isNaN(n)) return;
+      n=Math.min(25,Math.max(1,n));
+      var k=(n-1)*4+lane, w2=Math.min(13,Math.ceil(k/8));
+      var a=W1+(n-1)*4, b=W2+(w2-1)*8, c=W3+(n-1)*4;
+      o('s1',fmt(a)); o('c1',fmt(a-CALL));
+      o('s2',fmt(b)); o('c2',fmt(b-CALL)); o('w2n',word+' '+w2);
+      o('s3',fmt(c)); o('c3',fmt(c-CALL));
+    }
+    function step(d){var n=parseInt(inp.value,10)||1;inp.value=Math.min(25,Math.max(1,n+d));upd();}
+    inp.addEventListener('input',upd);
+    inp.addEventListener('change',function(){step(0);});
+    f.querySelector('.wm').addEventListener('click',function(){step(-1);});
+    f.querySelector('.wp').addEventListener('click',function(){step(1);});
+    f.querySelectorAll('.seg button').forEach(function(b){
+      b.addEventListener('click',function(){
+        lane=parseInt(b.dataset.lane,10);
+        f.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+        upd();
+      });
+    });
+    upd();
+  });
+})();
+</script>
+</body>
+</html>

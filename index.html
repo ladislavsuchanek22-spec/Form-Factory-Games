@@ -3,16 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Factory Games – individuální závod ve Form Factory Vinohradská, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.">
+<title>Factory Games · závod 5. 12. 2026 · Form Factory Praha</title>
+<meta name="description" content="Individuální fitness závod ve Form Factory Vinohradská v Praze, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.">
 <meta name="google-site-verification" content="abf25QrYbQI8uNUvQ5bWpJksa7UN_hBxoRfm9DcwIHs" />
 <link rel="canonical" href="https://formfactorygames.cz/">
-<link rel="icon" href="img/ff-logo.jpg">
-<style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
-<title>Form Factory Games</title>
+<link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/">
+<link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/">
+<link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/">
+<link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/">
+<link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Factory Games · závod 5. 12. 2026 · Form Factory Praha">
+<meta property="og:description" content="Individuální fitness závod ve Form Factory Vinohradská v Praze, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.">
+<meta property="og:url" content="https://formfactorygames.cz/">
+<meta property="og:image" content="https://formfactorygames.cz/img/hero.jpg">
+<meta property="og:locale" content="cs_CZ">
+<link rel="icon" href="/img/ff-logo.jpg">
+<script>(function(){var m=location.hash.match(/^#(en|pl|de)$/i);if(m)location.replace('/'+m[1].toLowerCase()+'/');})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
+html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}
 /* Layout: závodní scorecard — černá hala, bílé čáry stanovišť A→B→C→D, červená jen tam, kde se jde na start nebo se boduje. Barvy podle zadání: červená / bílá / černá */
 :root{
   --bg:#0B0B0C;
@@ -254,7 +266,7 @@ tbody tr:hover td{background:var(--surface-2)}
 
 /* CTA */
 .cta{position:relative;overflow:hidden;isolation:isolate;border-top:6px solid var(--red)}
-.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("img/sled.jpg") center 60%/cover;filter:grayscale(1)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.jpg") center 60%/cover;filter:grayscale(1)}
 .cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.96),rgba(11,11,12,.74))}
 .cta .wrap{display:grid;gap:24px}
 .cta h2{font-size:clamp(50px,9vw,120px);font-style:italic}
@@ -270,51 +282,60 @@ footer a{color:var(--fg)}
 /* jazykový přepínač */
 .nav-r{display:flex;align-items:center;gap:12px}
 .lsw{display:flex;border:1px solid var(--line)}
-.lsw button{background:transparent;border:0;border-left:1px solid var(--line);color:var(--muted);font:700 13px/1 var(--f-mono);letter-spacing:.06em;padding:9px 9px;cursor:pointer}
-.lsw button:first-child{border-left:0}
-.lsw button:hover{color:var(--fg)}
-.lsw button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.lsw a{border-left:1px solid var(--line);color:var(--muted);font:700 13px/1 var(--f-mono);letter-spacing:.06em;padding:9px 9px;text-decoration:none}
+.lsw a:first-child{border-left:0}
+.lsw a:hover{color:var(--fg)}
+.lsw a[aria-current]{background:var(--fg);color:var(--bg)}
 .lbl{font:600 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 @media (max-width:560px){.nav-r .btn{display:none}}
-@media (max-width:360px){.brand b{font-size:17px}.lsw button{padding:8px 6px}}
-</style>
+@media (max-width:360px){.brand b{font-size:17px}.lsw a{padding:8px 6px}}
 
-<div class="lang-root" data-lang="cz" lang="cs">
+/* weby STR2G v patičce */
+.net{flex-basis:100%;padding-bottom:24px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.net-h{margin:0 0 14px;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.net ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px 24px}
+.net a{display:grid;gap:3px;text-decoration:none;color:var(--fg)}
+.net b{font:700 20px/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.net span{font-size:14px;line-height:1.35;color:var(--muted)}
+.net i{font:500 12px/1.2 var(--f-mono);font-style:normal;color:var(--muted)}
+.net a:hover b{color:var(--red-hi)}
+.team-link{font:500 13px/1.3 var(--f-mono);color:var(--red-hi);text-decoration:none;margin-top:4px}
+.team-link:hover{text-decoration:underline}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SportsEvent", "@id": "https://formfactorygames.cz/#event", "name": "Factory Games 2026", "description": "Individuální fitness závod ve Form Factory Vinohradská v Praze, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.", "url": "https://formfactorygames.cz/", "inLanguage": "cs", "image": ["https://formfactorygames.cz/img/hero.jpg"], "startDate": "2026-12-05T10:00:00+01:00", "endDate": "2026-12-05T17:40:00+01:00", "doorTime": "2026-12-05T09:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "maximumAttendeeCapacity": 100, "location": {"@type": "SportsActivityLocation", "name": "Form Factory Vinohradská", "url": "https://hyroxtrainingclub.cz/", "address": {"@type": "PostalAddress", "streetAddress": "Vinohradská 190", "postalCode": "130 00", "addressLocality": "Praha 3", "addressCountry": "CZ"}}, "organizer": [{"@type": "Organization", "@id": "https://str2g.com/#org", "name": "STR2G HYROX", "url": "https://str2g.com/"}, {"@type": "Organization", "name": "Form Factory", "url": "https://www.formfactory.cz/"}]}, {"@type": "Person", "@id": "https://hyrox-prague.eu/#lada", "name": "Ladislav Suchánek", "url": "https://hyrox-prague.eu/", "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"]}]}</script>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top-cz">
-      <img src="img/ff-logo.jpg" alt="Form Factory">
+    <a class="brand" href="/">
+      <img src="/img/ff-logo.jpg" alt="Form Factory">
       <span><b>Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
     </a>
     <ul>
-      <li><a href="#workouty-cz">Workouty</a></li>
-      <li><a href="#zateze-cz">Zátěže</a></li>
-      <li><a href="#vlny-cz">Vlny</a></li>
-      <li><a href="#program-cz">Program</a></li>
-      <li><a href="#bodovani-cz">Bodování</a></li>
-      <li><a href="#faq-cz">FAQ</a></li>
+      <li><a href="#workouty">Workouty</a></li>
+      <li><a href="#zateze">Zátěže</a></li>
+      <li><a href="#vlny">Vlny</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#bodovani">Bodování</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-r">
-      <div class="lsw" role="group" aria-label="Jazyk">
-        <button type="button" data-set="cz" aria-pressed="true">CZ</button><button type="button" data-set="en" aria-pressed="false">EN</button><button type="button" data-set="pl" aria-pressed="false">PL</button><button type="button" data-set="de" aria-pressed="false">DE</button>
-      </div>
-      <a class="btn btn-red" href="#registrace-cz">Registrace</a>
+      <nav class="lsw" aria-label="Jazyk"><a href="/" hreflang="cs" lang="cs" aria-current="page">CZ</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/pl/" hreflang="pl" lang="pl">PL</a><a href="/de/" hreflang="de" lang="de">DE</a></nav>
+      <a class="btn btn-red" href="#registrace">Registrace</a>
     </div>
   </div>
 </header>
 
-<main id="top-cz">
+<main id="top">
   <section class="hero">
-    <div class="hero-img"><img src="img/hero.jpg" alt="Briefing závodníků ve Form Factory"></div>
+    <div class="hero-img"><img src="/img/hero.jpg" alt="Briefing závodníků ve Form Factory"></div>
     <div class="wrap">
       <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Sobota 5. 12. 2026</b> <span>·</span> <span>Sraz 9:30 · první start 10:00</span></p>
       <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
       <p class="lead">Jednodenní individuální závod. Síla, vytrvalost a technika ve třech workoutech. Každý jede všechny tři a hodnotí se zvlášť ve čtyřech kategoriích.</p>
       <div class="hero-cta">
-        <a class="btn btn-red" href="#registrace-cz">Chci startovat →</a>
-        <a class="btn btn-ghost" href="#workouty-cz">Co mě čeká</a>
+        <a class="btn btn-red" href="#registrace">Chci startovat →</a>
+        <a class="btn btn-ghost" href="#workouty">Co mě čeká</a>
       </div>
     </div>
   </section>
@@ -343,13 +364,13 @@ footer a{color:var(--fg)}
         </div>
       </div>
       <figure>
-        <img src="img/stations.jpg" alt="Závodnice na stanicích během simulace ve Form Factory">
+        <img src="/img/stations.jpg" alt="Závodnice na stanicích během simulace ve Form Factory">
         <figcaption>Pořádá Form Factory × STR2G</figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="alt" id="workouty-cz">
+  <section class="alt" id="workouty">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Workouty</p>
@@ -402,7 +423,7 @@ footer a{color:var(--fg)}
     </div>
   </section>
 
-  <section id="zateze-cz">
+  <section id="zateze">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Zátěže</p>
@@ -428,7 +449,7 @@ footer a{color:var(--fg)}
     </div>
   </section>
 
-  <section class="alt" id="vlny-cz">
+  <section class="alt" id="vlny">
     <div class="wrap">
       <div class="wave-head">
         <div class="sec-head" style="margin:0">
@@ -459,16 +480,16 @@ footer a{color:var(--fg)}
         <div class="finder-in">
           <h3>Kdy startuju?</h3>
           <div class="fld">
-            <label for="wave-cz">Tvoje vlna ve W1</label>
+            <label for="wave">Tvoje vlna ve W1</label>
             <div class="ctl">
               <button type="button" class="wm" aria-label="−1">−</button>
-              <input id="wave-cz" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
+              <input id="wave" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
               <button type="button" class="wp" aria-label="+1">+</button>
             </div>
           </div>
           <div class="fld">
-            <span class="lbl" id="lane-l-cz">Tvoje dráha</span>
-            <div class="seg" role="group" aria-labelledby="lane-l-cz">
+            <span class="lbl" id="lane-l">Tvoje dráha</span>
+            <div class="seg" role="group" aria-labelledby="lane-l">
               <button type="button" data-lane="1" aria-pressed="true">1</button>
               <button type="button" data-lane="2" aria-pressed="false">2</button>
               <button type="button" data-lane="3" aria-pressed="false">3</button>
@@ -486,9 +507,9 @@ footer a{color:var(--fg)}
     </div>
   </section>
 
-  <section class="day" id="program-cz">
+  <section class="day" id="program">
     <div class="wrap">
-      <div class="day-img"><img src="img/ria-mic.jpg" alt="Speakerka hecuje závodníky na trati"></div>
+      <div class="day-img"><img src="/img/ria-mic.jpg" alt="Speakerka hecuje závodníky na trati"></div>
       <div>
         <div class="sec-head">
           <p class="eyebrow">Program dne</p>
@@ -510,7 +531,7 @@ footer a{color:var(--fg)}
     </div>
   </section>
 
-  <section class="alt" id="bodovani-cz">
+  <section class="alt" id="bodovani">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Bodování</p>
@@ -563,15 +584,16 @@ footer a{color:var(--fg)}
         <p class="lead">Dvacet lidí, z toho dvanáct judges. Poznáš je podle nápisu na zádech.</p>
       </div>
       <div class="crew">
-        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Hlavní organizátor. Řídí celý závod, časové signály, nástupy a přesuny.</p></article>
-        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Svolává vlny, drží energii v hale a vede vyhlášení.</p></article>
+        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Hlavní organizátor. Řídí celý závod, časové signály, nástupy a přesuny.</p><a class="team-link" href="https://hyrox-prague.eu/" target="_blank" rel="noopener">Trénink a příprava · hyrox-prague.eu →</a></article>
+        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Svolává vlny, drží energii v hale a vede vyhlášení.</p><a class="team-link" href="https://www.instagram.com/riahrusovskaofficial/" target="_blank" rel="noopener">@riahrusovskaofficial</a></article>
         <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standardy, briefing judges a rozhodování sporných situací.</p></article>
       </div>
+      <p class="note">Závod pořádáme ve Form Factory Vinohradská, jednom ze čtyř HYROX Training Clubů. <a href="https://hyroxtrainingclub.cz/" target="_blank" rel="noopener">Lekce a rozvrh klubů →</a></p>
       <div class="crew-wide"><span><b>12</b> judges</span><span><b>1</b> zdravotník</span><span><b>1</b> zapisovatel výsledků</span><span><b>DJ</b>, kameraman, fotograf</span></div>
     </div>
   </section>
 
-  <section id="faq-cz">
+  <section id="faq">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Časté otázky</p>
@@ -588,13 +610,13 @@ footer a{color:var(--fg)}
     </div>
   </section>
 
-  <section class="cta" id="registrace-cz">
+  <section class="cta" id="registrace">
     <div class="wrap">
       <p class="eyebrow">Registrace</p>
       <h2>Sto míst.<br>Jedno je tvoje.</h2>
       <p class="lead">Sobota 5. prosince, Form Factory Vinohradská. Vyber kategorii, zaplať startovné a před závodem ti pošleme vlnu a dráhu na všechny tři workouty.</p>
       <div class="cta-row">
-        <a class="btn btn-red" href="#registrace-cz">Registrovat se <span class="ph">[ODKAZ]</span></a>
+        <a class="btn btn-red" href="#registrace">Registrovat se <span class="ph">[ODKAZ]</span></a>
         <span class="mail">Dotazy: <b>info@hyrox-czech.cz</b> · <b>+420 722 077 070</b></span>
       </div>
     </div>
@@ -603,1016 +625,13 @@ footer a{color:var(--fg)}
 
 <footer>
   <div class="wrap">
+    <nav class="net" aria-label="Weby STR2G"><p class="net-h">Weby STR2G</p><ul><li><a href="https://hyrox-prague.eu/" target="_blank" rel="noopener"><b>HYROX Prague</b><span>HYROX trénink a příprava na závod</span><i>hyrox-prague.eu</i></a></li><li><a href="https://str2g.com/cs/" target="_blank" rel="noopener"><b>STR2G Online</b><span>Online HYROX programy</span><i>str2g.com</i></a></li><li><a href="https://hyroxtrainingclub.cz/" target="_blank" rel="noopener"><b>HYROX Training Club</b><span>HYROX tréninky v Praze, Brně a Ostravě</span><i>hyroxtrainingclub.cz</i></a></li><li><a href="https://www.ladislavsuchanek.cz/" target="_blank" rel="noopener"><b>Ladislav Suchánek</b><span>Osobní trénink, výživa a masáže</span><i>ladislavsuchanek.cz</i></a></li></ul></nav>
     <span>Factory Games · Form Factory × STR2G · Vinohradská 190, Praha 3</span>
     <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
   </div>
 </footer>
-</div>
-
-<div class="lang-root" data-lang="en" lang="en" hidden>
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top-en">
-      <img src="img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
-    </a>
-    <ul>
-      <li><a href="#workouty-en">Workouts</a></li>
-      <li><a href="#zateze-en">Weights</a></li>
-      <li><a href="#vlny-en">Heats</a></li>
-      <li><a href="#program-en">Schedule</a></li>
-      <li><a href="#bodovani-en">Scoring</a></li>
-      <li><a href="#faq-en">FAQ</a></li>
-    </ul>
-    <div class="nav-r">
-      <div class="lsw" role="group" aria-label="Language">
-        <button type="button" data-set="cz" aria-pressed="false">CZ</button><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="pl" aria-pressed="false">PL</button><button type="button" data-set="de" aria-pressed="false">DE</button>
-      </div>
-      <a class="btn btn-red" href="#registrace-en">Register</a>
-    </div>
-  </div>
-</header>
-
-<main id="top-en">
-  <section class="hero">
-    <div class="hero-img"><img src="img/hero.jpg" alt="Athlete briefing at Form Factory"></div>
-    <div class="wrap">
-      <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Saturday 5 Dec 2026</b> <span>·</span> <span>Check-in 9:30 · first start 10:00</span></p>
-      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
-      <p class="lead">A one-day individual competition. Strength, endurance and skill across three workouts. Everyone does all three, ranked separately in four divisions.</p>
-      <div class="hero-cta">
-        <a class="btn btn-red" href="#registrace-en">I'm in →</a>
-        <a class="btn btn-ghost" href="#workouty-en">What to expect</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div class="wrap">
-      <div class="stat"><strong>100</strong><span>athletes</span></div>
-      <div class="stat"><strong>3</strong><span>workouts for everyone</span></div>
-      <div class="stat"><strong>4</strong><span>divisions</span></div>
-      <div class="stat"><strong>300</strong><span>points max</span></div>
-    </div>
-  </div>
-
-  <section class="concept">
-    <div class="wrap">
-      <div class="concept-text">
-        <p class="eyebrow">The event</p>
-        <h2>Three workouts. One result.</h2>
-        <p><strong>Factory Games is an individual competition.</strong> Power Grid in the morning, a six-minute AMRAP at noon, Final Grind in the afternoon. Always 38 minutes in between to rest and reset.</p>
-        <p>Sign up for the women's or men's division and pick Open or Pro. No quotas per division, just an overall cap of 100 athletes. First come, first served.</p>
-        <div class="cats">
-          <div><span>Women</span><b>Women Open</b></div>
-          <div><span>Women</span><b>Women Pro</b></div>
-          <div><span>Men</span><b>Men Open</b></div>
-          <div><span>Men</span><b>Men Pro</b></div>
-        </div>
-      </div>
-      <figure>
-        <img src="img/stations.jpg" alt="Athlete working through stations during a simulation at Form Factory">
-        <figcaption>Hosted by Form Factory × STR2G</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="alt" id="workouty-en">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Workouts</p>
-        <h2>Strength. Engine. Grit.</h2>
-        <p class="lead">In W1 and W3 you move through four stations A → B → C → D. Three minutes all-out on each, then one minute to log your score and move. Scores are in metres, calories or reps. More is better.</p>
-      </div>
-      <div class="wods">
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W1 · 10:00</span>
-            <h3>Power Grid</h3>
-            <div class="fmt"><span>4 × 3 min work</span><span>1 min transition</span><span>4 athletes per heat</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>SkiErg</b><span>metres</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>metres</span></div>
-            <div class="st"><span class="l">C</span><b>RowErg</b><span>metres</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>reps</span></div>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W2 · 12:30</span>
-            <h3>The Engine</h3>
-            <div class="fmt"><span>6 min AMRAP</span><span>8 athletes at once</span></div>
-          </div>
-          <div class="amrap">
-            <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
-              <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
-            </div>
-            <p>Repeat in this order until time runs out. One round is 50 reps. Every valid rep counts, so 3 rounds plus 12 = 162.</p>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W3 · 14:50</span>
-            <h3>Final Grind</h3>
-            <div class="fmt"><span>4 × 3 min work</span><span>1 min transition</span><span>4 athletes per heat</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>Echo Bike</b><span>calories</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>reps</span></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>metres, weighted</span></div>
-            <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>metres</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="zateze-en">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Weights</p>
-        <h2>Open or Pro?</h2>
-        <p class="lead">You pick your division. Look at the weights and be honest with yourself. Pro is for athletes who can move these loads again and again, under fatigue.</p>
-      </div>
-      <div class="tbl-wrap">
-        <table>
-          <thead>
-            <tr><th>Exercise</th><th class="cat">Women Open</th><th class="cat">Women Pro</th><th class="cat">Men Open</th><th class="cat">Men Pro</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Sled Push</td><td>100 kg</td><td>150 kg</td><td>150 kg</td><td>200 kg</td></tr>
-            <tr><td>KB Deadlift</td><td>2 × 16 kg</td><td>2 × 24 kg</td><td>2 × 24 kg</td><td>2 × 32 kg</td></tr>
-            <tr><td>Wall Balls</td><td>4 kg</td><td>6 kg</td><td>6 kg</td><td>9 kg</td></tr>
-            <tr><td>KB Swings</td><td>12 kg</td><td>16 kg</td><td>16 kg</td><td>20 kg</td></tr>
-            <tr><td>DB Thrusters</td><td>2 × 10 kg</td><td>2 × 15 kg</td><td>2 × 15 kg</td><td>2 × 20 kg</td></tr>
-            <tr><td>Walking Lunges</td><td>10 kg</td><td>20 kg</td><td>20 kg</td><td>30 kg</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">“2 ×” means two separate implements. For lunges the load listed is the total carried. Wall ball target height, swing type, lunge carry position and shuttle distance will be in the rulebook before registration opens.</p>
-    </div>
-  </section>
-
-  <section class="alt" id="vlny-en">
-    <div class="wrap">
-      <div class="wave-head">
-        <div class="sec-head" style="margin:0">
-          <p class="eyebrow">How heats work</p>
-          <h2>Heats of four. Every 4 minutes.</h2>
-        </div>
-        <p class="lead">In W1 and W3 a heat has up to four athletes. Everyone starts at A in their own lane 1–4 and keeps that lane for the whole workout. The next heat steps onto A four minutes later. At full flow, 16 people are working at once.</p>
-      </div>
-      <div class="rot-wrap">
-        <div class="rot">
-          <div class="h">Minute</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div>
-          <div>0:00–3:00</div><div class="w1">Heat 1</div><div></div><div></div><div></div>
-          <div>4:00–7:00</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div><div></div>
-          <div>8:00–11:00</div><div class="wx">Heat 3</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div>
-          <div class="last">12:00–15:00</div><div class="wx last">Heat 4</div><div class="wx last">Heat 3</div><div class="wx last">Heat 2</div><div class="w1 last">Heat 1</div>
-        </div>
-      </div>
-      <p class="note">Between work intervals there is always a full minute to log, move and reset. Heat 1 finishes in minute 15 and clears station D in minute 16. In W2, eight athletes start together every 8 minutes.</p>
-
-      <div class="cd-row">
-        <div class="cd"><span class="t">−8 min</span><b>Call-up</b><p>The speaker calls your heat. Be in the call-up zone.</p></div>
-        <div class="cd"><span class="t">Check</span><b>Number and weight</b><p>Your judge checks your number, division and the weight in your lane.</p></div>
-        <div class="cd"><span class="t">Signal</span><b>Start and stop</b><p>A central sound signal runs every heat.</p></div>
-        <div class="cd"><span class="t">+1 min</span><b>Log and move</b><p>The judge confirms your score out loud and you move to the next station.</p></div>
-      </div>
-
-      <div class="finder" data-wave-word="Heat">
-        <div class="finder-in">
-          <h3>When do I start?</h3>
-          <div class="fld">
-            <label for="wave-en">Your heat in W1</label>
-            <div class="ctl">
-              <button type="button" class="wm" aria-label="−1">−</button>
-              <input id="wave-en" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
-              <button type="button" class="wp" aria-label="+1">+</button>
-            </div>
-          </div>
-          <div class="fld">
-            <span class="lbl" id="lane-l-en">Your lane</span>
-            <div class="seg" role="group" aria-labelledby="lane-l-en">
-              <button type="button" data-lane="1" aria-pressed="true">1</button>
-              <button type="button" data-lane="2" aria-pressed="false">2</button>
-              <button type="button" data-lane="3" aria-pressed="false">3</button>
-              <button type="button" data-lane="4" aria-pressed="false">4</button>
-            </div>
-          </div>
-          <small>You'll get your heat and lane by email once registration closes. Heats are built from entries in the order Women Open → Women Pro → Men Open → Men Pro.</small>
-        </div>
-        <div class="finder-out" aria-live="polite">
-          <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
-          <div class="fo"><span class="w">W2<small data-o="w2n">Heat 1</small></span><div><span>Call-up</span><strong data-o="c2">12:22</strong></div><div><span>Start</span><strong data-o="s2" class="hi">12:30</strong></div></div>
-          <div class="fo"><span class="w">W3<small>Final Grind</small></span><div><span>Call-up</span><strong data-o="c3">14:42</strong></div><div><span>Start</span><strong data-o="s3" class="hi">14:50</strong></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="day" id="program-en">
-    <div class="wrap">
-      <div class="day-img"><img src="img/ria-mic.jpg" alt="Speaker firing up athletes on the floor"></div>
-      <div>
-        <div class="sec-head">
-          <p class="eyebrow">Schedule</p>
-          <h2>Race day</h2>
-        </div>
-        <ul class="sched">
-          <li><span class="t">09:30</span><div><b>Check-in</b><p>Bib number, heat list and your own warm-up.</p></div></li>
-          <li><span class="t">09:45</span><div><b>Briefing</b><p>Standards, heats, scoring and safe transitions.</p></div></li>
-          <li class="key"><span class="t">10:00–11:52</span><div><b>W1 Power Grid</b><p>25 heats, the last one starts at 11:36.</p></div></li>
-          <li class="brk"><span class="t">11:52–12:30</span><div><b>Break · efficient movement</b><p>Rest, plus an optional coach demo: wall ball rhythm and a safe KB swing.</p></div></li>
-          <li class="key"><span class="t">12:30–14:12</span><div><b>W2 The Engine</b><p>13 heats of eight, the last one starts at 14:06.</p></div></li>
-          <li class="brk"><span class="t">14:12–14:50</span><div><b>Break · skill under fatigue</b><p>Optional demo: shuttle turns, knee contact on lunges, thruster timing.</p></div></li>
-          <li class="key"><span class="t">14:50–16:42</span><div><b>W3 Final Grind</b><p>25 heats, the last one starts at 16:26.</p></div></li>
-          <li><span class="t">16:42–17:10</span><div><b>Results</b><p>Rankings for all divisions go live, followed by a 10-minute window for score queries.</p></div></li>
-          <li class="key"><span class="t">17:20–17:40</span><div><b>Awards</b><p>Four divisions, group photo, done.</p></div></li>
-        </ul>
-        <p class="note">Demos during the breaks are non-competitive and optional. If we run late we'll shorten them, but there will always be at least 30 minutes between the end of one block and the next start.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="bodovani-en">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Scoring</p>
-        <h2>Every workout counts the same.</h2>
-        <p class="lead">Metres, calories and reps are never added up. Within each division your performance becomes a rank, and the rank becomes points. You're only ranked against your own division.</p>
-      </div>
-      <div class="score">
-        <div class="formula">
-          <p class="eq">points = 100 × <em>(N − r)</em> / (N − 1)</p>
-          <dl>
-            <dt>N</dt><dd>number of athletes in the division</dd>
-            <dt>r</dt><dd>your rank at the station or in the workout</dd>
-          </dl>
-          <div class="ex">
-            <span>Example · Men Open, 21 athletes</span>
-            <p>1st = 100 pts · 11th = 50 pts · 21st = 0 pts</p>
-          </div>
-        </div>
-        <div class="sum">
-          <div><b>W1</b><p>Average points from four stations: ski, sled, row, deadlift</p><span>0–100</span></div>
-          <div><b>W2</b><p>Ranked by total valid reps</p><span>0–100</span></div>
-          <div><b>W3</b><p>Average points from four stations: bike, thrusters, lunges, shuttle</p><span>0–100</span></div>
-          <div class="tot"><b>Total</b><p>W1 + W2 + W3</p><span>max 300</span></div>
-        </div>
-      </div>
-      <p class="note">Tied performances share an averaged rank, e.g. a tie for 2nd–3rd = 2.5. Overall ties go to the higher W3 score, then W2. Points are not rounded along the way and are shown to two decimals. Live rankings are on the web via QR code.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Rules</p>
-        <h2>One standard for everyone</h2>
-      </div>
-      <div class="std">
-        <div><b>The signal decides</b><p>Start and stop run on a central sound signal. Only reps or metres completed before the stop count.</p></div>
-        <div><b>No-rep on the spot</b><p>Your judge calls a no-rep immediately and tells you why. In W2 you finish the prescribed valid reps before moving to the next exercise.</p></div>
-        <div><b>Scorecard</b><p>After each station the judge confirms your score out loud. You sign the card once you have left the competition area.</p></div>
-      </div>
-      <p class="note">Exact range of motion for deadlifts, thrusters and burpees, plus rules on late arrival, DNF and appeals, will be in the rulebook, with a demo video before the event.</p>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Who runs it</p>
-        <h2>The crew</h2>
-        <p class="lead">Twenty people, twelve of them judges. You'll recognise them by the label on their back.</p>
-      </div>
-      <div class="crew">
-        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Head organiser. Runs the whole event: timing signals, call-ups and transitions.</p></article>
-        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Calls the heats, keeps the energy up and hosts the awards.</p></article>
-        <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standards, judges' briefing and calls on disputed situations.</p></article>
-      </div>
-      <div class="crew-wide"><span><b>12</b> judges</span><span><b>1</b> medic</span><span><b>1</b> scorekeeper</span><span><b>DJ</b>, videographer, photographer</span></div>
-    </div>
-  </section>
-
-  <section id="faq-en">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">FAQ</p>
-        <h2>Before you sign up</h2>
-      </div>
-      <div class="faq-list">
-        <details open><summary>Open or Pro: how do I choose?</summary><p>Go by the weights. If 2 × 24 kg deadlifts or a 9 kg wall ball means fighting for every rep, go Open. Open isn't a lesser effort, it's a load you can push hard for the full three minutes.</p></details>
-        <details><summary>Do I have to do all three workouts?</summary><p>Yes. Your result is the sum of all three. Each workout carries the same weight, worth up to 100 points.</p></details>
-        <details><summary>How much is the entry fee?</summary><p>The entry fee is <span class="ph">[CZK __]</span>, paid at registration. Capacity is 100 athletes in total, with no quotas per division.</p></details>
-        <details><summary>How long will I be there?</summary><p>Check-in is at 9:30 and the awards wrap up at 17:40. Between workouts you'll have around two hours, depending on your heat. Bring food and drinks for the whole day.</p></details>
-        <details><summary>What should I bring?</summary><p>Shoes for running and squatting, drinks, food, a towel and warm clothes for the breaks. You'll get your number at check-in.</p></details>
-        <details><summary>Where can I see results?</summary><p>Live rankings on the web via a QR code at check-in and around the venue. Final results after 17:00, following the 10-minute window for queries.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="registrace-en">
-    <div class="wrap">
-      <p class="eyebrow">Register</p>
-      <h2>100 spots.<br>One is yours.</h2>
-      <p class="lead">Saturday 5 December, Form Factory Vinohradská, Prague. Pick your division, pay the entry fee, and before the event we'll send you your heat and lane for all three workouts.</p>
-      <div class="cta-row">
-        <a class="btn btn-red" href="#registrace-en">Register <span class="ph">[LINK]</span></a>
-        <span class="mail">Questions: <b>info@hyrox-czech.cz</b> · <b>+420 722 077 070</b></span>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>Factory Games · Form Factory × STR2G · Vinohradská 190, Prague 3</span>
-    <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
-  </div>
-</footer>
-</div>
-
-<div class="lang-root" data-lang="pl" lang="pl" hidden>
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top-pl">
-      <img src="img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
-    </a>
-    <ul>
-      <li><a href="#workouty-pl">Workouty</a></li>
-      <li><a href="#zateze-pl">Obciążenia</a></li>
-      <li><a href="#vlny-pl">Heaty</a></li>
-      <li><a href="#program-pl">Harmonogram</a></li>
-      <li><a href="#bodovani-pl">Punktacja</a></li>
-      <li><a href="#faq-pl">FAQ</a></li>
-    </ul>
-    <div class="nav-r">
-      <div class="lsw" role="group" aria-label="Język">
-        <button type="button" data-set="cz" aria-pressed="false">CZ</button><button type="button" data-set="en" aria-pressed="false">EN</button><button type="button" data-set="pl" aria-pressed="true">PL</button><button type="button" data-set="de" aria-pressed="false">DE</button>
-      </div>
-      <a class="btn btn-red" href="#registrace-pl">Rejestracja</a>
-    </div>
-  </div>
-</header>
-
-<main id="top-pl">
-  <section class="hero">
-    <div class="hero-img"><img src="img/hero.jpg" alt="Odprawa zawodników w Form Factory"></div>
-    <div class="wrap">
-      <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Sobota 5.12.2026</b> <span>·</span> <span>Zbiórka 9:30 · pierwszy start 10:00</span></p>
-      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
-      <p class="lead">Jednodniowe zawody indywidualne. Siła, wytrzymałość i technika w trzech workoutach. Każdy robi wszystkie trzy, klasyfikacja osobno w czterech kategoriach.</p>
-      <div class="hero-cta">
-        <a class="btn btn-red" href="#registrace-pl">Startuję →</a>
-        <a class="btn btn-ghost" href="#workouty-pl">Co mnie czeka</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div class="wrap">
-      <div class="stat"><strong>100</strong><span>zawodników</span></div>
-      <div class="stat"><strong>3</strong><span>workouty dla każdego</span></div>
-      <div class="stat"><strong>4</strong><span>kategorie</span></div>
-      <div class="stat"><strong>300</strong><span>punktów maks.</span></div>
-    </div>
-  </div>
-
-  <section class="concept">
-    <div class="wrap">
-      <div class="concept-text">
-        <p class="eyebrow">O zawodach</p>
-        <h2>Trzy workouty. Jeden wynik.</h2>
-        <p><strong>Factory Games to zawody indywidualne.</strong> Rano siłowo-wytrzymałościowy Power Grid, w południe sześciominutowy AMRAP, po południu Final Grind. Między nimi zawsze 38 minut na odpoczynek i reset.</p>
-        <p>Zapisujesz się do kategorii kobiet lub mężczyzn i wybierasz Open albo Pro. Bez limitów na kategorie, obowiązuje tylko łączny limit 100 zawodników. Kto pierwszy, ten startuje.</p>
-        <div class="cats">
-          <div><span>Kobiety</span><b>Women Open</b></div>
-          <div><span>Kobiety</span><b>Women Pro</b></div>
-          <div><span>Mężczyźni</span><b>Men Open</b></div>
-          <div><span>Mężczyźni</span><b>Men Pro</b></div>
-        </div>
-      </div>
-      <figure>
-        <img src="img/stations.jpg" alt="Zawodniczka na stanowiskach podczas symulacji w Form Factory">
-        <figcaption>Organizator: Form Factory × STR2G</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="alt" id="workouty-pl">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Workouty</p>
-        <h2>Siła. Silnik. Głowa.</h2>
-        <p class="lead">W W1 i W3 przechodzisz cztery stanowiska A → B → C → D. Na każdym trzy minuty na maksa, potem minuta na zapis i przejście. Wynik liczy się w metrach, kaloriach lub powtórzeniach. Więcej znaczy lepiej.</p>
-      </div>
-      <div class="wods">
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W1 · 10:00</span>
-            <h3>Power Grid</h3>
-            <div class="fmt"><span>4 × 3 min pracy</span><span>1 min przejście</span><span>4 zawodników w heacie</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>SkiErg</b><span>metry</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>metry</span></div>
-            <div class="st"><span class="l">C</span><b>RowErg</b><span>metry</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>powtórzenia</span></div>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W2 · 12:30</span>
-            <h3>The Engine</h3>
-            <div class="fmt"><span>6 min AMRAP</span><span>8 zawodników naraz</span></div>
-          </div>
-          <div class="amrap">
-            <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
-              <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
-            </div>
-            <p>Powtarzasz w tej kolejności do końca czasu. Jedna runda to 50 powtórzeń. Liczy się każde poprawne powtórzenie, więc 3 rundy i 12 = 162.</p>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W3 · 14:50</span>
-            <h3>Final Grind</h3>
-            <div class="fmt"><span>4 × 3 min pracy</span><span>1 min przejście</span><span>4 zawodników w heacie</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>Echo Bike</b><span>kalorie</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>powtórzenia</span></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>metry, z obciążeniem</span></div>
-            <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>metry</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="zateze-pl">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Obciążenia</p>
-        <h2>Open czy Pro?</h2>
-        <p class="lead">Kategorię wybierasz sam. Spójrz na ciężary i bądź wobec siebie szczery. Pro jest dla osób, które radzą sobie z tymi obciążeniami wielokrotnie i pod zmęczeniem.</p>
-      </div>
-      <div class="tbl-wrap">
-        <table>
-          <thead>
-            <tr><th>Ćwiczenie</th><th class="cat">Women Open</th><th class="cat">Women Pro</th><th class="cat">Men Open</th><th class="cat">Men Pro</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Sled Push</td><td>100 kg</td><td>150 kg</td><td>150 kg</td><td>200 kg</td></tr>
-            <tr><td>KB Deadlift</td><td>2 × 16 kg</td><td>2 × 24 kg</td><td>2 × 24 kg</td><td>2 × 32 kg</td></tr>
-            <tr><td>Wall Balls</td><td>4 kg</td><td>6 kg</td><td>6 kg</td><td>9 kg</td></tr>
-            <tr><td>KB Swings</td><td>12 kg</td><td>16 kg</td><td>16 kg</td><td>20 kg</td></tr>
-            <tr><td>DB Thrusters</td><td>2 × 10 kg</td><td>2 × 15 kg</td><td>2 × 15 kg</td><td>2 × 20 kg</td></tr>
-            <tr><td>Walking Lunges</td><td>10 kg</td><td>20 kg</td><td>20 kg</td><td>30 kg</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">„2 ×” oznacza dwa osobne przyrządy. Przy lunges podano łączne niesione obciążenie. Wysokość celu wall ball, typ swingu, sposób niesienia przy lunges i długość odcinka shuttle opublikujemy w regulaminie przed otwarciem rejestracji.</p>
-    </div>
-  </section>
-
-  <section class="alt" id="vlny-pl">
-    <div class="wrap">
-      <div class="wave-head">
-        <div class="sec-head" style="margin:0">
-          <p class="eyebrow">Jak wygląda start</p>
-          <h2>Heaty po czterech. Co 4 minuty.</h2>
-        </div>
-        <p class="lead">W W1 i W3 heat ma maksymalnie czterech zawodników. Wszyscy zaczynają na A, każdy na swoim torze 1–4, i trzyma go przez cały workout. Kolejny heat wchodzi na A po czterech minutach. W pełnym ruchu pracuje naraz 16 osób.</p>
-      </div>
-      <div class="rot-wrap">
-        <div class="rot">
-          <div class="h">Minuta</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div>
-          <div>0:00–3:00</div><div class="w1">Heat 1</div><div></div><div></div><div></div>
-          <div>4:00–7:00</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div><div></div>
-          <div>8:00–11:00</div><div class="wx">Heat 3</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div>
-          <div class="last">12:00–15:00</div><div class="wx last">Heat 4</div><div class="wx last">Heat 3</div><div class="wx last">Heat 2</div><div class="w1 last">Heat 1</div>
-        </div>
-      </div>
-      <p class="note">Między interwałami pracy zawsze jest pełna minuta na zapis, przejście i reset. Heat 1 kończy w 15. minucie i w 16. opuszcza stanowisko D. W W2 ośmiu zawodników startuje razem co 8 minut.</p>
-
-      <div class="cd-row">
-        <div class="cd"><span class="t">−8 min</span><b>Call-up</b><p>Speaker wywołuje twój heat. Bądź w strefie call-up.</p></div>
-        <div class="cd"><span class="t">Kontrola</span><b>Numer i ciężar</b><p>Sędzia sprawdza numer, kategorię i ciężar na twoim torze.</p></div>
-        <div class="cd"><span class="t">Sygnał</span><b>Start i stop</b><p>Cały heat prowadzi centralny sygnał dźwiękowy.</p></div>
-        <div class="cd"><span class="t">+1 min</span><b>Zapis i przejście</b><p>Sędzia głośno potwierdza wynik, ty idziesz na kolejne stanowisko.</p></div>
-      </div>
-
-      <div class="finder" data-wave-word="Heat">
-        <div class="finder-in">
-          <h3>Kiedy startuję?</h3>
-          <div class="fld">
-            <label for="wave-pl">Twój heat w W1</label>
-            <div class="ctl">
-              <button type="button" class="wm" aria-label="−1">−</button>
-              <input id="wave-pl" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
-              <button type="button" class="wp" aria-label="+1">+</button>
-            </div>
-          </div>
-          <div class="fld">
-            <span class="lbl" id="lane-l-pl">Twój tor</span>
-            <div class="seg" role="group" aria-labelledby="lane-l-pl">
-              <button type="button" data-lane="1" aria-pressed="true">1</button>
-              <button type="button" data-lane="2" aria-pressed="false">2</button>
-              <button type="button" data-lane="3" aria-pressed="false">3</button>
-              <button type="button" data-lane="4" aria-pressed="false">4</button>
-            </div>
-          </div>
-          <small>Heat i tor dostaniesz mailem po zamknięciu rejestracji. Heaty układamy ze zgłoszeń w kolejności Women Open → Women Pro → Men Open → Men Pro.</small>
-        </div>
-        <div class="finder-out" aria-live="polite">
-          <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
-          <div class="fo"><span class="w">W2<small data-o="w2n">Heat 1</small></span><div><span>Call-up</span><strong data-o="c2">12:22</strong></div><div><span>Start</span><strong data-o="s2" class="hi">12:30</strong></div></div>
-          <div class="fo"><span class="w">W3<small>Final Grind</small></span><div><span>Call-up</span><strong data-o="c3">14:42</strong></div><div><span>Start</span><strong data-o="s3" class="hi">14:50</strong></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="day" id="program-pl">
-    <div class="wrap">
-      <div class="day-img"><img src="img/ria-mic.jpg" alt="Speakerka dopinguje zawodników"></div>
-      <div>
-        <div class="sec-head">
-          <p class="eyebrow">Harmonogram dnia</p>
-          <h2>Dzień zawodów</h2>
-        </div>
-        <ul class="sched">
-          <li><span class="t">09:30</span><div><b>Zbiórka i check-in</b><p>Numer startowy, rozpiska heatów i własna rozgrzewka.</p></div></li>
-          <li><span class="t">09:45</span><div><b>Briefing</b><p>Standardy, heaty, punktacja i bezpieczne przejścia.</p></div></li>
-          <li class="key"><span class="t">10:00–11:52</span><div><b>W1 Power Grid</b><p>25 heatów, ostatni startuje o 11:36.</p></div></li>
-          <li class="brk"><span class="t">11:52–12:30</span><div><b>Przerwa · efektywny ruch</b><p>Odpoczynek i opcjonalny pokaz trenera: rytm wall balls i bezpieczny KB swing.</p></div></li>
-          <li class="key"><span class="t">12:30–14:12</span><div><b>W2 The Engine</b><p>13 heatów po ośmiu zawodników, ostatni startuje o 14:06.</p></div></li>
-          <li class="brk"><span class="t">14:12–14:50</span><div><b>Przerwa · technika pod zmęczeniem</b><p>Opcjonalny pokaz: nawroty na shuttle, kolano przy lunges, timing thrustera.</p></div></li>
-          <li class="key"><span class="t">14:50–16:42</span><div><b>W3 Final Grind</b><p>25 heatów, ostatni startuje o 16:26.</p></div></li>
-          <li><span class="t">16:42–17:10</span><div><b>Wyniki</b><p>Publikacja klasyfikacji wszystkich kategorii i 10 minut na uwagi do wyników.</p></div></li>
-          <li class="key"><span class="t">17:20–17:40</span><div><b>Dekoracja</b><p>Cztery kategorie, wspólne zdjęcie i koniec.</p></div></li>
-        </ul>
-        <p class="note">Pokazy w przerwach są poza rywalizacją i dobrowolne. Przy opóźnieniu je skrócimy, ale między końcem bloku a kolejnym startem zawsze zostanie co najmniej 30 minut.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="bodovani-pl">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Punktacja</p>
-        <h2>Każdy workout waży tyle samo.</h2>
-        <p class="lead">Metrów, kalorii i powtórzeń się nie sumuje. W każdej kategorii wynik zamienia się na miejsce, a miejsce na punkty. Klasyfikacja tylko w obrębie twojej kategorii.</p>
-      </div>
-      <div class="score">
-        <div class="formula">
-          <p class="eq">punkty = 100 × <em>(N − r)</em> / (N − 1)</p>
-          <dl>
-            <dt>N</dt><dd>liczba zawodników w kategorii</dd>
-            <dt>r</dt><dd>twoje miejsce na stanowisku lub w workoucie</dd>
-          </dl>
-          <div class="ex">
-            <span>Przykład · Men Open, 21 zawodników</span>
-            <p>1. miejsce = 100 pkt · 11. miejsce = 50 pkt · 21. miejsce = 0 pkt</p>
-          </div>
-        </div>
-        <div class="sum">
-          <div><b>W1</b><p>Średnia punktów z czterech stanowisk: ski, sled, row, deadlift</p><span>0–100</span></div>
-          <div><b>W2</b><p>Miejsce według łącznej liczby poprawnych powtórzeń</p><span>0–100</span></div>
-          <div><b>W3</b><p>Średnia punktów z czterech stanowisk: bike, thrusters, lunges, shuttle</p><span>0–100</span></div>
-          <div class="tot"><b>Razem</b><p>W1 + W2 + W3</p><span>max 300</span></div>
-        </div>
-      </div>
-      <p class="note">Remis daje uśrednione miejsce, np. remis na 2.–3. miejscu = 2,5. Przy remisie w klasyfikacji generalnej decyduje wyższy wynik w W3, potem w W2. Punkty liczymy bez zaokrąglania po drodze i pokazujemy z dwoma miejscami po przecinku. Bieżące wyniki zobaczysz na stronie przez kod QR.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Zasady</p>
-        <h2>Jeden standard dla wszystkich</h2>
-      </div>
-      <div class="std">
-        <div><b>Sygnał decyduje</b><p>Start i stop wyznacza centralny sygnał dźwiękowy. Liczy się tylko powtórzenie lub metr ukończony przed stopem.</p></div>
-        <div><b>No-rep od razu</b><p>Sędzia od razu ogłasza no-rep i mówi dlaczego. W W2 musisz dokończyć wymagane poprawne powtórzenia, zanim przejdziesz do kolejnego ćwiczenia.</p></div>
-        <div><b>Scorecard</b><p>Po każdym stanowisku sędzia głośno potwierdza wynik. Kartę podpisujesz po wyjściu ze strefy zawodów.</p></div>
-      </div>
-      <p class="note">Dokładny zakres ruchu w deadlifcie, thrusterze i burpee oraz zasady spóźnienia, DNF i odwołań będą w regulaminie. Przed zawodami dodamy też film demonstracyjny.</p>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Kto prowadzi</p>
-        <h2>Ekipa na miejscu</h2>
-        <p class="lead">Dwadzieścia osób, w tym dwunastu sędziów. Poznasz ich po napisie na plecach.</p>
-      </div>
-      <div class="crew">
-        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Główny organizator. Prowadzi całe zawody: sygnały czasowe, wejścia i przejścia.</p></article>
-        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Wywołuje heaty, trzyma energię na hali i prowadzi dekorację.</p></article>
-        <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standardy, odprawa sędziów i rozstrzyganie spornych sytuacji.</p></article>
-      </div>
-      <div class="crew-wide"><span><b>12</b> sędziów</span><span><b>1</b> ratownik</span><span><b>1</b> osoba od wyników</span><span><b>DJ</b>, operator, fotograf</span></div>
-    </div>
-  </section>
-
-  <section id="faq-pl">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">FAQ</p>
-        <h2>Zanim się zapiszesz</h2>
-      </div>
-      <div class="faq-list">
-        <details open><summary>Jak wybrać między Open a Pro?</summary><p>Według ciężarów. Jeśli 2 × 24 kg w deadlifcie albo 9 kg wall ball to dla ciebie walka o każde powtórzenie, wybierz Open. Open to nie mniejszy wysiłek, tylko obciążenie, z którym pojedziesz na maksa całe trzy minuty.</p></details>
-        <details><summary>Czy muszę zrobić wszystkie trzy workouty?</summary><p>Tak. Wynik to suma wszystkich trzech. Każdy workout ma tę samą wagę, maksymalnie 100 punktów.</p></details>
-        <details><summary>Ile kosztuje wpisowe?</summary><p>Wpisowe wynosi <span class="ph">[CZK __]</span> i płacisz je przy rejestracji. Limit to 100 zawodników łącznie, bez limitów na kategorie.</p></details>
-        <details><summary>Jak długo tam będę?</summary><p>Zbiórka o 9:30, dekoracja kończy się o 17:40. Między workoutami masz około dwóch godzin, zależnie od heatu. Weź jedzenie i picie na cały dzień.</p></details>
-        <details><summary>Co zabrać ze sobą?</summary><p>Buty do biegania i przysiadów, picie, jedzenie, ręcznik i ciepłe ubranie na przerwy. Numer dostaniesz przy check-inie.</p></details>
-        <details><summary>Gdzie zobaczę wyniki?</summary><p>Bieżące wyniki na stronie przez kod QR, dostępny przy rejestracji i na hali. Wyniki końcowe po 17:00, po 10-minutowym oknie na uwagi.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="registrace-pl">
-    <div class="wrap">
-      <p class="eyebrow">Rejestracja</p>
-      <h2>100 miejsc.<br>Jedno jest twoje.</h2>
-      <p class="lead">Sobota 5 grudnia, Form Factory Vinohradská, Praga. Wybierz kategorię, opłać wpisowe, a przed zawodami wyślemy ci heat i tor na wszystkie trzy workouty.</p>
-      <div class="cta-row">
-        <a class="btn btn-red" href="#registrace-pl">Zarejestruj się <span class="ph">[LINK]</span></a>
-        <span class="mail">Pytania: <b>info@hyrox-czech.cz</b> · <b>+420 722 077 070</b></span>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>Factory Games · Form Factory × STR2G · Vinohradská 190, Praga 3</span>
-    <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
-  </div>
-</footer>
-</div>
-
-<div class="lang-root" data-lang="de" lang="de" hidden>
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top-de">
-      <img src="img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
-    </a>
-    <ul>
-      <li><a href="#workouty-de">Workouts</a></li>
-      <li><a href="#zateze-de">Gewichte</a></li>
-      <li><a href="#vlny-de">Heats</a></li>
-      <li><a href="#program-de">Zeitplan</a></li>
-      <li><a href="#bodovani-de">Wertung</a></li>
-      <li><a href="#faq-de">FAQ</a></li>
-    </ul>
-    <div class="nav-r">
-      <div class="lsw" role="group" aria-label="Sprache">
-        <button type="button" data-set="cz" aria-pressed="false">CZ</button><button type="button" data-set="en" aria-pressed="false">EN</button><button type="button" data-set="pl" aria-pressed="false">PL</button><button type="button" data-set="de" aria-pressed="true">DE</button>
-      </div>
-      <a class="btn btn-red" href="#registrace-de">Anmeldung</a>
-    </div>
-  </div>
-</header>
-
-<main id="top-de">
-  <section class="hero">
-    <div class="hero-img"><img src="img/hero.jpg" alt="Athleten-Briefing bei Form Factory"></div>
-    <div class="wrap">
-      <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Samstag, 5.12.2026</b> <span>·</span> <span>Treffpunkt 9:30 · erster Start 10:00</span></p>
-      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
-      <p class="lead">Eintägiger Einzelwettkampf. Kraft, Ausdauer und Technik in drei Workouts. Jeder absolviert alle drei, gewertet wird getrennt in vier Kategorien.</p>
-      <div class="hero-cta">
-        <a class="btn btn-red" href="#registrace-de">Ich bin dabei →</a>
-        <a class="btn btn-ghost" href="#workouty-de">Was erwartet mich</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div class="wrap">
-      <div class="stat"><strong>100</strong><span>Athleten</span></div>
-      <div class="stat"><strong>3</strong><span>Workouts für alle</span></div>
-      <div class="stat"><strong>4</strong><span>Kategorien</span></div>
-      <div class="stat"><strong>300</strong><span>Punkte maximal</span></div>
-    </div>
-  </div>
-
-  <section class="concept">
-    <div class="wrap">
-      <div class="concept-text">
-        <p class="eyebrow">Der Wettkampf</p>
-        <h2>Drei Workouts. Ein Ergebnis.</h2>
-        <p><strong>Factory Games ist ein Einzelwettkampf.</strong> Morgens Power Grid, mittags ein sechsminütiges AMRAP, nachmittags Final Grind. Dazwischen jeweils 38 Minuten für Erholung und Reset.</p>
-        <p>Du meldest dich in der Frauen- oder Männerkategorie an und wählst Open oder Pro. Keine Quoten pro Kategorie, nur ein Gesamtlimit von 100 Athleten. Wer zuerst kommt, startet.</p>
-        <div class="cats">
-          <div><span>Frauen</span><b>Women Open</b></div>
-          <div><span>Frauen</span><b>Women Pro</b></div>
-          <div><span>Männer</span><b>Men Open</b></div>
-          <div><span>Männer</span><b>Men Pro</b></div>
-        </div>
-      </div>
-      <figure>
-        <img src="img/stations.jpg" alt="Athletin an den Stationen während einer Simulation bei Form Factory">
-        <figcaption>Veranstalter: Form Factory × STR2G</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="alt" id="workouty-de">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Workouts</p>
-        <h2>Kraft. Motor. Kopf.</h2>
-        <p class="lead">In W1 und W3 absolvierst du vier Stationen A → B → C → D. Drei Minuten Vollgas pro Station, dann eine Minute für Eintragen und Wechsel. Gewertet wird in Metern, Kalorien oder Wiederholungen. Mehr ist besser.</p>
-      </div>
-      <div class="wods">
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W1 · 10:00</span>
-            <h3>Power Grid</h3>
-            <div class="fmt"><span>4 × 3 min Arbeit</span><span>1 min Wechsel</span><span>4 Athleten pro Heat</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>SkiErg</b><span>Meter</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>Meter</span></div>
-            <div class="st"><span class="l">C</span><b>RowErg</b><span>Meter</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>Wiederholungen</span></div>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W2 · 12:30</span>
-            <h3>The Engine</h3>
-            <div class="fmt"><span>6 min AMRAP</span><span>8 Athleten gleichzeitig</span></div>
-          </div>
-          <div class="amrap">
-            <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
-              <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
-            </div>
-            <p>Wiederhole in dieser Reihenfolge, bis die Zeit abläuft. Eine Runde sind 50 Wiederholungen. Jede gültige Wiederholung zählt, also 3 Runden plus 12 = 162.</p>
-          </div>
-        </article>
-        <article class="wod">
-          <div class="wod-id">
-            <span class="k">W3 · 14:50</span>
-            <h3>Final Grind</h3>
-            <div class="fmt"><span>4 × 3 min Arbeit</span><span>1 min Wechsel</span><span>4 Athleten pro Heat</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>Echo Bike</b><span>Kalorien</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>Wiederholungen</span></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>Meter, mit Gewicht</span></div>
-            <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>Meter</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="zateze-de">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Gewichte</p>
-        <h2>Open oder Pro?</h2>
-        <p class="lead">Die Kategorie wählst du selbst. Schau dir die Gewichte an und sei ehrlich zu dir. Pro ist für alle, die diese Lasten wiederholt und unter Ermüdung bewegen.</p>
-      </div>
-      <div class="tbl-wrap">
-        <table>
-          <thead>
-            <tr><th>Übung</th><th class="cat">Women Open</th><th class="cat">Women Pro</th><th class="cat">Men Open</th><th class="cat">Men Pro</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Sled Push</td><td>100 kg</td><td>150 kg</td><td>150 kg</td><td>200 kg</td></tr>
-            <tr><td>KB Deadlift</td><td>2 × 16 kg</td><td>2 × 24 kg</td><td>2 × 24 kg</td><td>2 × 32 kg</td></tr>
-            <tr><td>Wall Balls</td><td>4 kg</td><td>6 kg</td><td>6 kg</td><td>9 kg</td></tr>
-            <tr><td>KB Swings</td><td>12 kg</td><td>16 kg</td><td>16 kg</td><td>20 kg</td></tr>
-            <tr><td>DB Thrusters</td><td>2 × 10 kg</td><td>2 × 15 kg</td><td>2 × 15 kg</td><td>2 × 20 kg</td></tr>
-            <tr><td>Walking Lunges</td><td>10 kg</td><td>20 kg</td><td>20 kg</td><td>30 kg</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">„2 ×“ bedeutet zwei einzelne Geräte. Bei den Lunges ist das gesamte getragene Gewicht angegeben. Wall-Ball-Zielhöhe, Swing-Variante, Trageposition bei den Lunges und Shuttle-Distanz stehen vor Anmeldestart im Regelwerk.</p>
-    </div>
-  </section>
-
-  <section class="alt" id="vlny-de">
-    <div class="wrap">
-      <div class="wave-head">
-        <div class="sec-head" style="margin:0">
-          <p class="eyebrow">So läuft der Start</p>
-          <h2>Heats zu viert. Alle 4 Minuten.</h2>
-        </div>
-        <p class="lead">In W1 und W3 hat ein Heat höchstens vier Athleten. Alle starten an A auf ihrer eigenen Bahn 1–4 und behalten sie das ganze Workout. Der nächste Heat startet vier Minuten später an A. Im Vollbetrieb arbeiten 16 Leute gleichzeitig.</p>
-      </div>
-      <div class="rot-wrap">
-        <div class="rot">
-          <div class="h">Minute</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div>
-          <div>0:00–3:00</div><div class="w1">Heat 1</div><div></div><div></div><div></div>
-          <div>4:00–7:00</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div><div></div>
-          <div>8:00–11:00</div><div class="wx">Heat 3</div><div class="wx">Heat 2</div><div class="w1">Heat 1</div><div></div>
-          <div class="last">12:00–15:00</div><div class="wx last">Heat 4</div><div class="wx last">Heat 3</div><div class="wx last">Heat 2</div><div class="w1 last">Heat 1</div>
-        </div>
-      </div>
-      <p class="note">Zwischen den Arbeitsintervallen gibt es immer eine volle Minute zum Eintragen, Wechseln und Zurücksetzen. Heat 1 endet in Minute 15 und verlässt Station D in Minute 16. In W2 starten acht Athleten gemeinsam alle 8 Minuten.</p>
-
-      <div class="cd-row">
-        <div class="cd"><span class="t">−8 min</span><b>Call-up</b><p>Der Speaker ruft deinen Heat auf. Sei in der Call-up-Zone.</p></div>
-        <div class="cd"><span class="t">Check</span><b>Nummer und Gewicht</b><p>Dein Judge prüft Nummer, Kategorie und Gewicht auf deiner Bahn.</p></div>
-        <div class="cd"><span class="t">Signal</span><b>Start und Stopp</b><p>Ein zentrales Tonsignal steuert jeden Heat.</p></div>
-        <div class="cd"><span class="t">+1 min</span><b>Eintragen und Wechsel</b><p>Der Judge bestätigt dein Ergebnis laut, du gehst zur nächsten Station.</p></div>
-      </div>
-
-      <div class="finder" data-wave-word="Heat">
-        <div class="finder-in">
-          <h3>Wann starte ich?</h3>
-          <div class="fld">
-            <label for="wave-de">Dein Heat in W1</label>
-            <div class="ctl">
-              <button type="button" class="wm" aria-label="−1">−</button>
-              <input id="wave-de" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
-              <button type="button" class="wp" aria-label="+1">+</button>
-            </div>
-          </div>
-          <div class="fld">
-            <span class="lbl" id="lane-l-de">Deine Bahn</span>
-            <div class="seg" role="group" aria-labelledby="lane-l-de">
-              <button type="button" data-lane="1" aria-pressed="true">1</button>
-              <button type="button" data-lane="2" aria-pressed="false">2</button>
-              <button type="button" data-lane="3" aria-pressed="false">3</button>
-              <button type="button" data-lane="4" aria-pressed="false">4</button>
-            </div>
-          </div>
-          <small>Heat und Bahn bekommst du nach Anmeldeschluss per E-Mail. Die Heats werden aus den Anmeldungen in der Reihenfolge Women Open → Women Pro → Men Open → Men Pro gebildet.</small>
-        </div>
-        <div class="finder-out" aria-live="polite">
-          <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
-          <div class="fo"><span class="w">W2<small data-o="w2n">Heat 1</small></span><div><span>Call-up</span><strong data-o="c2">12:22</strong></div><div><span>Start</span><strong data-o="s2" class="hi">12:30</strong></div></div>
-          <div class="fo"><span class="w">W3<small>Final Grind</small></span><div><span>Call-up</span><strong data-o="c3">14:42</strong></div><div><span>Start</span><strong data-o="s3" class="hi">14:50</strong></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="day" id="program-de">
-    <div class="wrap">
-      <div class="day-img"><img src="img/ria-mic.jpg" alt="Die Speakerin pusht die Athleten auf der Fläche"></div>
-      <div>
-        <div class="sec-head">
-          <p class="eyebrow">Zeitplan</p>
-          <h2>Wettkampftag</h2>
-        </div>
-        <ul class="sched">
-          <li><span class="t">09:30</span><div><b>Treffpunkt und Check-in</b><p>Startnummer, Heatliste und eigenes Aufwärmen.</p></div></li>
-          <li><span class="t">09:45</span><div><b>Briefing</b><p>Standards, Heats, Wertung und sichere Wechsel.</p></div></li>
-          <li class="key"><span class="t">10:00–11:52</span><div><b>W1 Power Grid</b><p>25 Heats, der letzte startet um 11:36.</p></div></li>
-          <li class="brk"><span class="t">11:52–12:30</span><div><b>Pause · effiziente Bewegung</b><p>Erholung und optionale Coach-Demo: Wall-Ball-Rhythmus und sicherer KB-Swing.</p></div></li>
-          <li class="key"><span class="t">12:30–14:12</span><div><b>W2 The Engine</b><p>13 Heats zu acht, der letzte startet um 14:06.</p></div></li>
-          <li class="brk"><span class="t">14:12–14:50</span><div><b>Pause · Technik unter Ermüdung</b><p>Optionale Demo: Shuttle-Wenden, Knie bei den Lunges, Thruster-Timing.</p></div></li>
-          <li class="key"><span class="t">14:50–16:42</span><div><b>W3 Final Grind</b><p>25 Heats, der letzte startet um 16:26.</p></div></li>
-          <li><span class="t">16:42–17:10</span><div><b>Ergebnisse</b><p>Veröffentlichung aller Ranglisten und 10 Minuten für Rückfragen zum Score.</p></div></li>
-          <li class="key"><span class="t">17:20–17:40</span><div><b>Siegerehrung</b><p>Vier Kategorien, Gruppenfoto, Schluss.</p></div></li>
-        </ul>
-        <p class="note">Die Demos in den Pausen sind ohne Wertung und freiwillig. Bei Verzögerung kürzen wir sie, zwischen Blockende und nächstem Start bleiben aber immer mindestens 30 Minuten.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="bodovani-de">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Wertung</p>
-        <h2>Jedes Workout zählt gleich.</h2>
-        <p class="lead">Meter, Kalorien und Wiederholungen werden nicht addiert. In jeder Kategorie wird die Leistung zum Rang und der Rang zu Punkten. Gewertet wird nur innerhalb deiner Kategorie.</p>
-      </div>
-      <div class="score">
-        <div class="formula">
-          <p class="eq">Punkte = 100 × <em>(N − r)</em> / (N − 1)</p>
-          <dl>
-            <dt>N</dt><dd>Anzahl Athleten in der Kategorie</dd>
-            <dt>r</dt><dd>dein Rang an der Station oder im Workout</dd>
-          </dl>
-          <div class="ex">
-            <span>Beispiel · Men Open, 21 Athleten</span>
-            <p>Platz 1 = 100 P. · Platz 11 = 50 P. · Platz 21 = 0 P.</p>
-          </div>
-        </div>
-        <div class="sum">
-          <div><b>W1</b><p>Durchschnitt aus vier Stationen: Ski, Sled, Row, Deadlift</p><span>0–100</span></div>
-          <div><b>W2</b><p>Rang nach Gesamtzahl gültiger Wiederholungen</p><span>0–100</span></div>
-          <div><b>W3</b><p>Durchschnitt aus vier Stationen: Bike, Thrusters, Lunges, Shuttle</p><span>0–100</span></div>
-          <div class="tot"><b>Gesamt</b><p>W1 + W2 + W3</p><span>max 300</span></div>
-        </div>
-      </div>
-      <p class="note">Gleiche Leistungen teilen sich den gemittelten Rang, z. B. Gleichstand auf Platz 2–3 = 2,5. Bei Gleichstand in der Gesamtwertung entscheidet das höhere Ergebnis in W3, dann in W2. Punkte werden nicht zwischengerundet und mit zwei Dezimalstellen angezeigt. Live-Ranking im Web per QR-Code.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Regeln</p>
-        <h2>Ein Standard für alle</h2>
-      </div>
-      <div class="std">
-        <div><b>Das Signal entscheidet</b><p>Start und Stopp gibt ein zentrales Tonsignal. Es zählen nur Wiederholungen oder Meter, die vor dem Stopp fertig sind.</p></div>
-        <div><b>No-Rep sofort</b><p>Dein Judge gibt ein No-Rep sofort mit Begründung. In W2 schließt du die vorgegebenen gültigen Wiederholungen ab, bevor du zur nächsten Übung wechselst.</p></div>
-        <div><b>Scorecard</b><p>Nach jeder Station bestätigt der Judge dein Ergebnis laut. Die Karte unterschreibst du nach Verlassen der Wettkampfzone.</p></div>
-      </div>
-      <p class="note">Genauer Bewegungsumfang bei Deadlift, Thruster und Burpee sowie Regeln zu Verspätung, DNF und Einsprüchen stehen im Regelwerk. Vor dem Event gibt es dazu ein Demo-Video.</p>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Wer leitet</p>
-        <h2>Das Team vor Ort</h2>
-        <p class="lead">Zwanzig Leute, davon zwölf Judges. Du erkennst sie an der Aufschrift auf dem Rücken.</p>
-      </div>
-      <div class="crew">
-        <article><span class="role">Big Eye</span><h3>Ladislav Suchánek</h3><p>Hauptorganisator. Leitet den gesamten Wettkampf: Zeitsignale, Aufrufe und Wechsel.</p></article>
-        <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>Ruft die Heats auf, hält die Stimmung hoch und moderiert die Siegerehrung.</p></article>
-        <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standards, Judges-Briefing und Entscheidung strittiger Situationen.</p></article>
-      </div>
-      <div class="crew-wide"><span><b>12</b> Judges</span><span><b>1</b> Sanitäter</span><span><b>1</b> Score-Erfassung</span><span><b>DJ</b>, Kameramann, Fotograf</span></div>
-    </div>
-  </section>
-
-  <section id="faq-de">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">FAQ</p>
-        <h2>Bevor du dich anmeldest</h2>
-      </div>
-      <div class="faq-list">
-        <details open><summary>Open oder Pro: wie entscheide ich?</summary><p>Nach den Gewichten. Wenn 2 × 24 kg beim Deadlift oder ein 9-kg-Wall-Ball für dich Kampf um jede Wiederholung bedeutet, nimm Open. Open heißt nicht weniger Einsatz, sondern ein Gewicht, mit dem du drei Minuten Vollgas geben kannst.</p></details>
-        <details><summary>Muss ich alle drei Workouts machen?</summary><p>Ja. Dein Ergebnis ist die Summe aller drei. Jedes Workout zählt gleich, maximal 100 Punkte.</p></details>
-        <details><summary>Was kostet die Startgebühr?</summary><p>Die Startgebühr beträgt <span class="ph">[CZK __]</span> und wird bei der Anmeldung bezahlt. Kapazität 100 Athleten insgesamt, ohne Quoten pro Kategorie.</p></details>
-        <details><summary>Wie lange bin ich vor Ort?</summary><p>Treffpunkt 9:30, die Siegerehrung endet um 17:40. Zwischen den Workouts hast du je nach Heat etwa zwei Stunden. Nimm Essen und Trinken für den ganzen Tag mit.</p></details>
-        <details><summary>Was soll ich mitbringen?</summary><p>Schuhe zum Laufen und für Squats, Getränke, Essen, ein Handtuch und warme Kleidung für die Pausen. Deine Startnummer bekommst du beim Check-in.</p></details>
-        <details><summary>Wo sehe ich die Ergebnisse?</summary><p>Live-Ranking im Web per QR-Code am Check-in und in der Halle. Endergebnisse nach 17:00, nach dem 10-minütigen Fenster für Rückfragen.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="registrace-de">
-    <div class="wrap">
-      <p class="eyebrow">Anmeldung</p>
-      <h2>100 Plätze.<br>Einer gehört dir.</h2>
-      <p class="lead">Samstag, 5. Dezember, Form Factory Vinohradská, Prag. Kategorie wählen, Startgebühr zahlen, und vor dem Event schicken wir dir Heat und Bahn für alle drei Workouts.</p>
-      <div class="cta-row">
-        <a class="btn btn-red" href="#registrace-de">Jetzt anmelden <span class="ph">[LINK]</span></a>
-        <span class="mail">Fragen: <b>info@hyrox-czech.cz</b> · <b>+420 722 077 070</b></span>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>Factory Games · Form Factory × STR2G · Vinohradská 190, Prag 3</span>
-    <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
-  </div>
-</footer>
-</div>
-
 <script>
 (function(){
-  var LANGS=['cz','en','pl','de'], HL={cz:'cs',en:'en',pl:'pl',de:'de'};
-  var roots=document.querySelectorAll('.lang-root');
-  function show(l){
-    if(LANGS.indexOf(l)<0) l='cz';
-    roots.forEach(function(r){r.hidden = r.dataset.lang!==l;});
-    document.documentElement.lang=HL[l];
-    try{localStorage.setItem('ffg-lang',l);}catch(e){}
-  }
-  document.querySelectorAll('.lsw button').forEach(function(b){
-    b.addEventListener('click',function(){show(b.dataset.set);window.scrollTo(0,0);});
-  });
-  var pick=null, h=(location.hash||'').slice(1).toLowerCase();
-  if(LANGS.indexOf(h)>=0) pick=h;
-  else if(h==='cs') pick='cz';
-  else { var m=h.match(/-(cz|en|pl|de)$/); if(m) pick=m[1]; }
-  if(!pick){ try{pick=localStorage.getItem('ffg-lang');}catch(e){} }
-  if(!pick){ var n=(navigator.language||'').slice(0,2).toLowerCase(); pick = n==='cs'||n==='sk'?'cz':(LANGS.indexOf(n)>=0?n:'en'); }
-  show(pick);
 
   var W1=600, W2=750, W3=890, CALL=8;
   function fmt(m){var h=Math.floor(m/60),mm=m%60;return (h<10?'0':'')+h+':'+(mm<10?'0':'')+mm;}
@@ -1644,6 +663,5 @@ footer a{color:var(--fg)}
   });
 })();
 </script>
-
 </body>
 </html>
