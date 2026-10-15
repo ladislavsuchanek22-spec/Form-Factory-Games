@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vygeneruje web Factory Games ve čtyřech jazycích.
+"""Vygeneruje web Form Factory Games ve čtyřech jazycích.
 
 Použití (z kořene repozitáře):  python3 _build/build.py
 
@@ -45,7 +45,7 @@ def jsonld(L, t):
             {
                 "@type": "SportsEvent",
                 "@id": SITE + "/#event",
-                "name": "Factory Games 2026",
+                "name": "Form Factory Games 2026",
                 "description": t["meta"],
                 "url": SITE + path,
                 "inLanguage": hl,

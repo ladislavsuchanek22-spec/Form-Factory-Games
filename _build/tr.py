@@ -8,7 +8,7 @@ hero_lead='Jednodenní individuální závod. Síla, vytrvalost a technika ve t�
 hero_cta1='Chci startovat →', hero_cta2='Co mě čeká',
 st1='atletů na startu', st2='workouty pro každého', st3='kategorie', st4='bodů maximum',
 ab_eb='O závodě', ab_h='Tři workouty. Jeden výsledek.',
-ab_p1='<strong>Factory Games je závod pro jednotlivce.</strong> Ráno silově vytrvalostní Power Grid, v poledne šestiminutové AMRAP peklo, odpoledne Final Grind. Mezi nimi vždy 38 minut na odpočinek a reset.',
+ab_p1='<strong>Form Factory Games je závod pro jednotlivce.</strong> Ráno silově vytrvalostní Power Grid, v poledne šestiminutové AMRAP peklo, odpoledne Final Grind. Mezi nimi vždy 38 minut na odpočinek a reset.',
 ab_p2='Přihlásíš se do ženské nebo mužské kategorie a vybereš si Open nebo Pro. Kvóty nejsou. Platí jen celkový limit 100 atletů, takže kdo dřív přijde, ten startuje.',
 cat_w='Ženy', cat_m='Muži',
 fig_alt='Závodnice na stanicích během simulace ve Form Factory', figcap='Pořádá Form Factory × STR2G',
@@ -82,7 +82,7 @@ hero_lead='A one-day individual competition. Strength, endurance and skill acros
 hero_cta1="I'm in →", hero_cta2='What to expect',
 st1='athletes', st2='workouts for everyone', st3='divisions', st4='points max',
 ab_eb='The event', ab_h='Three workouts. One result.',
-ab_p1='<strong>Factory Games is an individual competition.</strong> Power Grid in the morning, a six-minute AMRAP at noon, Final Grind in the afternoon. Always 38 minutes in between to rest and reset.',
+ab_p1='<strong>Form Factory Games is an individual competition.</strong> Power Grid in the morning, a six-minute AMRAP at noon, Final Grind in the afternoon. Always 38 minutes in between to rest and reset.',
 ab_p2="Sign up for the women's or men's division and pick Open or Pro. No quotas per division, just an overall cap of 100 athletes. First come, first served.",
 cat_w='Women', cat_m='Men',
 fig_alt='Athlete working through stations during a simulation at Form Factory', figcap='Hosted by Form Factory × STR2G',
@@ -156,7 +156,7 @@ hero_lead='Jednodniowe zawody indywidualne. Siła, wytrzymałość i technika w 
 hero_cta1='Startuję →', hero_cta2='Co mnie czeka',
 st1='zawodników', st2='workouty dla każdego', st3='kategorie', st4='punktów maks.',
 ab_eb='O zawodach', ab_h='Trzy workouty. Jeden wynik.',
-ab_p1='<strong>Factory Games to zawody indywidualne.</strong> Rano siłowo-wytrzymałościowy Power Grid, w południe sześciominutowy AMRAP, po południu Final Grind. Między nimi zawsze 38 minut na odpoczynek i reset.',
+ab_p1='<strong>Form Factory Games to zawody indywidualne.</strong> Rano siłowo-wytrzymałościowy Power Grid, w południe sześciominutowy AMRAP, po południu Final Grind. Między nimi zawsze 38 minut na odpoczynek i reset.',
 ab_p2='Zapisujesz się do kategorii kobiet lub mężczyzn i wybierasz Open albo Pro. Bez limitów na kategorie, obowiązuje tylko łączny limit 100 zawodników. Kto pierwszy, ten startuje.',
 cat_w='Kobiety', cat_m='Mężczyźni',
 fig_alt='Zawodniczka na stanowiskach podczas symulacji w Form Factory', figcap='Organizator: Form Factory × STR2G',
@@ -230,7 +230,7 @@ hero_lead='Eintägiger Einzelwettkampf. Kraft, Ausdauer und Technik in drei Work
 hero_cta1='Ich bin dabei →', hero_cta2='Was erwartet mich',
 st1='Athleten', st2='Workouts für alle', st3='Kategorien', st4='Punkte maximal',
 ab_eb='Der Wettkampf', ab_h='Drei Workouts. Ein Ergebnis.',
-ab_p1='<strong>Factory Games ist ein Einzelwettkampf.</strong> Morgens Power Grid, mittags ein sechsminütiges AMRAP, nachmittags Final Grind. Dazwischen jeweils 38 Minuten für Erholung und Reset.',
+ab_p1='<strong>Form Factory Games ist ein Einzelwettkampf.</strong> Morgens Power Grid, mittags ein sechsminütiges AMRAP, nachmittags Final Grind. Dazwischen jeweils 38 Minuten für Erholung und Reset.',
 ab_p2='Du meldest dich in der Frauen- oder Männerkategorie an und wählst Open oder Pro. Keine Quoten pro Kategorie, nur ein Gesamtlimit von 100 Athleten. Wer zuerst kommt, startet.',
 cat_w='Frauen', cat_m='Männer',
 fig_alt='Athletin an den Stationen während einer Simulation bei Form Factory', figcap='Veranstalter: Form Factory × STR2G',
@@ -298,28 +298,28 @@ cta_btn='Jetzt anmelden', ph_link='[LINK]', q_lbl='Fragen:', addr='Vinohradská 
 
 # ---- SEO a odkazy na ostatní weby (doplněno při rozdělení na /en/ /pl/ /de/)
 T['cz'].update(
-  title='Factory Games · závod 5. 12. 2026 · Form Factory Praha',
+  title='Form Factory Games · závod 5. 12. 2026 · Praha',
   meta='Individuální fitness závod ve Form Factory Vinohradská v Praze, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.',
   c1_link='Trénink a příprava · hyrox-prague.eu →',
   tm_more='Závod pořádáme ve Form Factory Vinohradská, jednom ze čtyř HYROX Training Clubů.',
   tm_more_link='Lekce a rozvrh klubů →',
 )
 T['en'].update(
-  title='Factory Games · Fitness race 5 Dec 2026 · Form Factory Prague',
+  title='Form Factory Games · Fitness race 5 Dec 2026 · Prague',
   meta='Individual fitness race at Form Factory Vinohradská, Prague, on 5 December 2026. 3 workouts, 4 divisions, 100 athletes.',
   c1_link='Coaching and race prep · hyrox-prague.eu →',
   tm_more='The race takes place at Form Factory Vinohradská, one of four HYROX Training Clubs.',
   tm_more_link='Classes and schedules →',
 )
 T['pl'].update(
-  title='Factory Games · zawody 5.12.2026 · Form Factory Praga',
+  title='Form Factory Games · zawody 5.12.2026 · Praga',
   meta='Indywidualne zawody fitness w Form Factory Vinohradská w Pradze, 5 grudnia 2026. 3 workouty, 4 kategorie, 100 zawodników.',
   c1_link='Trening i przygotowanie · hyrox-prague.eu →',
   tm_more='Zawody odbywają się w Form Factory Vinohradská, jednym z czterech HYROX Training Clubów.',
   tm_more_link='Zajęcia i grafik →',
 )
 T['de'].update(
-  title='Factory Games · Wettkampf 5.12.2026 · Form Factory Prag',
+  title='Form Factory Games · Wettkampf 5.12.2026 · Prag',
   meta='Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.',
   c1_link='Coaching und Wettkampfvorbereitung · hyrox-prague.eu →',
   tm_more='Der Wettkampf findet bei Form Factory Vinohradská statt, einem von vier HYROX Training Clubs.',
