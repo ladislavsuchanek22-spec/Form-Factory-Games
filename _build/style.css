@@ -239,7 +239,7 @@ tbody tr:hover td{background:var(--surface-2)}
 
 /* CTA */
 .cta{position:relative;overflow:hidden;isolation:isolate;border-top:6px solid var(--red)}
-.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.jpg") center 60%/cover;filter:grayscale(1)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.webp") center 60%/cover;filter:grayscale(1)}
 .cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.96),rgba(11,11,12,.74))}
 .cta .wrap{display:grid;gap:24px}
 .cta h2{font-size:clamp(50px,9vw,120px);font-style:italic}

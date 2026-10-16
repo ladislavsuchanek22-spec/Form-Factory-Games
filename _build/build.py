@@ -30,7 +30,7 @@ LANGS = {
     "de": ("de", "/de/", "de_DE", "DE"),
 }
 VERIFY = "abf25QrYbQI8uNUvQ5bWpJksa7UN_hBxoRfm9DcwIHs"
-LASTMOD = "2026-10-15"
+LASTMOD = "2026-10-16"
 
 STYLE = (B / "style.css").read_text(encoding="utf-8")
 TPL = Template((B / "template.html").read_text(encoding="utf-8"))
@@ -109,7 +109,13 @@ def head(L, t):
 <meta property="og:url" content="{SITE}{path}">
 <meta property="og:image" content="{SITE}/img/hero.jpg">
 <meta property="og:locale" content="{locale}">
-<link rel="icon" href="/img/ff-logo.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="160x160">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
 {legacy}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">

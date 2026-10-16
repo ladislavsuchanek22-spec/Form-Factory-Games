@@ -18,7 +18,13 @@
 <meta property="og:url" content="https://formfactorygames.cz/">
 <meta property="og:image" content="https://formfactorygames.cz/img/hero.jpg">
 <meta property="og:locale" content="cs_CZ">
-<link rel="icon" href="/img/ff-logo.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="160x160">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
 <script>(function(){var m=location.hash.match(/^#(en|pl|de)$/i);if(m)location.replace('/'+m[1].toLowerCase()+'/');})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -266,7 +272,7 @@ tbody tr:hover td{background:var(--surface-2)}
 
 /* CTA */
 .cta{position:relative;overflow:hidden;isolation:isolate;border-top:6px solid var(--red)}
-.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.jpg") center 60%/cover;filter:grayscale(1)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.webp") center 60%/cover;filter:grayscale(1)}
 .cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.96),rgba(11,11,12,.74))}
 .cta .wrap{display:grid;gap:24px}
 .cta h2{font-size:clamp(50px,9vw,120px);font-style:italic}
@@ -328,7 +334,7 @@ footer a{color:var(--fg)}
 
 <main id="top">
   <section class="hero">
-    <div class="hero-img"><img src="/img/hero.jpg" alt="Briefing závodníků ve Form Factory"></div>
+    <div class="hero-img"><img src="/img/hero.webp" alt="Briefing závodníků ve Form Factory"></div>
     <div class="wrap">
       <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Sobota 5. 12. 2026</b> <span>·</span> <span>Sraz 9:30 · první start 10:00</span></p>
       <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
@@ -364,7 +370,7 @@ footer a{color:var(--fg)}
         </div>
       </div>
       <figure>
-        <img src="/img/stations.jpg" alt="Závodnice na stanicích během simulace ve Form Factory">
+        <img loading="lazy" decoding="async" src="/img/stations.webp" alt="Závodnice na stanicích během simulace ve Form Factory">
         <figcaption>Pořádá Form Factory × STR2G</figcaption>
       </figure>
     </div>
@@ -509,7 +515,7 @@ footer a{color:var(--fg)}
 
   <section class="day" id="program">
     <div class="wrap">
-      <div class="day-img"><img src="/img/ria-mic.jpg" alt="Speakerka hecuje závodníky na trati"></div>
+      <div class="day-img"><img loading="lazy" decoding="async" src="/img/ria-mic.webp" alt="Speakerka hecuje závodníky na trati"></div>
       <div>
         <div class="sec-head">
           <p class="eyebrow">Program dne</p>
