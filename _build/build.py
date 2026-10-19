@@ -113,6 +113,7 @@ def head(L, t):
 <meta property="og:image:height" content="1200">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index,follow,max-image-preview:large">
+<script src="/js/tracking.js"></script>
 <link rel="icon" href="/favicon.png" type="image/png" sizes="160x160">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
