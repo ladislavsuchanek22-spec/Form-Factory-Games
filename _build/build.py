@@ -4,11 +4,11 @@
 Použití (z kořene repozitáře):  python3 _build/build.py
 
 - Texty:      _build/tr.py      (T['cz'], T['en'], T['pl'], T['de'])
-- Šablona:    _build/template.html
+- Šablona:    _build/template.tpl
 - Styly:      _build/style.css
 - Odkazy na ostatní weby STR2G: _build/net.py
 Výstup: index.html (čeština), en/, pl/, de/, stránka Judges & Crew v crew/ (+ en/crew/ …), sitemap.xml
-Texty Judges & Crew: _build/tr_crew.py, šablona _build/crew.html, styly crew.css, formulář crew.js
+Texty Judges & Crew: _build/tr_crew.py, šablona _build/crew.tpl, styly crew.css, formulář crew.js
 """
 import json
 import re
@@ -35,11 +35,11 @@ VERIFY = "abf25QrYbQI8uNUvQ5bWpJksa7UN_hBxoRfm9DcwIHs"
 LASTMOD = "2026-10-16"
 
 STYLE = (B / "style.css").read_text(encoding="utf-8")
-TPL = Template((B / "template.html").read_text(encoding="utf-8"))
+TPL = Template((B / "template.tpl").read_text(encoding="utf-8"))
 FINDER = (B / "finder.js").read_text(encoding="utf-8")
 # Stránka Judges & Crew: /crew/, /en/crew/, /pl/crew/, /de/crew/
 CREW = "crew/"
-CREW_TPL = Template((B / "crew.html").read_text(encoding="utf-8"))
+CREW_TPL = Template((B / "crew.tpl").read_text(encoding="utf-8"))
 CREW_CSS = (B / "crew.css").read_text(encoding="utf-8")
 CREW_JS = (B / "crew.js").read_text(encoding="utf-8")
 

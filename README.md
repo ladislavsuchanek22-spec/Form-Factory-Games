@@ -7,7 +7,7 @@ Statický web na Netlify, každý push do `main` se nasadí na https://formfacto
 
 Stránky se generují, needituj `index.html`, `en/`, `pl/`, `de/` ručně.
 
-1. Texty uprav v `_build/tr.py` (všechny čtyři jazyky), strukturu v `_build/template.html`, styly v `_build/style.css`.
+1. Texty uprav v `_build/tr.py` (všechny čtyři jazyky), strukturu v `_build/template.tpl`, styly v `_build/style.css`.
 2. Spusť z kořene repozitáře: `python3 _build/build.py`
 3. Commitni všechno.
 
