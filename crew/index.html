@@ -356,6 +356,8 @@ footer a{color:var(--fg)}
 .chk{display:flex;gap:12px;align-items:flex-start;cursor:pointer;font-size:15px;line-height:1.45;color:var(--muted)}
 .chk input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:var(--red)}
 .chk a{color:var(--fg)}
+.chk em{font-style:normal;color:var(--muted);opacity:.8}
+.checks{gap:14px}
 .send{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .send .req{color:var(--muted);font-size:14px}
 .f-msg{color:var(--red-hi);margin:0}
@@ -469,7 +471,6 @@ footer a{color:var(--fg)}
           <div><b>Briefing s head judgem</b><p>Ráno projdeme no-repy, scorecardy a přesuny. Každý ví, kde stojí a co dělá.</p></div>
           <div><b>Jeden standard pro všechny</b><p>Start a stop řídí centrální signál. Judges rozhodují podle stejných pravidel na všech drahách.</p></div>
         </div>
-        <div class="gets"><b>Co za to dostaneš</b><p><span class="ph">[doplnit: jídlo a pití během dne, týmové oblečení, …]</span></p></div>
       </div>
     </div>
   </section>
@@ -554,10 +555,13 @@ footer a{color:var(--fg)}
 
         <div class="fld"><label for="f-note">Poznámka</label><textarea id="f-note" name="poznamka" rows="4" placeholder="Cokoliv, co bychom měli vědět"></textarea></div>
 
-        <div class="checks">
+        <fieldset class="fs checks">
+          <legend>Souhlasy</legend>
           <label class="chk"><input type="checkbox" name="vek-18" value="ano" required><span>Je mi alespoň 18 let. <i>*</i></span></label>
-          <label class="chk"><input type="checkbox" name="souhlas" value="ano" required><span>Souhlasím se zpracováním údajů za účelem organizace Form Factory Games. Víc v <a href="https://www.ladislavsuchanek.cz/pravidla-ochrany-soukromi/" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>. <i>*</i></span></label>
-        </div>
+          <label class="chk"><input type="checkbox" name="souhlas-gdpr" value="ano" required><span>Souhlasím se zpracováním osobních údajů z této přihlášky (jméno, e-mail, telefon, Instagram, velikost trička a další vyplněné údaje) za účelem organizace Form Factory Games a komunikace se mnou ohledně akce. Správcem údajů je Ladislav Suchánek, IČ 73562769. Údaje uchováme nejdéle 12 měsíců po akci a nepředáme je nikomu mimo organizační tým. Souhlas můžu kdykoliv odvolat e-mailem na info@hyrox-czech.cz. Víc v <a href="https://www.ladislavsuchanek.cz/pravidla-ochrany-soukromi/" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>. <i>*</i></span></label>
+          <label class="chk"><input type="checkbox" name="souhlas-foto-video" value="ano"><span>Souhlasím s tím, že fotky a videa z akce, na kterých budu, můžou být použity v komunikaci Form Factory Games, STR2G a Form Factory (web, sociální sítě). <em>(nepovinné)</em></span></label>
+          <label class="chk"><input type="checkbox" name="souhlas-novinky" value="ano"><span>Chci dostávat informace o dalších závodech a akcích STR2G a Form Factory. <em>(nepovinné)</em></span></label>
+        </fieldset>
 
         <div class="send">
           <button class="btn btn-red" type="submit">Odeslat přihlášku</button>

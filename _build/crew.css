@@ -46,6 +46,8 @@
 .chk{display:flex;gap:12px;align-items:flex-start;cursor:pointer;font-size:15px;line-height:1.45;color:var(--muted)}
 .chk input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:var(--red)}
 .chk a{color:var(--fg)}
+.chk em{font-style:normal;color:var(--muted);opacity:.8}
+.checks{gap:14px}
 .send{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .send .req{color:var(--muted);font-size:14px}
 .f-msg{color:var(--red-hi);margin:0}

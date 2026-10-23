@@ -266,3 +266,34 @@ C['de'] = dict(
   addr='Vinohradská 190, Prag 3',
   link_main='Willst du ins Team? Melde dich als Judge oder Volunteer →',
 )
+
+
+# ---- souhlasy (GDPR, foto/video, novinky)
+C['cz'].update(
+  f_cons='Souhlasy',
+  f_gdpr='Souhlasím se zpracováním osobních údajů z této přihlášky (jméno, e-mail, telefon, Instagram, velikost trička a další vyplněné údaje) za účelem organizace Form Factory Games a komunikace se mnou ohledně akce. Správcem údajů je Ladislav Suchánek, IČ 73562769. Údaje uchováme nejdéle 12 měsíců po akci a nepředáme je nikomu mimo organizační tým. Souhlas můžu kdykoliv odvolat e-mailem na info@hyrox-czech.cz. Víc v',
+  f_photo='Souhlasím s tím, že fotky a videa z akce, na kterých budu, můžou být použity v komunikaci Form Factory Games, STR2G a Form Factory (web, sociální sítě).',
+  f_news='Chci dostávat informace o dalších závodech a akcích STR2G a Form Factory.',
+  f_opt='nepovinné',
+)
+C['en'].update(
+  f_cons='Consents',
+  f_gdpr='I agree to the processing of the personal data in this form (name, email, phone, Instagram, T-shirt size and any other details I fill in) to organise Form Factory Games and to contact me about the event. The data controller is Ladislav Suchánek, company ID 73562769. The data will be kept for no more than 12 months after the event and will not be shared outside the organising team. I can withdraw my consent at any time by emailing info@hyrox-czech.cz. More in the',
+  f_photo='I agree that photos and videos from the event showing me may be used in Form Factory Games, STR2G and Form Factory communication (website, social media).',
+  f_news='I want to hear about future STR2G and Form Factory races and events.',
+  f_opt='optional',
+)
+C['pl'].update(
+  f_cons='Zgody',
+  f_gdpr='Wyrażam zgodę na przetwarzanie danych osobowych z tego formularza (imię i nazwisko, e-mail, telefon, Instagram, rozmiar koszulki i inne podane informacje) w celu organizacji Form Factory Games i kontaktu ze mną w sprawie wydarzenia. Administratorem danych jest Ladislav Suchánek, nr identyfikacyjny 73562769. Dane będą przechowywane nie dłużej niż 12 miesięcy po wydarzeniu i nie zostaną przekazane poza zespół organizacyjny. Zgodę mogę w każdej chwili wycofać, pisząc na info@hyrox-czech.cz. Więcej w',
+  f_photo='Zgadzam się, aby zdjęcia i filmy z wydarzenia, na których się znajduję, były wykorzystywane w komunikacji Form Factory Games, STR2G i Form Factory (strona, media społecznościowe).',
+  f_news='Chcę otrzymywać informacje o kolejnych zawodach i wydarzeniach STR2G i Form Factory.',
+  f_opt='opcjonalnie',
+)
+C['de'].update(
+  f_cons='Einwilligungen',
+  f_gdpr='Ich willige in die Verarbeitung der personenbezogenen Daten aus diesem Formular ein (Name, E-Mail, Telefon, Instagram, T-Shirt-Größe und weitere Angaben), um Form Factory Games zu organisieren und mich zur Veranstaltung zu kontaktieren. Verantwortlicher ist Ladislav Suchánek, IČ 73562769. Die Daten werden höchstens 12 Monate nach der Veranstaltung gespeichert und nicht außerhalb des Organisationsteams weitergegeben. Ich kann meine Einwilligung jederzeit per E-Mail an info@hyrox-czech.cz widerrufen. Mehr in der',
+  f_photo='Ich bin einverstanden, dass Fotos und Videos von der Veranstaltung, auf denen ich zu sehen bin, in der Kommunikation von Form Factory Games, STR2G und Form Factory (Website, Social Media) verwendet werden.',
+  f_news='Ich möchte Infos zu weiteren Wettkämpfen und Events von STR2G und Form Factory erhalten.',
+  f_opt='optional',
+)

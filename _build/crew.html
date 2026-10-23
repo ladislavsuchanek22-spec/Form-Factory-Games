@@ -100,7 +100,6 @@
           <div><b>${pr2h}</b><p>${pr2}</p></div>
           <div><b>${pr3h}</b><p>${pr3}</p></div>
         </div>
-        <div class="gets"><b>${gt_h}</b><p><span class="ph">${gt}</span></p></div>
       </div>
     </div>
   </section>
@@ -185,10 +184,13 @@
 
         <div class="fld"><label for="f-note">${f_note}</label><textarea id="f-note" name="poznamka" rows="4" placeholder="${f_note_ph}"></textarea></div>
 
-        <div class="checks">
+        <fieldset class="fs checks">
+          <legend>${f_cons}</legend>
           <label class="chk"><input type="checkbox" name="vek-18" value="ano" required><span>${f_adult} <i>*</i></span></label>
-          <label class="chk"><input type="checkbox" name="souhlas" value="ano" required><span>${f_gdpr} <a href="https://www.ladislavsuchanek.cz/pravidla-ochrany-soukromi/" target="_blank" rel="noopener">${f_gdpr_link}</a>. <i>*</i></span></label>
-        </div>
+          <label class="chk"><input type="checkbox" name="souhlas-gdpr" value="ano" required><span>${f_gdpr} <a href="https://www.ladislavsuchanek.cz/pravidla-ochrany-soukromi/" target="_blank" rel="noopener">${f_gdpr_link}</a>. <i>*</i></span></label>
+          <label class="chk"><input type="checkbox" name="souhlas-foto-video" value="ano"><span>${f_photo} <em>(${f_opt})</em></span></label>
+          <label class="chk"><input type="checkbox" name="souhlas-novinky" value="ano"><span>${f_news} <em>(${f_opt})</em></span></label>
+        </fieldset>
 
         <div class="send">
           <button class="btn btn-red" type="submit">${f_send}</button>
