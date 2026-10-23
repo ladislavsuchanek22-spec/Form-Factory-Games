@@ -7,7 +7,8 @@ Použití (z kořene repozitáře):  python3 _build/build.py
 - Šablona:    _build/template.html
 - Styly:      _build/style.css
 - Odkazy na ostatní weby STR2G: _build/net.py
-Výstup: index.html (čeština), en/index.html, pl/index.html, de/index.html, sitemap.xml
+Výstup: index.html (čeština), en/, pl/, de/, stránka Judges & Crew v crew/ (+ en/crew/ …), sitemap.xml
+Texty Judges & Crew: _build/tr_crew.py, šablona _build/crew.html, styly crew.css, formulář crew.js
 """
 import json
 import re
@@ -19,6 +20,7 @@ B = Path(__file__).resolve().parent
 ROOT = B.parent
 sys.path.insert(0, str(B))
 from tr import T  # noqa: E402
+from tr_crew import C  # noqa: E402
 import net  # noqa: E402
 
 SITE = "https://formfactorygames.cz"
@@ -35,6 +37,11 @@ LASTMOD = "2026-10-16"
 STYLE = (B / "style.css").read_text(encoding="utf-8")
 TPL = Template((B / "template.html").read_text(encoding="utf-8"))
 FINDER = (B / "finder.js").read_text(encoding="utf-8")
+# Stránka Judges & Crew: /crew/, /en/crew/, /pl/crew/, /de/crew/
+CREW = "crew/"
+CREW_TPL = Template((B / "crew.html").read_text(encoding="utf-8"))
+CREW_CSS = (B / "crew.css").read_text(encoding="utf-8")
+CREW_JS = (B / "crew.js").read_text(encoding="utf-8")
 
 
 def jsonld(L, t):
@@ -86,12 +93,13 @@ def jsonld(L, t):
     return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + "</script>"
 
 
-def head(L, t):
+def head(L, t, sub="", extra_css="", ld=True, hero="/img/hero.webp"):
     hl, path, locale, _ = LANGS[L]
-    alts = "\n".join(f'<link rel="alternate" hreflang="{v[0]}" href="{SITE}{v[1]}">' for v in LANGS.values())
-    alts += f'\n<link rel="alternate" hreflang="x-default" href="{SITE}/">'
+    path += sub
+    alts = "\n".join(f'<link rel="alternate" hreflang="{v[0]}" href="{SITE}{v[1]}{sub}">' for v in LANGS.values())
+    alts += f'\n<link rel="alternate" hreflang="x-default" href="{SITE}/{sub}">'
     legacy = ""
-    if L == "cz":  # staré odkazy formfactorygames.cz/#en apod.
+    if L == "cz" and not sub:  # staré odkazy formfactorygames.cz/#en apod.
         legacy = "<script>(function(){var m=location.hash.match(/^#(en|pl|de)$/i);if(m)location.replace('/'+m[1].toLowerCase()+'/');})();</script>\n"
     return f'''<!doctype html>
 <html lang="{hl}">
@@ -116,14 +124,14 @@ def head(L, t):
 <script src="/js/tracking.js"></script>
 <link rel="icon" href="/favicon.png" type="image/png" sizes="160x160">
 <link rel="apple-touch-icon" href="/favicon.png">
-<link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="{hero}" fetchpriority="high">
 {legacy}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 html,body{{margin:0}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}[hidden]{{display:none!important}}
-{STYLE}</style>
-{jsonld(L, t)}
+{STYLE}{extra_css}</style>
+{jsonld(L, t) if ld else ""}
 </head>
 <body>
 '''
@@ -140,18 +148,37 @@ def page(L):
     t["U_HP"] = net.url("hp", hl)
     t["U_HTC"] = net.url("htc", hl)
     t["NET"] = net.block("ffg", hl)
+    t["U_CREW"] = path + CREW
+    t["link_main"] = C[L]["link_main"]
     body = TPL.substitute(t)
     left = re.findall(r"\$\{\w+\}", body)
     assert not left, left
     return head(L, t) + body + FINDER + "\n</body>\n</html>\n"
 
 
+def page_crew(L):
+    t = dict(C[L])
+    hl, path, _, _ = LANGS[L]
+    t["HL"] = hl
+    t["HOME"] = path
+    t["lang_aria"] = T[L]["lang_aria"]
+    t["LANGLINKS"] = "".join(
+        f'<a href="{v[1]}{CREW}" hreflang="{v[0]}" lang="{v[0]}"' + (' aria-current="page"' if k == L else "") + f">{v[3]}</a>"
+        for k, v in LANGS.items())
+    t["NET"] = net.block("ffg", hl)
+    body = CREW_TPL.substitute(t)
+    left = re.findall(r"\$\{\w+\}", body)
+    assert not left, left
+    return head(L, t, sub=CREW, extra_css=CREW_CSS, ld=False, hero="/img/sled.webp") + body + CREW_JS + "\n</body>\n</html>\n"
+
+
 def sitemap():
     rows = []
-    for v in LANGS.values():
-        alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{w[0]}" href="{SITE}{w[1]}"/>' for w in LANGS.values())
-        alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}/"/>'
-        rows.append(f"  <url>\n    <loc>{SITE}{v[1]}</loc>\n    <lastmod>{LASTMOD}</lastmod>{alts}\n  </url>")
+    for sub in ("", CREW):
+        for v in LANGS.values():
+            alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{w[0]}" href="{SITE}{w[1]}{sub}"/>' for w in LANGS.values())
+            alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}/{sub}"/>'
+            rows.append(f"  <url>\n    <loc>{SITE}{v[1]}{sub}</loc>\n    <lastmod>{LASTMOD}</lastmod>{alts}\n  </url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(rows) + "\n</urlset>\n")
@@ -162,6 +189,10 @@ def main():
         out = ROOT / v[1].strip("/") / "index.html"
         out.parent.mkdir(exist_ok=True)
         out.write_text(page(L), encoding="utf-8")
+        print("zapsáno", out.relative_to(ROOT))
+        out = ROOT / (v[1] + CREW).strip("/") / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(page_crew(L), encoding="utf-8")
         print("zapsáno", out.relative_to(ROOT))
     (ROOT / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
     print("zapsáno sitemap.xml")

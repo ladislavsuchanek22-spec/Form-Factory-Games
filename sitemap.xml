@@ -36,4 +36,40 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/"/>
   </url>
+  <url>
+    <loc>https://formfactorygames.cz/crew/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/crew/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/crew/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/crew/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/en/crew/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/crew/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/crew/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/crew/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/pl/crew/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/crew/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/crew/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/crew/"/>
+  </url>
+  <url>
+    <loc>https://formfactorygames.cz/de/crew/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://formfactorygames.cz/crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formfactorygames.cz/en/crew/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://formfactorygames.cz/pl/crew/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://formfactorygames.cz/de/crew/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formfactorygames.cz/crew/"/>
+  </url>
 </urlset>

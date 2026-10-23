@@ -274,3 +274,4 @@ footer a{color:var(--fg)}
 .net a:hover b{color:var(--red-hi)}
 .team-link{font:500 13px/1.3 var(--f-mono);color:var(--red-hi);text-decoration:none;margin-top:4px}
 .team-link:hover{text-decoration:underline}
+.crew-link{margin-top:22px;display:inline-flex;white-space:normal;text-align:left;line-height:1.2}
