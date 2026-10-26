@@ -172,13 +172,14 @@ def page_crew(L):
     return head(L, t, sub=CREW, extra_css=CREW_CSS, ld=False, hero="/img/sled.webp") + body + CREW_JS + "\n</body>\n</html>\n"
 
 
-def sitemap():
+def sitemap(extra=()):
     rows = []
     for sub in ("", CREW):
         for v in LANGS.values():
             alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{w[0]}" href="{SITE}{w[1]}{sub}"/>' for w in LANGS.values())
             alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}/{sub}"/>'
             rows.append(f"  <url>\n    <loc>{SITE}{v[1]}{sub}</loc>\n    <lastmod>{LASTMOD}</lastmod>{alts}\n  </url>")
+    rows += [f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{LASTMOD}</lastmod>\n  </url>" for u in extra]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(rows) + "\n</urlset>\n")
@@ -194,7 +195,10 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(page_crew(L), encoding="utf-8")
         print("zapsáno", out.relative_to(ROOT))
-    (ROOT / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent))
+    import articles
+    (ROOT / "sitemap.xml").write_text(sitemap(articles.build(ROOT)), encoding="utf-8")
     print("zapsáno sitemap.xml")
 
 
