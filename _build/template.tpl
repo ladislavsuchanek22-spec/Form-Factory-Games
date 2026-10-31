@@ -1,8 +1,8 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="${HOME}">
-      <img src="/img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Form Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
+      <span class="brand-mark"><img src="/img/ff-logo.jpg" alt="Form Factory" width="40" height="40"></span>
+      <span class="brand-t"><b>Form Factory</b><i>Games</i></span>
     </a>
     <ul>
       <li><a href="#workouty">${nav_wo}</a></li>
@@ -14,7 +14,7 @@
     </ul>
     <div class="nav-r">
       <nav class="lsw" aria-label="${lang_aria}">${LANGLINKS}</nav>
-      <a class="btn btn-red" href="#registrace">${nav_reg}</a>
+      <a class="btn btn-ghost" href="#registrace">${nav_reg} ›</a>
     </div>
   </div>
 </header>
@@ -22,14 +22,17 @@
 <main id="top">
   <section class="hero">
     <div class="hero-img"><img src="/img/hero.webp" alt="${hero_alt}"></div>
-    <div class="wrap">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
       <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>${when_date}</b> <span>·</span> <span>${when_time}</span></p>
-      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
+      <h1><span class="h1-s">Form Factory</span><span class="h1-l">Games</span></h1>
       <p class="lead">${hero_lead}</p>
       <div class="hero-cta">
         <a class="btn btn-red" href="#registrace">${hero_cta1}</a>
-        <a class="btn btn-ghost" href="#workouty">${hero_cta2}</a>
+        <a class="btn btn-ghost" href="#workouty">${hero_cta2} ›</a>
       </div>
+      </div>
+      <p class="hero-side"><b>Form Factory</b><span>Vinohradská</span><span>${when_date}</span><span>100 × Open · Pro</span></p>
     </div>
   </section>
 
@@ -72,6 +75,7 @@
       </div>
       <div class="wods">
         <article class="wod">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w1-row.webp" alt="Power Grid · RowErg" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W1 · 10:00</span>
             <h3>Power Grid</h3>
@@ -84,7 +88,8 @@
             <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>${u_r}</span></div>
           </div>
         </article>
-        <article class="wod">
+        <article class="wod wod-hl">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="The Engine · Wall balls" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W2 · 12:30</span>
             <h3>The Engine</h3>
@@ -100,6 +105,7 @@
           </div>
         </article>
         <article class="wod">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w3-lunges.webp" alt="Final Grind · Walking lunges" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W3 · 14:50</span>
             <h3>Final Grind</h3>
@@ -282,8 +288,10 @@
         <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>${c3}</p></article>
       </div>
       <p class="note">${tm_more} <a href="${U_HTC}" target="_blank" rel="noopener">${tm_more_link}</a></p>
-      <div class="crew-wide"><span><b>12</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
-      <a class="btn btn-ghost crew-link" href="${U_CREW}">${link_main}</a>
+      <div class="crew-band">
+        <div class="crew-wide"><span><b>12</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
+        <a class="btn btn-white crew-link" href="${U_CREW}">${link_main}</a>
+      </div>
     </div>
   </section>
 

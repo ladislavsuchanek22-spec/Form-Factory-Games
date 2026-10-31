@@ -1,8 +1,8 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="${HOME}">
-      <img src="/img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Form Factory Games</b><small>Judges &amp; Crew · Vinohradská</small></span>
+      <span class="brand-mark"><img src="/img/ff-logo.jpg" alt="Form Factory" width="40" height="40"></span>
+      <span class="brand-t"><b>Form Factory</b><i>Games · Crew</i></span>
     </a>
     <ul>
       <li><a href="${HOME}">${nav_back}</a></li>
@@ -12,7 +12,7 @@
     </ul>
     <div class="nav-r">
       <nav class="lsw" aria-label="${lang_aria}">${LANGLINKS}</nav>
-      <a class="btn btn-red" href="#prihlaska">${nav_form}</a>
+      <a class="btn btn-ghost" href="#prihlaska">${nav_form} ›</a>
     </div>
   </div>
 </header>
@@ -22,7 +22,7 @@
     <div class="hero-img"><img src="/img/sled.webp" alt=""></div>
     <div class="wrap">
       <p class="when"><b>${hero_eb}</b></p>
-      <h1><span>Judges</span><span class="o">&amp;</span><span class="r">Crew</span></h1>
+      <h1><span class="h1-s">Judges &amp;</span><span class="h1-l">Crew</span></h1>
       <p class="lead">${hero_lead}</p>
       <div class="hero-cta">
         <a class="btn btn-red" href="#prihlaska">${hero_cta1}</a>

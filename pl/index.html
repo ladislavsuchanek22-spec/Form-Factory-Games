@@ -28,23 +28,26 @@
 <link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;800&family=Roboto:wght@400;500;700&display=swap">
 <style>
 html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}
-/* Layout: závodní scorecard — černá hala, bílé čáry stanovišť A→B→C→D, červená jen tam, kde se jde na start nebo se boduje. Barvy podle zadání: červená / bílá / černá */
+/* Layout ve stylu formfactory.cz — černá, karmínový blok značky, žlutý akcent, Roboto Condensed (light + bold), zaoblení 8 px */
 :root{
-  --bg:#0B0B0C;
-  --surface:#151517;
-  --surface-2:#1E1E21;
-  --line:#2C2C31;
-  --fg:#F4F4F2;
-  --muted:#A6A6AC;
-  --red:#D71F17;
-  --red-hi:#FF4A3D;
-  --f-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
-  --f-body:"Barlow","Helvetica Neue",Arial,sans-serif;
-  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
-  --wrap:1180px;
+  --bg:#000;
+  --surface:#111;
+  --surface-2:#1A1A1A;
+  --line:#2E2E2E;
+  --fg:#FFF;
+  --muted:#A8A8A8;
+  --red:#C41D3E;
+  --red-hi:#E8335A;
+  --acc:#FFEB00;
+  --light:#F0F0F0;
+  --r:8px;
+  --f-display:"Roboto Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"Roboto","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Roboto Condensed","Arial Narrow",Arial,sans-serif;
+  --wrap:1240px;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -53,24 +56,24 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--red-hi);outline-offset:3px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--f-display);text-transform:uppercase;line-height:.95;margin:0;text-wrap:balance;letter-spacing:.01em}
 h2{font-size:clamp(40px,6vw,72px);font-weight:800}
 h3{font-size:28px;font-weight:700}
 p{margin:0}
-.eyebrow{font:600 13px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--red-hi);display:flex;align-items:center;gap:10px}
-.eyebrow::before{content:"";width:28px;height:2px;background:var(--red-hi)}
+.eyebrow{font:600 13px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--acc)}
 .lead{color:var(--muted);font-size:19px;max-width:62ch}
 .btn{display:inline-flex;align-items:center;gap:10px;font:700 17px/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:16px 26px;border:2px solid transparent;transition:background .2s,transform .2s;cursor:pointer}
 .btn-red{background:var(--red);color:var(--fg)}
-.btn-red:hover{background:var(--red-hi);transform:translateY(-1px)}
+.btn-red:hover{background:var(--acc);transform:translateY(-1px)}
 .btn-ghost{border-color:var(--fg);color:var(--fg);background:transparent}
 .btn-ghost:hover{background:var(--fg);color:var(--bg)}
 section{padding-block:clamp(72px,10vw,120px)}
 .alt{background:var(--surface)}
 .sec-head{display:grid;gap:18px;margin-bottom:44px}
-.ph{font-family:var(--f-mono);font-size:.82em;color:var(--fg);border:1px dashed var(--red-hi);padding:1px 6px;white-space:nowrap}
+.ph{font-family:var(--f-mono);font-size:.82em;color:var(--fg);border:1px dashed var(--acc);padding:1px 6px;white-space:nowrap}
 .note{margin-top:18px;color:var(--muted);font-size:15px;max-width:72ch}
 
 /* NAV */
@@ -95,10 +98,10 @@ section{padding-block:clamp(72px,10vw,120px)}
 .hero .wrap{padding-block:clamp(80px,12vw,150px) clamp(48px,7vw,80px);display:grid;gap:26px}
 .when{display:flex;flex-wrap:wrap;gap:10px 22px;font:500 14px/1.4 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .when b{color:var(--fg);font-weight:500}
-.hero h1{font-size:clamp(66px,13vw,176px);font-weight:800;font-style:italic;line-height:.84}
+.hero h1{font-size:clamp(66px,13vw,176px);font-weight:800;line-height:.84}
 .hero h1 span{display:block}
 .hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--fg)}
-.hero h1 .r{color:var(--red-hi)}
+.hero h1 .r{color:var(--acc)}
 .hero .lead{color:#D2D2D6;max-width:52ch;font-size:20px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
 
@@ -131,8 +134,8 @@ section{padding-block:clamp(72px,10vw,120px)}
 @media (max-width:860px){.wod{grid-template-columns:1fr}}
 .wod-id{padding:26px;border-right:1px solid var(--line);display:grid;gap:10px;align-content:start;min-width:0}
 @media (max-width:860px){.wod-id{border-right:0;border-bottom:1px solid var(--line)}}
-.wod-id .k{font:700 14px/1 var(--f-mono);color:var(--red-hi);letter-spacing:.1em}
-.wod-id h3{font-size:clamp(40px,4.4vw,54px);font-weight:800;font-style:italic}
+.wod-id .k{font:700 14px/1 var(--f-mono);color:var(--acc);letter-spacing:.1em}
+.wod-id h3{font-size:clamp(40px,4.4vw,54px);font-weight:800}
 .wod-id .fmt{display:flex;flex-wrap:wrap;gap:6px}
 .wod-id .fmt span{font:500 12px/1 var(--f-mono);letter-spacing:.04em;padding:7px 9px;border:1px solid var(--line);color:var(--fg)}
 .wod-id .t{font:500 14px/1.4 var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
@@ -141,7 +144,7 @@ section{padding-block:clamp(72px,10vw,120px)}
 .st{padding:22px 20px;border-right:1px solid var(--line);display:grid;gap:6px;align-content:start;min-width:0}
 .st:last-child{border-right:0}
 @media (max-width:700px){.st:nth-child(2){border-right:0}.st:nth-child(n+3){border-top:1px solid var(--line)}}
-.st .l{font:800 56px/.85 var(--f-display);font-style:italic;color:var(--fg)}
+.st .l{font:800 56px/.85 var(--f-display);color:var(--fg)}
 .st b{font:700 22px/1.1 var(--f-display);text-transform:uppercase}
 .st span{font:500 13px/1.3 var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .amrap{padding:26px;display:grid;gap:18px;align-content:center;min-width:0}
@@ -149,7 +152,7 @@ section{padding-block:clamp(72px,10vw,120px)}
 .chain div{display:grid;gap:2px}
 .chain strong{font:800 clamp(44px,5vw,60px)/.9 var(--f-display);font-variant-numeric:tabular-nums}
 .chain b{font:700 20px/1 var(--f-display);text-transform:uppercase}
-.chain i{font:700 24px/1 var(--f-display);font-style:normal;color:var(--red-hi)}
+.chain i{font:700 24px/1 var(--f-display);font-style:normal;color:var(--acc)}
 .amrap p{color:var(--muted);font-size:16px;max-width:60ch}
 
 /* ZÁTĚŽE */
@@ -170,7 +173,7 @@ tbody tr:hover td{background:var(--surface-2)}
 .rot div{padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font:500 14px/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
 .rot div:nth-child(5n){border-right:0}
 .rot .h{background:var(--surface-2);color:var(--muted);font:600 13px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase}
-.rot .h.l{color:var(--fg);font:800 24px/1 var(--f-display);font-style:italic}
+.rot .h.l{color:var(--fg);font:800 24px/1 var(--f-display)}
 .rot .w1{background:var(--red);color:var(--fg)}
 .rot .wx{background:var(--surface-2)}
 .rot .last{border-bottom:0}
@@ -179,7 +182,7 @@ tbody tr:hover td{background:var(--surface-2)}
 @media (max-width:860px){.cd-row{grid-template-columns:1fr 1fr}}
 @media (max-width:480px){.cd-row{grid-template-columns:1fr}}
 .cd{border-top:2px solid var(--fg);padding-top:14px;display:grid;gap:6px;align-content:start}
-.cd .t{font:700 15px/1 var(--f-mono);color:var(--red-hi);font-variant-numeric:tabular-nums}
+.cd .t{font:700 15px/1 var(--f-mono);color:var(--acc);font-variant-numeric:tabular-nums}
 .cd b{font:700 22px/1.1 var(--f-display);text-transform:uppercase}
 .cd p{color:var(--muted);font-size:15px}
 
@@ -203,12 +206,12 @@ tbody tr:hover td{background:var(--surface-2)}
 .finder-out{min-width:0}
 .fo{display:grid;grid-template-columns:110px 1fr 1fr;gap:12px;align-items:baseline;padding:18px 28px;border-bottom:1px solid var(--line)}
 .fo:last-child{border-bottom:0}
-.fo .w{font:800 26px/1 var(--f-display);font-style:italic;text-transform:uppercase}
+.fo .w{font:800 26px/1 var(--f-display);text-transform:uppercase}
 .fo .w small{display:block;font:500 11px/1.3 var(--f-mono);font-style:normal;letter-spacing:.08em;color:var(--muted);margin-top:4px}
 .fo div{display:grid;gap:2px}
 .fo span{font:600 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .fo strong{font:800 clamp(30px,4vw,44px)/1 var(--f-display);font-variant-numeric:tabular-nums}
-.fo strong.hi{color:var(--red-hi)}
+.fo strong.hi{color:var(--acc)}
 @media (max-width:480px){.fo{grid-template-columns:1fr 1fr;padding:16px}.fo .w{grid-column:span 2}}
 
 /* PROGRAM */
@@ -220,7 +223,7 @@ tbody tr:hover td{background:var(--surface-2)}
 .sched .t{font:700 16px/1.45 var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
 .sched b{display:block;font:700 22px/1.15 var(--f-display);text-transform:uppercase}
 .sched p{color:var(--muted);font-size:15px}
-.sched li.key .t{color:var(--red-hi)}
+.sched li.key .t{color:var(--acc)}
 .sched li.brk b{color:var(--muted)}
 @media (max-width:420px){.sched li{grid-template-columns:1fr;gap:4px}}
 
@@ -229,7 +232,7 @@ tbody tr:hover td{background:var(--surface-2)}
 @media (max-width:860px){.score{grid-template-columns:1fr}}
 .formula{border:1px solid var(--line);background:var(--bg);padding:28px;display:grid;gap:18px}
 .formula .eq{font:700 clamp(26px,3.6vw,40px)/1.15 var(--f-mono);letter-spacing:-.01em}
-.formula .eq em{font-style:normal;color:var(--red-hi)}
+.formula .eq em{font-style:normal;color:var(--acc)}
 .formula dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px;color:var(--muted)}
 .formula dt{font:700 15px/1.5 var(--f-mono);color:var(--fg)}
 .formula dd{margin:0}
@@ -238,10 +241,10 @@ tbody tr:hover td{background:var(--surface-2)}
 .ex p{font:500 15px/1.5 var(--f-mono);font-variant-numeric:tabular-nums}
 .sum{display:grid;gap:0;border-top:1px solid var(--line)}
 .sum div{display:grid;grid-template-columns:80px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.sum b{font:800 26px/1 var(--f-display);font-style:italic;text-transform:uppercase}
+.sum b{font:800 26px/1 var(--f-display);text-transform:uppercase}
 .sum p{color:var(--muted);font-size:16px}
 .sum span{font:700 16px/1 var(--f-mono);font-variant-numeric:tabular-nums}
-.sum .tot b,.sum .tot span{color:var(--red-hi)}
+.sum .tot b,.sum .tot span{color:var(--acc)}
 .sum .tot p{color:var(--fg)}
 
 /* STANDARDY */
@@ -255,7 +258,7 @@ tbody tr:hover td{background:var(--surface-2)}
 .crew{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media (max-width:860px){.crew{grid-template-columns:1fr}}
 .crew article{border:1px solid var(--line);background:var(--surface);padding:26px;display:grid;gap:10px;align-content:start}
-.crew .role{font:700 13px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi)}
+.crew .role{font:700 13px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
 .crew h3{font-size:34px}
 .crew p{color:var(--muted);font-size:16px}
 .crew-wide{margin-top:16px;border:1px solid var(--line);padding:18px 22px;color:var(--muted);font-size:16px;display:flex;flex-wrap:wrap;gap:8px 28px}
@@ -266,7 +269,7 @@ tbody tr:hover td{background:var(--surface-2)}
 .faq-list details{border-bottom:1px solid var(--line)}
 .faq-list summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative;font:700 22px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
 .faq-list summary::-webkit-details-marker{display:none}
-.faq-list summary::after{content:"+";position:absolute;right:4px;top:16px;font:700 28px/1 var(--f-display);color:var(--red-hi)}
+.faq-list summary::after{content:"+";position:absolute;right:4px;top:16px;font:700 28px/1 var(--f-display);color:var(--acc)}
 .faq-list details[open] summary::after{content:"–"}
 .faq-list details p{color:var(--muted);padding:0 0 22px;max-width:68ch}
 
@@ -275,7 +278,7 @@ tbody tr:hover td{background:var(--surface-2)}
 .cta::before{content:"";position:absolute;inset:0;z-index:-1;background:url("/img/sled.webp") center 60%/cover;filter:grayscale(1)}
 .cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,12,.96),rgba(11,11,12,.74))}
 .cta .wrap{display:grid;gap:24px}
-.cta h2{font-size:clamp(50px,9vw,120px);font-style:italic}
+.cta h2{font-size:clamp(50px,9vw,120px)}
 .cta .lead{color:#D2D2D6}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .mail{font:500 15px/1.4 var(--f-mono);color:var(--muted);user-select:all}
@@ -304,10 +307,157 @@ footer a{color:var(--fg)}
 .net b{font:700 20px/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
 .net span{font-size:14px;line-height:1.35;color:var(--muted)}
 .net i{font:500 12px/1.2 var(--f-mono);font-style:normal;color:var(--muted)}
-.net a:hover b{color:var(--red-hi)}
-.team-link{font:500 13px/1.3 var(--f-mono);color:var(--red-hi);text-decoration:none;margin-top:4px}
+.net a:hover b{color:var(--acc)}
+.team-link{font:500 13px/1.3 var(--f-mono);color:var(--acc);text-decoration:none;margin-top:4px}
 .team-link:hover{text-decoration:underline}
 .crew-link{margin-top:22px;display:inline-flex;white-space:normal;text-align:left;line-height:1.2}
+
+/* ===== FF look (formfactory.cz) ===== */
+body{font-size:17px}
+h1,h2,h3{letter-spacing:.005em}
+h2{font-weight:800;font-size:clamp(38px,5.4vw,66px);line-height:1}
+.eyebrow{font:700 14px/1 var(--f-display);letter-spacing:.2em}
+.eyebrow::before{background:var(--acc);height:3px}
+.btn{border-radius:var(--r);font:700 16px/1 var(--f-display);letter-spacing:.1em;padding:16px 24px;border-width:3px}
+.btn-red{background:var(--acc);color:#000}
+.btn-red:hover{background:#FFF36B;transform:translateY(-1px)}
+.btn-ghost{border-color:var(--fg)}
+.btn-white{background:#FFF;color:#000;border-color:#FFF}
+.btn-white:hover{background:#000;color:#FFF;border-color:#000}
+.ph{border-radius:4px}
+
+/* nav: karmínový blok značky */
+.nav{background:rgba(0,0,0,.92);border-bottom:1px solid #1C1C1C}
+.nav .wrap{padding-block:0;min-height:72px}
+.brand{align-self:stretch;gap:0;background:var(--red);margin-left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:0 22px 0 max(16px,env(safe-area-inset-left,0px));color:#FFF}
+.brand-mark img{width:40px;height:40px;border-radius:4px}
+.brand-t{display:grid;margin-left:12px;line-height:1}
+.brand-t b{font:700 20px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
+.brand-t i{font:300 15px/1.2 var(--f-display);font-style:normal;letter-spacing:.32em;text-transform:uppercase;margin-top:3px}
+@media (min-width:1272px){.brand{margin-left:0;padding-left:18px}}
+.nav ul a{font:700 15px/1 var(--f-display);color:#D8D8D8}
+.nav ul a:hover{color:var(--acc)}
+.lsw{border-radius:var(--r);overflow:hidden;border-color:#3A3A3A}
+.lsw a{font:700 13px/1 var(--f-display);border-color:#3A3A3A}
+.lsw a[aria-current]{background:var(--acc);color:#000}
+.nav .btn{padding:10px 16px;font-size:14px;border-width:2px}
+@media (max-width:420px){.brand{padding-right:14px}.brand-t b{font-size:16px}.brand-t i{font-size:12px}}
+
+/* hero */
+.hero{border-bottom:0}
+.hero-img img{filter:none;object-position:center 35%}
+.hero::after{background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.72) 45%,rgba(0,0,0,.2) 100%),linear-gradient(0deg,#000 0%,transparent 35%)}
+.hero-grid{grid-template-columns:1fr auto;align-items:end;gap:32px}
+.hero-main{display:grid;gap:26px;min-width:0}
+.when{font:700 15px/1.4 var(--f-display);letter-spacing:.16em;color:var(--acc)}
+.when b{color:var(--acc);font-weight:700}
+.hero h1{line-height:.9}
+.hero h1 .h1-s{font:700 clamp(26px,3.4vw,44px)/1 var(--f-display);letter-spacing:.18em;margin-bottom:10px}
+.hero h1 .h1-l{font:300 clamp(64px,11vw,150px)/.9 var(--f-display);letter-spacing:.42em;margin-right:-.42em}
+.hero .lead{color:#E2E2E2}
+.hero-side{display:grid;gap:4px;text-align:right;font:700 clamp(18px,1.8vw,24px)/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.04em;color:var(--acc)}
+.hero-side b{color:#FFF;font-weight:700}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-side{display:none}}
+@media (max-width:480px){.hero h1 .h1-l{letter-spacing:.24em;margin-right:-.24em}}
+
+/* stats */
+.stats{background:#000;border-top:1px solid #1C1C1C;border-bottom:1px solid #1C1C1C}
+.stat{border-color:#1C1C1C}
+.stat strong{font-weight:800}
+.stat span{text-transform:uppercase;font:700 13px/1.3 var(--f-display);letter-spacing:.12em}
+
+/* sekce */
+.alt{background:#0B0B0B}
+.concept figure img,.day-img img{border-radius:var(--r)}
+.concept figcaption{border-radius:0 var(--r) 0 var(--r);background:var(--red);font:700 13px/1.3 var(--f-display)}
+.cats{border-radius:var(--r);overflow:hidden}
+.cats b{font-weight:800}
+
+/* workouty: fotka + karta */
+.wods{gap:20px}
+.wod{grid-template-columns:280px 300px 1fr;border:2px solid #3A3A3A;border-radius:var(--r);overflow:hidden;background:#000}
+.wod.wod-hl{border-color:var(--acc)}
+.wod-img{margin:0;min-height:100%;position:relative}
+.wod-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wod-id .k{font:700 15px/1 var(--f-display);letter-spacing:.14em}
+.wod-id h3{font-size:clamp(38px,3.6vw,48px)}
+.wod-id .fmt span{border-radius:4px;font:700 12px/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase}
+.st .l{color:var(--acc)}
+.st span{font:500 13px/1.3 var(--f-display)}
+.st b{font-weight:800}
+@media (max-width:1100px){.wod{grid-template-columns:200px 1fr}.wod-img{grid-row:span 2}.wod-id{border-right:0;border-bottom:1px solid var(--line)}}
+@media (max-width:700px){.wod{grid-template-columns:1fr}.wod-img{grid-row:auto;height:220px;min-height:0}.wod-img img{object-position:center 30%}}
+
+/* zátěže */
+.tbl-wrap{border-radius:var(--r)}
+th{font:700 13px/1.2 var(--f-display);background:#161616}
+td{font:500 17px/1.3 var(--f-display)}
+td:first-child{font-weight:800}
+th:nth-child(3),th:nth-child(5),td:nth-child(3),td:nth-child(5){color:var(--acc)}
+
+/* vlny + finder */
+.rot-wrap,.finder{border-radius:var(--r)}
+.rot{border-radius:var(--r);overflow:hidden}
+.rot div{font:500 15px/1.2 var(--f-display)}
+.rot .w1{background:var(--red)}
+.cd{border-top:3px solid var(--acc)}
+.cd .t{font:700 16px/1 var(--f-display)}
+.finder{overflow:hidden}
+.ctl button,.ctl input,.seg button{border-radius:var(--r)}
+.seg{gap:6px}
+.seg button{margin-left:0}
+.seg button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#000}
+.fo .w small{font:500 12px/1.3 var(--f-display)}
+
+/* program: světlá sekce */
+.day{background:var(--light);color:#000}
+.day .eyebrow{color:var(--red)}
+.day .eyebrow::before{background:var(--red)}
+.day .sched{border-top:2px solid #000}
+.day .sched li{border-bottom:2px solid #000}
+.day .sched .t{color:#555;font:700 17px/1.45 var(--f-display)}
+.day .sched p,.day .note{color:#444}
+.day .sched li.key .t{color:var(--red)}
+.day .sched li.brk b{color:#777}
+.day .note a{color:#000}
+
+/* bodování, pravidla */
+.formula{border-radius:var(--r);border:2px solid #3A3A3A}
+.formula .eq{font:700 clamp(26px,3.6vw,40px)/1.15 var(--f-display)}
+.formula dt{font:700 16px/1.5 var(--f-display);color:var(--acc)}
+.ex p,.sum span{font-family:var(--f-display)}
+.std div{border-top:3px solid var(--acc)}
+
+/* tým + crew pás */
+.crew article{border-radius:var(--r);border:2px solid #2A2A2A;background:#000}
+.crew .role{font:700 13px/1 var(--f-display)}
+.team-link{font:700 14px/1.3 var(--f-display)}
+.crew-band{margin-top:24px;background:var(--red);border-radius:var(--r);padding:24px clamp(20px,3vw,32px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px}
+.crew-band .crew-wide{margin:0;border:0;padding:0;color:#FFE3E8}
+.crew-band .crew-wide b{color:#FFF}
+.crew-band .crew-link{margin-top:0}
+
+/* FAQ */
+.faq-list{border-top:0;display:grid;gap:10px}
+.faq-list details{border:2px solid #2A2A2A;border-radius:var(--r);background:#111;padding:0 22px}
+.faq-list details[open]{border-color:#444}
+.faq-list summary{font-weight:800}
+.faq-list summary::after{right:0}
+
+/* CTA */
+.cta{border-top:0}
+.cta::before{filter:none}
+.cta::after{background:linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.7))}
+.cta h2{color:var(--acc);font-size:clamp(46px,8vw,104px)}
+.mail{font:500 16px/1.4 var(--f-display)}
+
+/* patička */
+footer{background:#000;border-top:1px solid #1C1C1C}
+.net-h{font:700 13px/1 var(--f-display)}
+.net b{font-weight:800}
+.net i{font:500 13px/1.2 var(--f-display)}
+.net a:hover b{color:var(--acc)}
+@media (max-width:600px){.when{display:grid;gap:4px}.when>span:not(:last-child){display:none}.when>span:last-child{display:block}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SportsEvent", "@id": "https://formfactorygames.cz/#event", "name": "Form Factory Games 2026", "description": "Indywidualne zawody fitness w Form Factory Vinohradská w Pradze, 5 grudnia 2026. 3 workouty, 4 kategorie, 100 zawodników.", "url": "https://formfactorygames.cz/pl/", "inLanguage": "pl", "image": ["https://formfactorygames.cz/img/hero.jpg"], "startDate": "2026-12-05T10:00:00+01:00", "endDate": "2026-12-05T17:40:00+01:00", "doorTime": "2026-12-05T09:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "maximumAttendeeCapacity": 100, "location": {"@type": "SportsActivityLocation", "name": "Form Factory Vinohradská", "url": "https://hyroxtrainingclub.cz/", "address": {"@type": "PostalAddress", "streetAddress": "Vinohradská 190", "postalCode": "130 00", "addressLocality": "Praha 3", "addressCountry": "CZ"}}, "organizer": [{"@type": "Organization", "@id": "https://str2g.com/#org", "name": "STR2G HYROX", "url": "https://str2g.com/"}, {"@type": "Organization", "name": "Form Factory", "url": "https://www.formfactory.cz/"}]}, {"@type": "Person", "@id": "https://hyrox-prague.eu/#lada", "name": "Ladislav Suchánek", "url": "https://hyrox-prague.eu/", "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"]}]}</script>
 </head>
@@ -315,8 +465,8 @@ footer a{color:var(--fg)}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="/pl/">
-      <img src="/img/ff-logo.jpg" alt="Form Factory">
-      <span><b>Form Factory Games</b><small>Form Factory × STR2G · Vinohradská</small></span>
+      <span class="brand-mark"><img src="/img/ff-logo.jpg" alt="Form Factory" width="40" height="40"></span>
+      <span class="brand-t"><b>Form Factory</b><i>Games</i></span>
     </a>
     <ul>
       <li><a href="#workouty">Workouty</a></li>
@@ -328,7 +478,7 @@ footer a{color:var(--fg)}
     </ul>
     <div class="nav-r">
       <nav class="lsw" aria-label="Język"><a href="/" hreflang="cs" lang="cs">CZ</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/pl/" hreflang="pl" lang="pl" aria-current="page">PL</a><a href="/de/" hreflang="de" lang="de">DE</a></nav>
-      <a class="btn btn-red" href="#registrace">Rejestracja</a>
+      <a class="btn btn-ghost" href="#registrace">Rejestracja ›</a>
     </div>
   </div>
 </header>
@@ -336,14 +486,17 @@ footer a{color:var(--fg)}
 <main id="top">
   <section class="hero">
     <div class="hero-img"><img src="/img/hero.webp" alt="Odprawa zawodników w Form Factory"></div>
-    <div class="wrap">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
       <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>Sobota 5.12.2026</b> <span>·</span> <span>Zbiórka 9:30 · pierwszy start 10:00</span></p>
-      <h1><span>Form</span><span class="o">Factory</span><span class="r">Games</span></h1>
+      <h1><span class="h1-s">Form Factory</span><span class="h1-l">Games</span></h1>
       <p class="lead">Jednodniowe zawody indywidualne. Siła, wytrzymałość i technika w trzech workoutach. Każdy robi wszystkie trzy, klasyfikacja osobno w czterech kategoriach.</p>
       <div class="hero-cta">
         <a class="btn btn-red" href="#registrace">Startuję →</a>
-        <a class="btn btn-ghost" href="#workouty">Co mnie czeka</a>
+        <a class="btn btn-ghost" href="#workouty">Co mnie czeka ›</a>
       </div>
+      </div>
+      <p class="hero-side"><b>Form Factory</b><span>Vinohradská</span><span>Sobota 5.12.2026</span><span>100 × Open · Pro</span></p>
     </div>
   </section>
 
@@ -386,6 +539,7 @@ footer a{color:var(--fg)}
       </div>
       <div class="wods">
         <article class="wod">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w1-row.webp" alt="Power Grid · RowErg" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W1 · 10:00</span>
             <h3>Power Grid</h3>
@@ -398,7 +552,8 @@ footer a{color:var(--fg)}
             <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>powtórzenia</span></div>
           </div>
         </article>
-        <article class="wod">
+        <article class="wod wod-hl">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="The Engine · Wall balls" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W2 · 12:30</span>
             <h3>The Engine</h3>
@@ -414,6 +569,7 @@ footer a{color:var(--fg)}
           </div>
         </article>
         <article class="wod">
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w3-lunges.webp" alt="Final Grind · Walking lunges" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">W3 · 14:50</span>
             <h3>Final Grind</h3>
@@ -596,8 +752,10 @@ footer a{color:var(--fg)}
         <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>Standardy, odprawa sędziów i rozstrzyganie spornych sytuacji.</p></article>
       </div>
       <p class="note">Zawody odbywają się w Form Factory Vinohradská, jednym z czterech HYROX Training Clubów. <a href="https://hyroxtrainingclub.cz/pl/" target="_blank" rel="noopener">Zajęcia i grafik →</a></p>
-      <div class="crew-wide"><span><b>12</b> sędziów</span><span><b>1</b> ratownik</span><span><b>1</b> osoba od wyników</span><span><b>DJ</b>, operator, fotograf</span></div>
-      <a class="btn btn-ghost crew-link" href="/pl/crew/">Chcesz być w ekipie? Zgłoś się jako sędzia lub wolontariusz →</a>
+      <div class="crew-band">
+        <div class="crew-wide"><span><b>12</b> sędziów</span><span><b>1</b> ratownik</span><span><b>1</b> osoba od wyników</span><span><b>DJ</b>, operator, fotograf</span></div>
+        <a class="btn btn-white crew-link" href="/pl/crew/">Chcesz być w ekipie? Zgłoś się jako sędzia lub wolontariusz →</a>
+      </div>
     </div>
   </section>
 

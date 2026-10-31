@@ -127,7 +127,7 @@ def head(L, t, sub="", extra_css="", ld=True, hero="/img/hero.webp"):
 <link rel="preload" as="image" href="{hero}" fetchpriority="high">
 {legacy}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;800&family=Roboto:wght@400;500;700&display=swap">
 <style>
 html,body{{margin:0}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}[hidden]{{display:none!important}}
 {STYLE}{extra_css}</style>
