@@ -458,6 +458,105 @@ footer{background:#000;border-top:1px solid #1C1C1C}
 .net i{font:500 13px/1.2 var(--f-display)}
 .net a:hover b{color:var(--acc)}
 @media (max-width:600px){.when{display:grid;gap:4px}.when>span:not(:last-child){display:none}.when>span:last-child{display:block}}
+
+/* ===== interaktivní části pro atlety ===== */
+.cdown{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px}
+.cdown[hidden]{display:none}
+.cdown .lbl{flex-basis:100%;color:#DADADA}
+.cd-u{min-width:72px;padding:10px 12px;border:2px solid #3A3A3A;border-radius:var(--r);background:rgba(0,0,0,.55);display:grid;justify-items:center;gap:2px}
+.cd-u b{font:800 32px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.cd-u small{font:700 11px/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+@media (max-width:420px){.cd-u{min-width:0;flex:1;padding:8px 6px}.cd-u b{font-size:26px}}
+
+.catpick{display:grid;gap:10px;margin:-12px 0 28px;padding:18px 20px;border:2px solid #3A3A3A;border-radius:var(--r);background:#000}
+.catpick small{color:var(--muted);font-size:14px}
+.cp{display:flex;flex-wrap:wrap;gap:8px}
+.cp button{flex:1 1 140px;min-height:46px;border:2px solid #3A3A3A;border-radius:var(--r);background:#111;color:#FFF;font:800 16px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.cp button:hover{border-color:#FFF}
+.cp button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#000}
+@media (max-width:700px){.catpick{padding:14px}.cp button{flex-basis:40%}}
+.wt{font:800 18px/1.1 var(--f-display);font-style:normal;color:var(--acc);margin-top:2px}
+.wt:empty{display:none}
+.chain .wt{display:block}
+.chain .wt:empty{display:none}
+#zateze td.sel,#zateze th.sel{background:rgba(255,235,0,.12);color:var(--acc)}
+#zateze th.sel{box-shadow:inset 0 -3px 0 var(--acc)}
+
+.tips{grid-column:1/-1;border-top:1px solid var(--line)}
+.tips summary{list-style:none;cursor:pointer;padding:16px 26px;font:800 15px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:10px}
+.tips summary::-webkit-details-marker{display:none}
+.tips summary::after{content:"+";margin-left:auto;font-size:24px}
+.tips[open] summary::after{content:"–"}
+.tips summary:hover{background:#0E0E0E}
+.tips-in{padding:0 26px 24px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.tips ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;counter-reset:t}
+.tips li{position:relative;padding-left:34px;color:#D4D4D4;font-size:16px;counter-increment:t}
+.tips li::before{content:counter(t);position:absolute;left:0;top:0;width:22px;height:22px;border-radius:4px;background:var(--acc);color:#000;font:800 14px/22px var(--f-display);text-align:center}
+@media (max-width:1100px){.tips-in{grid-template-columns:1fr}}
+@media (max-width:700px){.tips ul{grid-template-columns:1fr}.tips summary{padding:16px}.tips-in{padding:0 16px 20px}}
+.amcalc{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:12px;padding:18px;border:2px solid var(--acc);border-radius:var(--r);min-width:300px}
+.amcalc>b{grid-column:1/-1;font:800 18px/1 var(--f-display);text-transform:uppercase}
+.amcalc label,.calc label{display:grid;gap:6px;font:700 12px/1.2 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.amcalc input,.calc input{width:100%;height:46px;background:#111;border:2px solid #3A3A3A;border-radius:var(--r);color:#FFF;font:800 22px/1 var(--f-display);text-align:center;font-variant-numeric:tabular-nums}
+.amcalc input:focus,.calc input:focus{outline:none;border-color:var(--acc)}
+.am-out{display:grid;gap:2px}
+.am-out span{font:700 12px/1.2 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.am-out strong{font:800 36px/1 var(--f-display);color:var(--acc);font-variant-numeric:tabular-nums}
+@media (max-width:420px){.amcalc{min-width:0}}
+
+.calc{margin-top:40px;display:grid;grid-template-columns:1.3fr .7fr;border:2px solid #3A3A3A;border-radius:var(--r);overflow:hidden;background:#000}
+.calc-in{padding:28px;display:grid;gap:18px;border-right:2px solid #3A3A3A;min-width:0}
+.calc-in h3{font-size:clamp(30px,3.4vw,40px)}
+.calc-p{color:var(--muted);max-width:60ch}
+.calc-n{max-width:240px}
+.calc-g{display:grid;grid-template-columns:170px 1fr;gap:6px 18px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
+.calc-g b{font:800 20px/1.1 var(--f-display);text-transform:uppercase}
+.calc-g small{grid-row:2;color:var(--muted);font-size:13px}
+.calc-st{grid-row:1/3;grid-column:2;display:grid;grid-template-columns:repeat(4,minmax(0,90px));gap:10px}
+.calc-st label span{color:var(--acc)}
+.calc-out{padding:28px;display:grid;gap:0;align-content:start;background:#0B0B0B}
+.calc-out div{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.calc-out span{font:800 22px/1 var(--f-display);text-transform:uppercase}
+.calc-out strong{font:800 34px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.calc-out .tot{border-bottom:0;flex-wrap:wrap}
+.calc-out .tot span,.calc-out .tot strong{color:var(--acc)}
+.calc-out .tot strong{font-size:52px;margin-left:auto}
+.calc-out .tot small{flex-basis:100%;text-align:right;color:var(--muted);font:700 14px/1 var(--f-display)}
+.calc-out p{color:var(--muted);font-size:14px;margin-top:10px}
+@media (max-width:960px){.calc{grid-template-columns:1fr}.calc-in{border-right:0;border-bottom:2px solid #3A3A3A}}
+@media (max-width:600px){.calc-in,.calc-out{padding:18px}.calc-g{grid-template-columns:1fr}.calc-g small{grid-row:auto}.calc-st{grid-row:auto;grid-column:auto;grid-template-columns:repeat(4,1fr)}}
+
+.finder .ics{justify-self:start;margin-top:4px}
+
+.prep-g{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start}
+@media (max-width:860px){.prep-g{grid-template-columns:1fr}}
+.ck{border:2px solid #3A3A3A;border-radius:var(--r);padding:22px;display:grid;gap:16px;background:#000}
+.ck-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ck-bar{flex:1 1 160px;height:10px;border-radius:99px;background:#222;overflow:hidden}
+.ck-bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .25s}
+.ck-n{font:800 16px/1 var(--f-display);text-transform:uppercase;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.ck-reset{background:none;border:0;color:var(--muted);font:700 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;text-decoration:underline}
+.ck ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:600px){.ck ul{grid-template-columns:1fr}}
+.ck label{display:flex;align-items:center;gap:12px;padding:13px 14px;border:2px solid #2A2A2A;border-radius:var(--r);background:#111;cursor:pointer;font-size:16px;line-height:1.3;transition:border-color .15s}
+.ck label:hover{border-color:#555}
+.ck input{appearance:none;-webkit-appearance:none;flex:0 0 22px;width:22px;height:22px;margin:0;border:2px solid #666;border-radius:5px;display:grid;place-content:center;cursor:pointer}
+.ck input::after{content:"";width:11px;height:6px;border:solid #000;border-width:0 0 3px 3px;transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.ck input:checked{background:var(--acc);border-color:var(--acc)}
+.ck input:checked::after{opacity:1}
+.ck input:checked+span{color:var(--muted);text-decoration:line-through}
+.ck-done{font:800 20px/1.2 var(--f-display);text-transform:uppercase;color:var(--acc)}
+.venue{border-radius:var(--r);background:var(--red);padding:24px;display:grid;gap:12px;justify-items:start}
+.venue .lbl{color:#FFD0DA}
+.venue h3{font-size:34px}
+.venue p{font:700 18px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.04em}
+.venue .btn{margin-bottom:10px}
+.venue dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;width:100%}
+.venue dt{font:800 20px/1.2 var(--f-display);font-variant-numeric:tabular-nums}
+.venue dd{margin:0;font-size:16px;line-height:1.4;color:#FFE6EB}
+.brand{flex-shrink:0;white-space:nowrap}
+@media (max-width:1180px){.nav ul{gap:16px}.nav ul a{font-size:14px}}
+@media (max-width:1060px){.nav ul{display:none}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SportsEvent", "@id": "https://formfactorygames.cz/#event", "name": "Form Factory Games 2026", "description": "Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.", "url": "https://formfactorygames.cz/de/", "inLanguage": "de", "image": ["https://formfactorygames.cz/img/hero.jpg"], "startDate": "2026-12-05T10:00:00+01:00", "endDate": "2026-12-05T17:40:00+01:00", "doorTime": "2026-12-05T09:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "maximumAttendeeCapacity": 100, "location": {"@type": "SportsActivityLocation", "name": "Form Factory Vinohradská", "url": "https://hyroxtrainingclub.cz/", "address": {"@type": "PostalAddress", "streetAddress": "Vinohradská 190", "postalCode": "130 00", "addressLocality": "Praha 3", "addressCountry": "CZ"}}, "organizer": [{"@type": "Organization", "@id": "https://str2g.com/#org", "name": "STR2G HYROX", "url": "https://str2g.com/"}, {"@type": "Organization", "name": "Form Factory", "url": "https://www.formfactory.cz/"}]}, {"@type": "Person", "@id": "https://hyrox-prague.eu/#lada", "name": "Ladislav Suchánek", "url": "https://hyrox-prague.eu/", "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"]}]}</script>
 </head>
@@ -474,6 +573,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
       <li><a href="#vlny">Heats</a></li>
       <li><a href="#program">Zeitplan</a></li>
       <li><a href="#bodovani">Wertung</a></li>
+      <li><a href="#priprava">Vorbereitung</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-r">
@@ -494,6 +594,13 @@ footer{background:#000;border-top:1px solid #1C1C1C}
       <div class="hero-cta">
         <a class="btn btn-red" href="#registrace">Ich bin dabei →</a>
         <a class="btn btn-ghost" href="#workouty">Was erwartet mich ›</a>
+      </div>
+      <div class="cdown" data-t="2026-12-05T09:30:00+01:00" hidden>
+        <span class="lbl">Noch bis zum Start</span>
+        <div class="cd-u"><b data-u="d">00</b><small>Tage</small></div>
+        <div class="cd-u"><b data-u="h">00</b><small>Std</small></div>
+        <div class="cd-u"><b data-u="m">00</b><small>Min</small></div>
+        <div class="cd-u"><b data-u="s">00</b><small>Sek</small></div>
       </div>
       </div>
       <p class="hero-side"><b>Form Factory</b><span>Vinohradská</span><span>Samstag, 5.12.2026</span><span>100 × Open · Pro</span></p>
@@ -537,6 +644,16 @@ footer{background:#000;border-top:1px solid #1C1C1C}
         <h2>Kraft. Motor. Kopf.</h2>
         <p class="lead">In W1 und W3 absolvierst du vier Stationen A → B → C → D. Drei Minuten Vollgas pro Station, dann eine Minute für Eintragen und Wechsel. Gewertet wird in Metern, Kalorien oder Wiederholungen. Mehr ist besser.</p>
       </div>
+      <div class="catpick">
+        <span class="lbl" id="cp-l">Meine Kategorie</span>
+        <div class="cp" role="group" aria-labelledby="cp-l">
+          <button type="button" data-cat="0" aria-pressed="false">Women Open</button>
+          <button type="button" data-cat="1" aria-pressed="false">Women Pro</button>
+          <button type="button" data-cat="2" aria-pressed="false">Men Open</button>
+          <button type="button" data-cat="3" aria-pressed="false">Men Pro</button>
+        </div>
+        <small>Wähl deine Kategorie und die Gewichte erscheinen direkt in den Workouts und in der Tabelle.</small>
+      </div>
       <div class="wods">
         <article class="wod">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w1-row.webp" alt="Power Grid · RowErg" width="667" height="1000"></figure>
@@ -547,10 +664,11 @@ footer{background:#000;border-top:1px solid #1C1C1C}
           </div>
           <div class="stations">
             <div class="st"><span class="l">A</span><b>SkiErg</b><span>Meter</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>Meter</span></div>
+            <div class="st"><span class="l">B</span><b>Sled Push</b><span>Meter</span><em class="wt" data-w="100 kg|150 kg|150 kg|200 kg"></em></div>
             <div class="st"><span class="l">C</span><b>RowErg</b><span>Meter</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>Wiederholungen</span></div>
+            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>Wiederholungen</span><em class="wt" data-w="2 × 16 kg|2 × 24 kg|2 × 24 kg|2 × 32 kg"></em></div>
           </div>
+          <details class="tips"><summary>Strategie vom Coach</summary><div class="tips-in"><ul><li>Geh am SkiErg nicht auf 100 %. Direkt danach kommt der Sled und der rächt jeden verbrannten Zug.</li><li>Sled: tief bleiben, Arme lang, kurze schnelle Schritte. Bleibt er stehen, nicht auf der Stelle drücken, sofort wieder anschieben. Jeder Meter zählt.</li><li>RowErg: halt ein Tempo, das du die vollen drei Minuten schaffst. Die letzten 30 Sekunden alles raus.</li><li>KB Deadlift: Sätze von 8 bis 10 mit kurzer Pause halten länger als ein großer Satz und dann langes Stehen.</li></ul></div></details>
         </article>
         <article class="wod wod-hl">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="The Engine · Wall balls" width="667" height="1000"></figure>
@@ -561,12 +679,20 @@ footer{background:#000;border-top:1px solid #1C1C1C}
           </div>
           <div class="amrap">
             <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
+              <div><strong>20</strong><b>Wall balls</b><em class="wt" data-w="4 kg|6 kg|6 kg|9 kg"></em></div><i>→</i>
               <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
+              <div><strong>20</strong><b>KB swings</b><em class="wt" data-w="12 kg|16 kg|16 kg|20 kg"></em></div><i>↻</i>
             </div>
             <p>Wiederhole in dieser Reihenfolge, bis die Zeit abläuft. Eine Runde sind 50 Wiederholungen. Jede gültige Wiederholung zählt, also 3 Runden plus 12 = 162.</p>
           </div>
+          <details class="tips"><summary>Strategie vom Coach</summary><div class="tips-in"><ul><li>Sechs Minuten sind zu lang für einen Sprint. Starte mit 80 % und leg in den letzten zwei Minuten zu.</li><li>Teil die Wall Balls vorher ein, z. B. 10 + 10 oder 8 + 7 + 5. Eine geplante Pause ist immer kürzer als eine erzwungene.</li><li>Burpees im gleichmäßigen Tempo, ohne Herumstehen. Hier geht die meiste Zeit verloren.</li><li>Swings möglichst ohne Absetzen. Hier sammelst du am schnellsten Wiederholungen.</li></ul>
+            <div class="amcalc">
+              <b>Rechne deinen W2-Score aus</b>
+              <label>Volle Runden<input type="number" class="am-r" min="0" max="12" value="3" inputmode="numeric"></label>
+              <label>Extra-Wiederholungen<input type="number" class="am-x" min="0" max="49" value="12" inputmode="numeric"></label>
+              <div class="am-out"><span>Score</span><strong class="am-s">162</strong></div>
+              <div class="am-out"><span>Schnitt pro Runde</span><strong class="am-p">1:51</strong></div>
+            </div></div></details>
         </article>
         <article class="wod">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w3-lunges.webp" alt="Final Grind · Walking lunges" width="667" height="1000"></figure>
@@ -577,10 +703,11 @@ footer{background:#000;border-top:1px solid #1C1C1C}
           </div>
           <div class="stations">
             <div class="st"><span class="l">A</span><b>Echo Bike</b><span>Kalorien</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>Wiederholungen</span></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>Meter, mit Gewicht</span></div>
+            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>Wiederholungen</span><em class="wt" data-w="2 × 10 kg|2 × 15 kg|2 × 15 kg|2 × 20 kg"></em></div>
+            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>Meter, mit Gewicht</span><em class="wt" data-w="10 kg|20 kg|20 kg|30 kg"></em></div>
             <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>Meter</span></div>
           </div>
+          <details class="tips"><summary>Strategie vom Coach</summary><div class="tips-in"><ul><li>Das Echo Bike kann dir die Beine für den Rest des Workouts zerstören. Die ersten 20 Sekunden nicht voll.</li><li>Thrusters: oben atmen, nicht unten. Rhythmus wie ein Metronom.</li><li>Lunges: kürzere Schritte, gleichmäßiges Tempo. Wenn du Pause brauchst, dann im Stehen.</li><li>Shuttle Runs: Wenden kosten Zeit. Tief in die Wende und sofort zurück.</li></ul></div></details>
         </article>
       </div>
     </div>
@@ -660,6 +787,8 @@ footer{background:#000;border-top:1px solid #1C1C1C}
             </div>
           </div>
           <small>Heat und Bahn bekommst du nach Anmeldeschluss per E-Mail. Die Heats werden aus den Anmeldungen in der Reihenfolge Women Open → Women Pro → Men Open → Men Pro gebildet.</small>
+          <button type="button" class="btn btn-ghost ics" data-sraz="Treffpunkt und Check-in" data-lane-word="Deine Bahn" data-addr="Form Factory Vinohradská, Vinohradská 190, Prag 3">Starts in den Kalender</button>
+          <small>Lädt eine .ics-Datei mit Check-in und allen drei Starts für deinen Heat und deine Bahn.</small>
         </div>
         <div class="finder-out" aria-live="polite">
           <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
@@ -721,6 +850,24 @@ footer{background:#000;border-top:1px solid #1C1C1C}
         </div>
       </div>
       <p class="note">Gleiche Leistungen teilen sich den gemittelten Rang, z. B. Gleichstand auf Platz 2–3 = 2,5. Bei Gleichstand in der Gesamtwertung entscheidet das höhere Ergebnis in W3, dann in W2. Punkte werden nicht zwischengerundet und mit zwei Dezimalstellen angezeigt. Live-Ranking im Web per QR-Code.</p>
+      <div class="calc">
+        <div class="calc-in">
+          <p class="eyebrow">Rechner</p>
+          <h3>Wie viele Punkte sind das?</h3>
+          <p class="calc-p">Gib ein, wie viele Athleten in deiner Kategorie sind und auf welchem Platz du landest. In W1 und W3 wird jede Station einzeln gewertet.</p>
+          <label class="calc-n"><span>Athleten in der Kategorie</span><input type="number" min="2" max="100" value="25" data-c="n" inputmode="numeric"></label>
+          <div class="calc-g"><b>W1 Power Grid</b><small>Platz an der Station</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="5" data-c="1" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="8" data-c="1" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="3" data-c="1" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="6" data-c="1" inputmode="numeric"></label></div></div>
+          <div class="calc-g"><b>W2 The Engine</b><small>Platz</small><div class="calc-st"><label><span>#</span><input type="number" min="1" value="7" data-c="2" inputmode="numeric"></label></div></div>
+          <div class="calc-g"><b>W3 Final Grind</b><small>Platz an der Station</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="4" data-c="3" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="6" data-c="3" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="9" data-c="3" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="5" data-c="3" inputmode="numeric"></label></div></div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <div><span>W1</span><strong data-r="1">0</strong></div>
+          <div><span>W2</span><strong data-r="2">0</strong></div>
+          <div><span>W3</span><strong data-r="3">0</strong></div>
+          <div class="tot"><span>Gesamt</span><strong data-r="t">0</strong><small>/ 300</small></div>
+          <p>Nur zur Orientierung. Die offiziellen Ergebnisse berechnet das Wettkampfsystem.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -759,7 +906,37 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     </div>
   </section>
 
-  <section id="faq">
+  <section class="prep" id="priprava">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Vorbereitung</p>
+        <h2>Pack am Abend vorher</h2>
+        <p class="lead">Hak ab, was du hast. Die Liste bleibt auf deinem Handy gespeichert.</p>
+      </div>
+      <div class="prep-g">
+        <div class="ck" data-of="gepackt">
+          <div class="ck-top"><div class="ck-bar"><i></i></div><span class="ck-n">0 / 8 gepackt</span><button type="button" class="ck-reset">Zurücksetzen</button></div>
+          <ul><li><label><input type="checkbox" data-k="1"><span>Schuhe zum Laufen und für Squats</span></label></li><li><label><input type="checkbox" data-k="2"><span>Ersatz-Shirt und Socken</span></label></li><li><label><input type="checkbox" data-k="3"><span>Getränke für den ganzen Tag</span></label></li><li><label><input type="checkbox" data-k="4"><span>Essen und etwas Schnelles zwischen den Workouts</span></label></li><li><label><input type="checkbox" data-k="5"><span>Handtuch</span></label></li><li><label><input type="checkbox" data-k="6"><span>Warme Schicht für die Pausen</span></label></li><li><label><input type="checkbox" data-k="7"><span>Eigenes Warm-up-Zeug (Band, Rolle)</span></label></li><li><label><input type="checkbox" data-k="8"><span>Dein Heat und deine Bahn aus der E-Mail</span></label></li></ul>
+          <p class="ck-done" hidden>Du hast alles. Jetzt richtig ausschlafen.</p>
+        </div>
+        <div class="venue">
+          <span class="lbl">Wo es ist</span>
+          <h3>Form Factory Vinohradská</h3>
+          <p>Vinohradská 190, Prag 3</p>
+          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">In Karten öffnen ›</a>
+          <span class="lbl">Der Tag im Überblick</span>
+          <dl>
+            <dt>09:30</dt><dd>Treffpunkt und Check-in</dd>
+            <dt>09:45</dt><dd>Briefing</dd>
+            <dt>10:00</dt><dd>Erster Start</dd>
+            <dt>17:20</dt><dd>Siegerehrung</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="faq">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">FAQ</p>
@@ -828,6 +1005,127 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     upd();
   });
 })();
+</script><script>
+(function(){
+  function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v);}catch(e){return null;}}
+  function ga(n,p){if(window.gtag)try{gtag('event',n,p||{});}catch(e){}}
+  var pad=function(n){return (n<10?'0':'')+n;};
+
+  /* odpočet do startu */
+  var cd=document.querySelector('.cdown');
+  if(cd){
+    var T=new Date(cd.dataset.t).getTime();
+    var u=function(k,v){cd.querySelector('[data-u="'+k+'"]').textContent=pad(v);};
+    var tick=function(){
+      var s=Math.floor((T-Date.now())/1000);
+      if(s<=0){cd.hidden=true;return false;}
+      cd.hidden=false;
+      u('d',Math.floor(s/86400));u('h',Math.floor(s%86400/3600));u('m',Math.floor(s%3600/60));u('s',s%60);
+      return true;
+    };
+    if(tick())setInterval(tick,1000);
+  }
+
+  /* moje kategorie -> zátěže ve workoutech a v tabulce */
+  var cp=document.querySelectorAll('.cp button');
+  function setCat(i,save){
+    cp.forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.cat===i));});
+    document.querySelectorAll('.wt').forEach(function(e){e.textContent=i<0?'':e.dataset.w.split('|')[i];});
+    document.querySelectorAll('#zateze tr').forEach(function(r){
+      [].forEach.call(r.children,function(c,j){c.classList.toggle('sel',i>=0&&j===i+1);});
+    });
+    document.body.classList.toggle('has-cat',i>=0);
+    if(save){ls('ffg-cat',String(i));ga('select_category',{category:['WO','WP','MO','MP'][i]});}
+  }
+  cp.forEach(function(b){b.addEventListener('click',function(){
+    var i=+b.dataset.cat; setCat(b.getAttribute('aria-pressed')==='true'?-1:i,true);
+  });});
+  var saved=parseInt(ls('ffg-cat'),10); if(saved>=0&&saved<4)setCat(saved,false);
+
+  /* W2 AMRAP: skóre a tempo na kolo */
+  var am=document.querySelector('.amcalc');
+  if(am){
+    var r=am.querySelector('.am-r'),x=am.querySelector('.am-x');
+    var up=function(){
+      var R=Math.max(0,parseInt(r.value,10)||0),X=Math.min(49,Math.max(0,parseInt(x.value,10)||0));
+      var s=R*50+X; am.querySelector('.am-s').textContent=s;
+      var p=s?Math.round(360/(s/50)):0;
+      am.querySelector('.am-p').textContent=s?Math.floor(p/60)+':'+pad(p%60):'–';
+    };
+    r.addEventListener('input',up);x.addEventListener('input',up);up();
+  }
+
+  /* kalkulačka bodů: 100 × (N − r) / (N − 1) */
+  var calc=document.querySelector('.calc');
+  if(calc){
+    var inps=calc.querySelectorAll('input');
+    var pts=function(N,rk){rk=Math.min(N,Math.max(1,rk||1));return 100*(N-rk)/(N-1);};
+    var run=function(){
+      var N=Math.min(100,Math.max(2,parseInt(calc.querySelector('[data-c="n"]').value,10)||2));
+      var avg=function(w){var a=calc.querySelectorAll('[data-c="'+w+'"]'),s=0;a.forEach(function(i){s+=pts(N,parseFloat(i.value));});return s/a.length;};
+      var w1=avg('1'),w2=avg('2'),w3=avg('3');
+      var o=function(k,v){calc.querySelector('[data-r="'+k+'"]').textContent=v.toFixed(2).replace('.',document.documentElement.lang==='en'?'.':',');};
+      o('1',w1);o('2',w2);o('3',w3);o('t',w1+w2+w3);
+      inps.forEach(function(i){if(i.dataset.c!=='n')i.max=N;});
+    };
+    inps.forEach(function(i){i.addEventListener('input',run);});run();
+  }
+
+  /* starty do kalendáře (.ics) podle vlny a dráhy ve finderu */
+  document.querySelectorAll('.finder').forEach(function(f){
+    var btn=f.querySelector('.ics'); if(!btn)return;
+    btn.addEventListener('click',function(){
+      var g=function(k){return f.querySelector('[data-o="'+k+'"]').textContent.trim();};
+      var wave=f.querySelector('.wi').value, lane=(f.querySelector('.seg [aria-pressed="true"]')||{}).dataset;
+      lane=lane?lane.lane:'1';
+      // 5. 12. 2026 je SEČ (UTC+1)
+      var z=function(hm,add){var p=hm.split(':'),m=(+p[0])*60+(+p[1])+(add||0)-60;return '20261205T'+pad(Math.floor(m/60))+pad(m%60)+'00Z';};
+      var esc=function(s){return s.replace(/[,;\\]/g,function(c){return '\\'+c;});};
+      var loc=esc(btn.dataset.addr), word=f.dataset.waveWord; lane=btn.dataset.laneWord+' '+lane;
+      var ev=[
+        [btn.dataset.sraz,'09:30',15,''],
+        ['W1 Power Grid',g('s1'),16,'Call-up '+g('c1')+' · '+word+' '+wave+' · '+lane],
+        ['W2 The Engine',g('s2'),6,'Call-up '+g('c2')+' · '+g('w2n')],
+        ['W3 Final Grind',g('s3'),16,'Call-up '+g('c3')+' · '+word+' '+wave+' · '+lane]
+      ];
+      var now=new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z';
+      var L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//formfactorygames.cz//FFG 2026//CS','CALSCALE:GREGORIAN'];
+      ev.forEach(function(e,i){
+        // call-up 8 min před startem -> připomínka 10 min předem
+        L.push('BEGIN:VEVENT','UID:ffg2026-'+i+'-'+wave+'-'+lane.replace(/\D/g,'')+'@formfactorygames.cz','DTSTAMP:'+now,
+          'DTSTART:'+z(e[1],i?-8:0),'DTEND:'+z(e[1],e[2]),
+          'SUMMARY:'+esc('Form Factory Games · '+e[0]),'LOCATION:'+loc,
+          'DESCRIPTION:'+esc((e[3]?e[3]+' · ':'')+'formfactorygames.cz'),
+          'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+esc(e[0]),'TRIGGER:-PT10M','END:VALARM','END:VEVENT');
+      });
+      L.push('END:VCALENDAR');
+      var blob=new Blob([L.join('\r\n')],{type:'text/calendar;charset=utf-8'});
+      var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='form-factory-games-'+wave+'.ics';
+      document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);
+      ga('add_to_calendar',{wave:wave,lane:lane});
+    });
+  });
+
+  /* checklist s uložením v prohlížeči */
+  var ck=document.querySelector('.ck');
+  if(ck){
+    var boxes=ck.querySelectorAll('input[type=checkbox]');
+    var st={};try{st=JSON.parse(ls('ffg-ck')||'{}')||{};}catch(e){}
+    var draw=function(){
+      var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+      ck.querySelector('.ck-n').textContent=n+' / '+boxes.length+' '+ck.dataset.of;
+      ck.querySelector('.ck-bar i').style.width=(100*n/boxes.length)+'%';
+      ck.querySelector('.ck-done').hidden=n<boxes.length;
+    };
+    boxes.forEach(function(b){
+      b.checked=!!st[b.dataset.k];
+      b.addEventListener('change',function(){st[b.dataset.k]=b.checked?1:0;ls('ffg-ck',JSON.stringify(st));draw();});
+    });
+    ck.querySelector('.ck-reset').addEventListener('click',function(){st={};ls('ffg-ck',null);boxes.forEach(function(b){b.checked=false;});draw();});
+    draw();
+  }
+})();
 </script>
+
 </body>
 </html>

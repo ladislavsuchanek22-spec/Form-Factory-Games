@@ -21,6 +21,7 @@ ROOT = B.parent
 sys.path.insert(0, str(B))
 from tr import T  # noqa: E402
 from tr_crew import C  # noqa: E402
+from tr_ath import A  # noqa: E402
 import net  # noqa: E402
 
 SITE = "https://formfactorygames.cz"
@@ -37,6 +38,7 @@ LASTMOD = "2026-10-16"
 STYLE = (B / "style.css").read_text(encoding="utf-8")
 TPL = Template((B / "template.tpl").read_text(encoding="utf-8"))
 FINDER = (B / "finder.js").read_text(encoding="utf-8")
+ATH = (B / "athlete.js").read_text(encoding="utf-8")
 # Stránka Judges & Crew: /crew/, /en/crew/, /pl/crew/, /de/crew/
 CREW = "crew/"
 CREW_TPL = Template((B / "crew.tpl").read_text(encoding="utf-8"))
@@ -139,6 +141,7 @@ html,body{{margin:0}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bot
 
 def page(L):
     t = dict(T[L])
+    t.update(A[L])
     hl, path, _, _ = LANGS[L]
     t["L"] = L
     t["HOME"] = path
@@ -153,7 +156,7 @@ def page(L):
     body = TPL.substitute(t)
     left = re.findall(r"\$\{\w+\}", body)
     assert not left, left
-    return head(L, t) + body + FINDER + "\n</body>\n</html>\n"
+    return head(L, t) + body + FINDER + ATH + "\n</body>\n</html>\n"
 
 
 def page_crew(L):

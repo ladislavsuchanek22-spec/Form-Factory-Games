@@ -10,6 +10,7 @@
       <li><a href="#vlny">${nav_wv}</a></li>
       <li><a href="#program">${nav_pg}</a></li>
       <li><a href="#bodovani">${nav_sc}</a></li>
+      <li><a href="#priprava">${prep_eb}</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-r">
@@ -30,6 +31,13 @@
       <div class="hero-cta">
         <a class="btn btn-red" href="#registrace">${hero_cta1}</a>
         <a class="btn btn-ghost" href="#workouty">${hero_cta2} ›</a>
+      </div>
+      <div class="cdown" data-t="2026-12-05T09:30:00+01:00" hidden>
+        <span class="lbl">${cd_h}</span>
+        <div class="cd-u"><b data-u="d">00</b><small>${cd_d}</small></div>
+        <div class="cd-u"><b data-u="h">00</b><small>${cd_hh}</small></div>
+        <div class="cd-u"><b data-u="m">00</b><small>${cd_m}</small></div>
+        <div class="cd-u"><b data-u="s">00</b><small>${cd_s}</small></div>
       </div>
       </div>
       <p class="hero-side"><b>Form Factory</b><span>Vinohradská</span><span>${when_date}</span><span>100 × Open · Pro</span></p>
@@ -73,6 +81,16 @@
         <h2>${wo_h}</h2>
         <p class="lead">${wo_lead}</p>
       </div>
+      <div class="catpick">
+        <span class="lbl" id="cp-l">${cp_lbl}</span>
+        <div class="cp" role="group" aria-labelledby="cp-l">
+          <button type="button" data-cat="0" aria-pressed="false">Women Open</button>
+          <button type="button" data-cat="1" aria-pressed="false">Women Pro</button>
+          <button type="button" data-cat="2" aria-pressed="false">Men Open</button>
+          <button type="button" data-cat="3" aria-pressed="false">Men Pro</button>
+        </div>
+        <small>${cp_hint}</small>
+      </div>
       <div class="wods">
         <article class="wod">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w1-row.webp" alt="Power Grid · RowErg" width="667" height="1000"></figure>
@@ -83,10 +101,11 @@
           </div>
           <div class="stations">
             <div class="st"><span class="l">A</span><b>SkiErg</b><span>${u_m}</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>${u_m}</span></div>
+            <div class="st"><span class="l">B</span><b>Sled Push</b><span>${u_m}</span><em class="wt" data-w="100 kg|150 kg|150 kg|200 kg"></em></div>
             <div class="st"><span class="l">C</span><b>RowErg</b><span>${u_m}</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>${u_r}</span></div>
+            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>${u_r}</span><em class="wt" data-w="2 × 16 kg|2 × 24 kg|2 × 24 kg|2 × 32 kg"></em></div>
           </div>
+          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w1t1}</li><li>${w1t2}</li><li>${w1t3}</li><li>${w1t4}</li></ul></div></details>
         </article>
         <article class="wod wod-hl">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="The Engine · Wall balls" width="667" height="1000"></figure>
@@ -97,12 +116,20 @@
           </div>
           <div class="amrap">
             <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b></div><i>→</i>
+              <div><strong>20</strong><b>Wall balls</b><em class="wt" data-w="4 kg|6 kg|6 kg|9 kg"></em></div><i>→</i>
               <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b></div><i>↻</i>
+              <div><strong>20</strong><b>KB swings</b><em class="wt" data-w="12 kg|16 kg|16 kg|20 kg"></em></div><i>↻</i>
             </div>
             <p>${amrap_p}</p>
           </div>
+          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w2t1}</li><li>${w2t2}</li><li>${w2t3}</li><li>${w2t4}</li></ul>
+            <div class="amcalc">
+              <b>${am_h}</b>
+              <label>${am_r}<input type="number" class="am-r" min="0" max="12" value="3" inputmode="numeric"></label>
+              <label>${am_x}<input type="number" class="am-x" min="0" max="49" value="12" inputmode="numeric"></label>
+              <div class="am-out"><span>${am_s}</span><strong class="am-s">162</strong></div>
+              <div class="am-out"><span>${am_p}</span><strong class="am-p">1:51</strong></div>
+            </div></div></details>
         </article>
         <article class="wod">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w3-lunges.webp" alt="Final Grind · Walking lunges" width="667" height="1000"></figure>
@@ -113,10 +140,11 @@
           </div>
           <div class="stations">
             <div class="st"><span class="l">A</span><b>Echo Bike</b><span>${u_cal}</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>${u_r}</span></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>${u_mw}</span></div>
+            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>${u_r}</span><em class="wt" data-w="2 × 10 kg|2 × 15 kg|2 × 15 kg|2 × 20 kg"></em></div>
+            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>${u_mw}</span><em class="wt" data-w="10 kg|20 kg|20 kg|30 kg"></em></div>
             <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>${u_m}</span></div>
           </div>
+          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w3t1}</li><li>${w3t2}</li><li>${w3t3}</li><li>${w3t4}</li></ul></div></details>
         </article>
       </div>
     </div>
@@ -196,6 +224,8 @@
             </div>
           </div>
           <small>${fd_small}</small>
+          <button type="button" class="btn btn-ghost ics" data-sraz="${ics_sraz}" data-lane-word="${fd_lane}" data-addr="Form Factory Vinohradská, ${addr}">${ics_btn}</button>
+          <small>${ics_small}</small>
         </div>
         <div class="finder-out" aria-live="polite">
           <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
@@ -257,6 +287,24 @@
         </div>
       </div>
       <p class="note">${sc_note}</p>
+      <div class="calc">
+        <div class="calc-in">
+          <p class="eyebrow">${calc_eb}</p>
+          <h3>${calc_h}</h3>
+          <p class="calc-p">${calc_p}</p>
+          <label class="calc-n"><span>${calc_n}</span><input type="number" min="2" max="100" value="25" data-c="n" inputmode="numeric"></label>
+          <div class="calc-g"><b>W1 Power Grid</b><small>${calc_st}</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="5" data-c="1" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="8" data-c="1" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="3" data-c="1" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="6" data-c="1" inputmode="numeric"></label></div></div>
+          <div class="calc-g"><b>W2 The Engine</b><small>${calc_rk}</small><div class="calc-st"><label><span>#</span><input type="number" min="1" value="7" data-c="2" inputmode="numeric"></label></div></div>
+          <div class="calc-g"><b>W3 Final Grind</b><small>${calc_st}</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="4" data-c="3" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="6" data-c="3" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="9" data-c="3" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="5" data-c="3" inputmode="numeric"></label></div></div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <div><span>W1</span><strong data-r="1">0</strong></div>
+          <div><span>W2</span><strong data-r="2">0</strong></div>
+          <div><span>W3</span><strong data-r="3">0</strong></div>
+          <div class="tot"><span>${calc_tot}</span><strong data-r="t">0</strong><small>/ 300</small></div>
+          <p>${calc_note}</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -295,7 +343,37 @@
     </div>
   </section>
 
-  <section id="faq">
+  <section class="prep" id="priprava">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">${prep_eb}</p>
+        <h2>${prep_h}</h2>
+        <p class="lead">${prep_lead}</p>
+      </div>
+      <div class="prep-g">
+        <div class="ck" data-of="${ck_of}">
+          <div class="ck-top"><div class="ck-bar"><i></i></div><span class="ck-n">0 / 8 ${ck_of}</span><button type="button" class="ck-reset">${ck_reset}</button></div>
+          <ul><li><label><input type="checkbox" data-k="1"><span>${ck1}</span></label></li><li><label><input type="checkbox" data-k="2"><span>${ck2}</span></label></li><li><label><input type="checkbox" data-k="3"><span>${ck3}</span></label></li><li><label><input type="checkbox" data-k="4"><span>${ck4}</span></label></li><li><label><input type="checkbox" data-k="5"><span>${ck5}</span></label></li><li><label><input type="checkbox" data-k="6"><span>${ck6}</span></label></li><li><label><input type="checkbox" data-k="7"><span>${ck7}</span></label></li><li><label><input type="checkbox" data-k="8"><span>${ck8}</span></label></li></ul>
+          <p class="ck-done" hidden>${ck_done}</p>
+        </div>
+        <div class="venue">
+          <span class="lbl">${ven_h}</span>
+          <h3>Form Factory Vinohradská</h3>
+          <p>${addr}</p>
+          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">${ven_map} ›</a>
+          <span class="lbl">${ven_day}</span>
+          <dl>
+            <dt>09:30</dt><dd>${ven_r1}</dd>
+            <dt>09:45</dt><dd>${ven_r2}</dd>
+            <dt>10:00</dt><dd>${ven_r3}</dd>
+            <dt>17:20</dt><dd>${ven_r4}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="faq">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">${fq_eb}</p>

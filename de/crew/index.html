@@ -458,6 +458,105 @@ footer{background:#000;border-top:1px solid #1C1C1C}
 .net i{font:500 13px/1.2 var(--f-display)}
 .net a:hover b{color:var(--acc)}
 @media (max-width:600px){.when{display:grid;gap:4px}.when>span:not(:last-child){display:none}.when>span:last-child{display:block}}
+
+/* ===== interaktivní části pro atlety ===== */
+.cdown{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px}
+.cdown[hidden]{display:none}
+.cdown .lbl{flex-basis:100%;color:#DADADA}
+.cd-u{min-width:72px;padding:10px 12px;border:2px solid #3A3A3A;border-radius:var(--r);background:rgba(0,0,0,.55);display:grid;justify-items:center;gap:2px}
+.cd-u b{font:800 32px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.cd-u small{font:700 11px/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+@media (max-width:420px){.cd-u{min-width:0;flex:1;padding:8px 6px}.cd-u b{font-size:26px}}
+
+.catpick{display:grid;gap:10px;margin:-12px 0 28px;padding:18px 20px;border:2px solid #3A3A3A;border-radius:var(--r);background:#000}
+.catpick small{color:var(--muted);font-size:14px}
+.cp{display:flex;flex-wrap:wrap;gap:8px}
+.cp button{flex:1 1 140px;min-height:46px;border:2px solid #3A3A3A;border-radius:var(--r);background:#111;color:#FFF;font:800 16px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.cp button:hover{border-color:#FFF}
+.cp button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#000}
+@media (max-width:700px){.catpick{padding:14px}.cp button{flex-basis:40%}}
+.wt{font:800 18px/1.1 var(--f-display);font-style:normal;color:var(--acc);margin-top:2px}
+.wt:empty{display:none}
+.chain .wt{display:block}
+.chain .wt:empty{display:none}
+#zateze td.sel,#zateze th.sel{background:rgba(255,235,0,.12);color:var(--acc)}
+#zateze th.sel{box-shadow:inset 0 -3px 0 var(--acc)}
+
+.tips{grid-column:1/-1;border-top:1px solid var(--line)}
+.tips summary{list-style:none;cursor:pointer;padding:16px 26px;font:800 15px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:10px}
+.tips summary::-webkit-details-marker{display:none}
+.tips summary::after{content:"+";margin-left:auto;font-size:24px}
+.tips[open] summary::after{content:"–"}
+.tips summary:hover{background:#0E0E0E}
+.tips-in{padding:0 26px 24px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.tips ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;counter-reset:t}
+.tips li{position:relative;padding-left:34px;color:#D4D4D4;font-size:16px;counter-increment:t}
+.tips li::before{content:counter(t);position:absolute;left:0;top:0;width:22px;height:22px;border-radius:4px;background:var(--acc);color:#000;font:800 14px/22px var(--f-display);text-align:center}
+@media (max-width:1100px){.tips-in{grid-template-columns:1fr}}
+@media (max-width:700px){.tips ul{grid-template-columns:1fr}.tips summary{padding:16px}.tips-in{padding:0 16px 20px}}
+.amcalc{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:12px;padding:18px;border:2px solid var(--acc);border-radius:var(--r);min-width:300px}
+.amcalc>b{grid-column:1/-1;font:800 18px/1 var(--f-display);text-transform:uppercase}
+.amcalc label,.calc label{display:grid;gap:6px;font:700 12px/1.2 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.amcalc input,.calc input{width:100%;height:46px;background:#111;border:2px solid #3A3A3A;border-radius:var(--r);color:#FFF;font:800 22px/1 var(--f-display);text-align:center;font-variant-numeric:tabular-nums}
+.amcalc input:focus,.calc input:focus{outline:none;border-color:var(--acc)}
+.am-out{display:grid;gap:2px}
+.am-out span{font:700 12px/1.2 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.am-out strong{font:800 36px/1 var(--f-display);color:var(--acc);font-variant-numeric:tabular-nums}
+@media (max-width:420px){.amcalc{min-width:0}}
+
+.calc{margin-top:40px;display:grid;grid-template-columns:1.3fr .7fr;border:2px solid #3A3A3A;border-radius:var(--r);overflow:hidden;background:#000}
+.calc-in{padding:28px;display:grid;gap:18px;border-right:2px solid #3A3A3A;min-width:0}
+.calc-in h3{font-size:clamp(30px,3.4vw,40px)}
+.calc-p{color:var(--muted);max-width:60ch}
+.calc-n{max-width:240px}
+.calc-g{display:grid;grid-template-columns:170px 1fr;gap:6px 18px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
+.calc-g b{font:800 20px/1.1 var(--f-display);text-transform:uppercase}
+.calc-g small{grid-row:2;color:var(--muted);font-size:13px}
+.calc-st{grid-row:1/3;grid-column:2;display:grid;grid-template-columns:repeat(4,minmax(0,90px));gap:10px}
+.calc-st label span{color:var(--acc)}
+.calc-out{padding:28px;display:grid;gap:0;align-content:start;background:#0B0B0B}
+.calc-out div{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.calc-out span{font:800 22px/1 var(--f-display);text-transform:uppercase}
+.calc-out strong{font:800 34px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.calc-out .tot{border-bottom:0;flex-wrap:wrap}
+.calc-out .tot span,.calc-out .tot strong{color:var(--acc)}
+.calc-out .tot strong{font-size:52px;margin-left:auto}
+.calc-out .tot small{flex-basis:100%;text-align:right;color:var(--muted);font:700 14px/1 var(--f-display)}
+.calc-out p{color:var(--muted);font-size:14px;margin-top:10px}
+@media (max-width:960px){.calc{grid-template-columns:1fr}.calc-in{border-right:0;border-bottom:2px solid #3A3A3A}}
+@media (max-width:600px){.calc-in,.calc-out{padding:18px}.calc-g{grid-template-columns:1fr}.calc-g small{grid-row:auto}.calc-st{grid-row:auto;grid-column:auto;grid-template-columns:repeat(4,1fr)}}
+
+.finder .ics{justify-self:start;margin-top:4px}
+
+.prep-g{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start}
+@media (max-width:860px){.prep-g{grid-template-columns:1fr}}
+.ck{border:2px solid #3A3A3A;border-radius:var(--r);padding:22px;display:grid;gap:16px;background:#000}
+.ck-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ck-bar{flex:1 1 160px;height:10px;border-radius:99px;background:#222;overflow:hidden}
+.ck-bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .25s}
+.ck-n{font:800 16px/1 var(--f-display);text-transform:uppercase;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.ck-reset{background:none;border:0;color:var(--muted);font:700 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;text-decoration:underline}
+.ck ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:600px){.ck ul{grid-template-columns:1fr}}
+.ck label{display:flex;align-items:center;gap:12px;padding:13px 14px;border:2px solid #2A2A2A;border-radius:var(--r);background:#111;cursor:pointer;font-size:16px;line-height:1.3;transition:border-color .15s}
+.ck label:hover{border-color:#555}
+.ck input{appearance:none;-webkit-appearance:none;flex:0 0 22px;width:22px;height:22px;margin:0;border:2px solid #666;border-radius:5px;display:grid;place-content:center;cursor:pointer}
+.ck input::after{content:"";width:11px;height:6px;border:solid #000;border-width:0 0 3px 3px;transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.ck input:checked{background:var(--acc);border-color:var(--acc)}
+.ck input:checked::after{opacity:1}
+.ck input:checked+span{color:var(--muted);text-decoration:line-through}
+.ck-done{font:800 20px/1.2 var(--f-display);text-transform:uppercase;color:var(--acc)}
+.venue{border-radius:var(--r);background:var(--red);padding:24px;display:grid;gap:12px;justify-items:start}
+.venue .lbl{color:#FFD0DA}
+.venue h3{font-size:34px}
+.venue p{font:700 18px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.04em}
+.venue .btn{margin-bottom:10px}
+.venue dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;width:100%}
+.venue dt{font:800 20px/1.2 var(--f-display);font-variant-numeric:tabular-nums}
+.venue dd{margin:0;font-size:16px;line-height:1.4;color:#FFE6EB}
+.brand{flex-shrink:0;white-space:nowrap}
+@media (max-width:1180px){.nav ul{gap:16px}.nav ul a{font-size:14px}}
+@media (max-width:1060px){.nav ul{display:none}}
 /* Stránka Judges & Crew (/crew/) – doplněk ke style.css */
 .crew-hero h1{font-size:clamp(60px,11vw,150px)}
 
