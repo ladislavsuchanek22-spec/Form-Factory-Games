@@ -3,7 +3,7 @@ T = {}
 T['cz'] = dict(HL='cs', lang_aria='Jazyk',
 nav_wo='Workouty', nav_wt='Zátěže', nav_wv='Vlny', nav_pg='Program', nav_sc='Bodování', nav_reg='Registrace',
 hero_alt='Briefing závodníků ve Form Factory',
-when_date='Sobota 5. 12. 2026', when_time='Sraz 9:30 · první start 10:00',
+when_date='Sobota 23. 1. 2027', when_time='Sraz 9:30 · první start 10:00',
 hero_lead='Jednodenní individuální závod. Síla, vytrvalost a technika ve třech workoutech. Každý jede všechny tři a hodnotí se zvlášť ve čtyřech kategoriích.',
 hero_cta1='Chci startovat →', hero_cta2='Co mě čeká',
 st1='atletů na startu', st2='workouty pro každého', st3='kategorie', st4='bodů maximum',
@@ -70,14 +70,14 @@ q4='Jak dlouho tam budu?', a4='Sraz je v 9:30, vyhlášení končí v 17:40. Mez
 q5='Co si vzít s sebou?', a5='Boty na běh i dřep, pití, něco k jídlu, ručník a teplé oblečení na pauzy. Číslo dostaneš u check-inu.',
 q6='Kde uvidím výsledky?', a6='Průběžné pořadí na webu přes QR kód, který bude u registrace a v hale. Konečné výsledky po 17:00, po desetiminutovém okně na připomínky.',
 cta_h='Sto míst.<br>Jedno je tvoje.',
-cta_lead='Sobota 5. prosince, Form Factory Vinohradská. Vyber kategorii, zaplať startovné a před závodem ti pošleme vlnu a dráhu na všechny tři workouty.',
+cta_lead='Sobota 23. ledna, Form Factory Vinohradská. Vyber kategorii, zaplať startovné a před závodem ti pošleme vlnu a dráhu na všechny tři workouty.',
 cta_btn='Registrovat se', ph_link='[ODKAZ]', q_lbl='Dotazy:', addr='Vinohradská 190, Praha 3',
 )
 
 T['en'] = dict(HL='en', lang_aria='Language',
 nav_wo='Workouts', nav_wt='Weights', nav_wv='Heats', nav_pg='Schedule', nav_sc='Scoring', nav_reg='Register',
 hero_alt='Athlete briefing at Form Factory',
-when_date='Saturday 5 Dec 2026', when_time='Check-in 9:30 · first start 10:00',
+when_date='Saturday 23 Jan 2027', when_time='Check-in 9:30 · first start 10:00',
 hero_lead='A one-day individual competition. Strength, endurance and skill across three workouts. Everyone does all three, ranked separately in four divisions.',
 hero_cta1="I'm in →", hero_cta2='What to expect',
 st1='athletes', st2='workouts for everyone', st3='divisions', st4='points max',
@@ -144,14 +144,14 @@ q4='How long will I be there?', a4="Check-in is at 9:30 and the awards wrap up a
 q5='What should I bring?', a5="Shoes for running and squatting, drinks, food, a towel and warm clothes for the breaks. You'll get your number at check-in.",
 q6='Where can I see results?', a6='Live rankings on the web via a QR code at check-in and around the venue. Final results after 17:00, following the 10-minute window for queries.',
 cta_h='100 spots.<br>One is yours.',
-cta_lead="Saturday 5 December, Form Factory Vinohradská, Prague. Pick your division, pay the entry fee, and before the event we'll send you your heat and lane for all three workouts.",
+cta_lead="Saturday 23 January, Form Factory Vinohradská, Prague. Pick your division, pay the entry fee, and before the event we'll send you your heat and lane for all three workouts.",
 cta_btn='Register', ph_link='[LINK]', q_lbl='Questions:', addr='Vinohradská 190, Prague 3',
 )
 
 T['pl'] = dict(HL='pl', lang_aria='Język',
 nav_wo='Workouty', nav_wt='Obciążenia', nav_wv='Heaty', nav_pg='Harmonogram', nav_sc='Punktacja', nav_reg='Rejestracja',
 hero_alt='Odprawa zawodników w Form Factory',
-when_date='Sobota 5.12.2026', when_time='Zbiórka 9:30 · pierwszy start 10:00',
+when_date='Sobota 23.1.2027', when_time='Zbiórka 9:30 · pierwszy start 10:00',
 hero_lead='Jednodniowe zawody indywidualne. Siła, wytrzymałość i technika w trzech workoutach. Każdy robi wszystkie trzy, klasyfikacja osobno w czterech kategoriach.',
 hero_cta1='Startuję →', hero_cta2='Co mnie czeka',
 st1='zawodników', st2='workouty dla każdego', st3='kategorie', st4='punktów maks.',
@@ -218,14 +218,14 @@ q4='Jak długo tam będę?', a4='Zbiórka o 9:30, dekoracja kończy się o 17:40
 q5='Co zabrać ze sobą?', a5='Buty do biegania i przysiadów, picie, jedzenie, ręcznik i ciepłe ubranie na przerwy. Numer dostaniesz przy check-inie.',
 q6='Gdzie zobaczę wyniki?', a6='Bieżące wyniki na stronie przez kod QR, dostępny przy rejestracji i na hali. Wyniki końcowe po 17:00, po 10-minutowym oknie na uwagi.',
 cta_h='100 miejsc.<br>Jedno jest twoje.',
-cta_lead='Sobota 5 grudnia, Form Factory Vinohradská, Praga. Wybierz kategorię, opłać wpisowe, a przed zawodami wyślemy ci heat i tor na wszystkie trzy workouty.',
+cta_lead='Sobota 23 stycznia, Form Factory Vinohradská, Praga. Wybierz kategorię, opłać wpisowe, a przed zawodami wyślemy ci heat i tor na wszystkie trzy workouty.',
 cta_btn='Zarejestruj się', ph_link='[LINK]', q_lbl='Pytania:', addr='Vinohradská 190, Praga 3',
 )
 
 T['de'] = dict(HL='de', lang_aria='Sprache',
 nav_wo='Workouts', nav_wt='Gewichte', nav_wv='Heats', nav_pg='Zeitplan', nav_sc='Wertung', nav_reg='Anmeldung',
 hero_alt='Athleten-Briefing bei Form Factory',
-when_date='Samstag, 5.12.2026', when_time='Treffpunkt 9:30 · erster Start 10:00',
+when_date='Samstag, 23.1.2027', when_time='Treffpunkt 9:30 · erster Start 10:00',
 hero_lead='Eintägiger Einzelwettkampf. Kraft, Ausdauer und Technik in drei Workouts. Jeder absolviert alle drei, gewertet wird getrennt in vier Kategorien.',
 hero_cta1='Ich bin dabei →', hero_cta2='Was erwartet mich',
 st1='Athleten', st2='Workouts für alle', st3='Kategorien', st4='Punkte maximal',
@@ -292,35 +292,35 @@ q4='Wie lange bin ich vor Ort?', a4='Treffpunkt 9:30, die Siegerehrung endet um 
 q5='Was soll ich mitbringen?', a5='Schuhe zum Laufen und für Squats, Getränke, Essen, ein Handtuch und warme Kleidung für die Pausen. Deine Startnummer bekommst du beim Check-in.',
 q6='Wo sehe ich die Ergebnisse?', a6='Live-Ranking im Web per QR-Code am Check-in und in der Halle. Endergebnisse nach 17:00, nach dem 10-minütigen Fenster für Rückfragen.',
 cta_h='100 Plätze.<br>Einer gehört dir.',
-cta_lead='Samstag, 5. Dezember, Form Factory Vinohradská, Prag. Kategorie wählen, Startgebühr zahlen, und vor dem Event schicken wir dir Heat und Bahn für alle drei Workouts.',
+cta_lead='Samstag, 23. Januar, Form Factory Vinohradská, Prag. Kategorie wählen, Startgebühr zahlen, und vor dem Event schicken wir dir Heat und Bahn für alle drei Workouts.',
 cta_btn='Jetzt anmelden', ph_link='[LINK]', q_lbl='Fragen:', addr='Vinohradská 190, Prag 3',
 )
 
 # ---- SEO a odkazy na ostatní weby (doplněno při rozdělení na /en/ /pl/ /de/)
 T['cz'].update(
-  title='Form Factory Games · závod 5. 12. 2026 · Praha',
-  meta='Individuální fitness závod ve Form Factory Vinohradská v Praze, 5. 12. 2026. 3 workouty, 4 kategorie, 100 atletů.',
+  title='Form Factory Games · závod 23. 1. 2027 · Praha',
+  meta='Individuální fitness závod ve Form Factory Vinohradská v Praze, 23. 1. 2027. 3 workouty, 4 kategorie, 100 atletů.',
   c1_link='Trénink a příprava · hyrox-prague.eu →',
   tm_more='Závod pořádáme ve Form Factory Vinohradská, jednom ze čtyř HYROX Training Clubů.',
   tm_more_link='Lekce a rozvrh klubů →',
 )
 T['en'].update(
-  title='Form Factory Games · Fitness race 5 Dec 2026 · Prague',
-  meta='Individual fitness race at Form Factory Vinohradská, Prague, on 5 December 2026. 3 workouts, 4 divisions, 100 athletes.',
+  title='Form Factory Games · Fitness race 23 Jan 2027 · Prague',
+  meta='Individual fitness race at Form Factory Vinohradská, Prague, on 23 January 2027. 3 workouts, 4 divisions, 100 athletes.',
   c1_link='Coaching and race prep · hyrox-prague.eu →',
   tm_more='The race takes place at Form Factory Vinohradská, one of four HYROX Training Clubs.',
   tm_more_link='Classes and schedules →',
 )
 T['pl'].update(
-  title='Form Factory Games · zawody 5.12.2026 · Praga',
-  meta='Indywidualne zawody fitness w Form Factory Vinohradská w Pradze, 5 grudnia 2026. 3 workouty, 4 kategorie, 100 zawodników.',
+  title='Form Factory Games · zawody 23.1.2027 · Praga',
+  meta='Indywidualne zawody fitness w Form Factory Vinohradská w Pradze, 23 stycznia 2027. 3 workouty, 4 kategorie, 100 zawodników.',
   c1_link='Trening i przygotowanie · hyrox-prague.eu →',
   tm_more='Zawody odbywają się w Form Factory Vinohradská, jednym z czterech HYROX Training Clubów.',
   tm_more_link='Zajęcia i grafik →',
 )
 T['de'].update(
-  title='Form Factory Games · Wettkampf 5.12.2026 · Prag',
-  meta='Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 5. Dezember 2026. 3 Workouts, 4 Kategorien, 100 Athleten.',
+  title='Form Factory Games · Wettkampf 23.1.2027 · Prag',
+  meta='Fitness-Einzelwettkampf bei Form Factory Vinohradská in Prag am 23. Januar 2027. 3 Workouts, 4 Kategorien, 100 Athleten.',
   c1_link='Coaching und Wettkampfvorbereitung · hyrox-prague.eu →',
   tm_more='Der Wettkampf findet bei Form Factory Vinohradská statt, einem von vier HYROX Training Clubs.',
   tm_more_link='Kurse und Stundenplan →',

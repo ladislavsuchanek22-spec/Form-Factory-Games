@@ -32,7 +32,7 @@
         <a class="btn btn-red" href="#registrace">${hero_cta1}</a>
         <a class="btn btn-ghost" href="#workouty">${hero_cta2} ›</a>
       </div>
-      <div class="cdown" data-t="2026-12-05T09:30:00+01:00" hidden>
+      <div class="cdown" data-t="2027-01-23T09:30:00+01:00" hidden>
         <span class="lbl">${cd_h}</span>
         <div class="cd-u"><b data-u="d">00</b><small>${cd_d}</small></div>
         <div class="cd-u"><b data-u="h">00</b><small>${cd_hh}</small></div>

@@ -71,8 +71,8 @@
       var g=function(k){return f.querySelector('[data-o="'+k+'"]').textContent.trim();};
       var wave=f.querySelector('.wi').value, lane=(f.querySelector('.seg [aria-pressed="true"]')||{}).dataset;
       lane=lane?lane.lane:'1';
-      // 5. 12. 2026 je SEČ (UTC+1)
-      var z=function(hm,add){var p=hm.split(':'),m=(+p[0])*60+(+p[1])+(add||0)-60;return '20261205T'+pad(Math.floor(m/60))+pad(m%60)+'00Z';};
+      // 23. 1. 2027 je SEČ (UTC+1)
+      var z=function(hm,add){var p=hm.split(':'),m=(+p[0])*60+(+p[1])+(add||0)-60;return '20270123T'+pad(Math.floor(m/60))+pad(m%60)+'00Z';};
       var esc=function(s){return s.replace(/[,;\\]/g,function(c){return '\\'+c;});};
       var loc=esc(btn.dataset.addr), word=f.dataset.waveWord; lane=btn.dataset.laneWord+' '+lane;
       var ev=[

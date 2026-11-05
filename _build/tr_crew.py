@@ -4,10 +4,10 @@
 C = {}
 
 C['cz'] = dict(
-  title='Judges a dobrovolníci · Form Factory Games 5. 12. 2026',
-  meta='Přihlas se jako judge nebo dobrovolník na Form Factory Games, 5. 12. 2026 ve Form Factory Vinohradská v Praze.',
+  title='Judges a dobrovolníci · Form Factory Games 23. 1. 2027',
+  meta='Přihlas se jako judge nebo dobrovolník na Form Factory Games, 23. 1. 2027 ve Form Factory Vinohradská v Praze.',
   nav_roles='Role', nav_day='Den týmu', nav_form='Přihláška', nav_back='Závod',
-  hero_eb='Form Factory Games · 5. 12. 2026 · Form Factory Vinohradská',
+  hero_eb='Form Factory Games · 23. 1. 2027 · Form Factory Vinohradská',
   hero_lead='Bez lidí na place se závod nerozjede. Hledáme 12 judges a dobrovolníky, kteří s námi odjedou celý den. Od stavby ráno po vyhlášení.',
   hero_cta1='Chci být v týmu →', hero_cta2='Co tě čeká',
   st1='judges', st2='lidí v týmu', st3='atletů na startu', st4='workouty za den',
@@ -28,7 +28,7 @@ C['cz'] = dict(
   hj_role='Head judge', hj_txt='Standardy, briefing judges a rozhodování sporných situací.',
   be_txt='Celé řízení závodu, časové signály, nástupy a přesuny.',
   sp_txt='Svolává vlny, drží energii v hale a vede vyhlášení.',
-  dy_eb='Den týmu', dy_h='Sobota 5. 12. 2026',
+  dy_eb='Den týmu', dy_h='Sobota 23. 1. 2027',
   d1h='Sraz týmu a stavba', d1='Kontrola zátěží po drahách, test časovače a zvuku.',
   d2h='Briefing a kontrola', d2='Poslední projití standardů, otevření registrace atletů.',
   d3h='W1 Power Grid', d3='12 judges, 16 atletů naráz na čtyřech stanovištích.',
@@ -70,10 +70,10 @@ C['cz'] = dict(
 )
 
 C['en'] = dict(
-  title='Judges and volunteers · Form Factory Games 5 Dec 2026',
-  meta='Sign up as a judge or volunteer for Form Factory Games, 5 December 2026 at Form Factory Vinohradská, Prague.',
+  title='Judges and volunteers · Form Factory Games 23 Jan 2027',
+  meta='Sign up as a judge or volunteer for Form Factory Games, 23 January 2027 at Form Factory Vinohradská, Prague.',
   nav_roles='Roles', nav_day='Crew day', nav_form='Sign up', nav_back='The race',
-  hero_eb='Form Factory Games · 5 Dec 2026 · Form Factory Vinohradská',
+  hero_eb='Form Factory Games · 23 Jan 2027 · Form Factory Vinohradská',
   hero_lead='No race runs without people on the floor. We need 12 judges and volunteers to see the whole day through with us, from setup in the morning to the awards.',
   hero_cta1='Join the crew →', hero_cta2='What to expect',
   st1='judges', st2='people on the crew', st3='athletes', st4='workouts in one day',
@@ -94,7 +94,7 @@ C['en'] = dict(
   hj_role='Head judge', hj_txt='Standards, judges\' briefing and calls on disputed situations.',
   be_txt='Runs the whole event: timing signals, call-ups and transitions.',
   sp_txt='Calls the heats, keeps the energy up and hosts the awards.',
-  dy_eb='Crew day', dy_h='Saturday 5 Dec 2026',
+  dy_eb='Crew day', dy_h='Saturday 23 Jan 2027',
   d1h='Crew check-in and setup', d1='Checking the weights in every lane, testing the timer and sound.',
   d2h='Briefing and final check', d2='One last run through the standards, athlete check-in opens.',
   d3h='W1 Power Grid', d3='12 judges, 16 athletes working at once across four stations.',
@@ -136,10 +136,10 @@ C['en'] = dict(
 )
 
 C['pl'] = dict(
-  title='Sędziowie i wolontariusze · Form Factory Games 5.12.2026',
-  meta='Zgłoś się jako sędzia lub wolontariusz na Form Factory Games, 5 grudnia 2026 w Form Factory Vinohradská w Pradze.',
+  title='Sędziowie i wolontariusze · Form Factory Games 23.1.2027',
+  meta='Zgłoś się jako sędzia lub wolontariusz na Form Factory Games, 23 stycznia 2027 w Form Factory Vinohradská w Pradze.',
   nav_roles='Role', nav_day='Dzień ekipy', nav_form='Zgłoszenie', nav_back='Zawody',
-  hero_eb='Form Factory Games · 5.12.2026 · Form Factory Vinohradská',
+  hero_eb='Form Factory Games · 23.1.2027 · Form Factory Vinohradská',
   hero_lead='Bez ludzi na miejscu zawody nie ruszą. Szukamy 12 sędziów i wolontariuszy, którzy przejdą z nami cały dzień, od montażu rano po dekorację.',
   hero_cta1='Chcę być w ekipie →', hero_cta2='Co cię czeka',
   st1='sędziów', st2='osób w ekipie', st3='zawodników', st4='workouty w jeden dzień',
@@ -160,7 +160,7 @@ C['pl'] = dict(
   hj_role='Sędzia główny', hj_txt='Standardy, odprawa sędziów i rozstrzyganie spornych sytuacji.',
   be_txt='Prowadzi całe zawody: sygnały czasowe, wejścia i przejścia.',
   sp_txt='Wywołuje heaty, trzyma energię na hali i prowadzi dekorację.',
-  dy_eb='Dzień ekipy', dy_h='Sobota 5.12.2026',
+  dy_eb='Dzień ekipy', dy_h='Sobota 23.1.2027',
   d1h='Zbiórka ekipy i montaż', d1='Kontrola obciążeń na torach, test zegara i nagłośnienia.',
   d2h='Odprawa i kontrola', d2='Ostatnie przejście standardów, otwarcie check-inu zawodników.',
   d3h='W1 Power Grid', d3='12 sędziów, 16 zawodników naraz na czterech stanowiskach.',
@@ -202,10 +202,10 @@ C['pl'] = dict(
 )
 
 C['de'] = dict(
-  title='Judges und Volunteers · Form Factory Games 5.12.2026',
-  meta='Melde dich als Judge oder Volunteer für Form Factory Games am 5. Dezember 2026 bei Form Factory Vinohradská in Prag.',
+  title='Judges und Volunteers · Form Factory Games 23.1.2027',
+  meta='Melde dich als Judge oder Volunteer für Form Factory Games am 23. Januar 2027 bei Form Factory Vinohradská in Prag.',
   nav_roles='Rollen', nav_day='Crew-Tag', nav_form='Anmeldung', nav_back='Wettkampf',
-  hero_eb='Form Factory Games · 5.12.2026 · Form Factory Vinohradská',
+  hero_eb='Form Factory Games · 23.1.2027 · Form Factory Vinohradská',
   hero_lead='Ohne Leute auf der Fläche läuft kein Wettkampf. Wir suchen 12 Judges und Volunteers, die den ganzen Tag mit uns durchziehen, vom Aufbau am Morgen bis zur Siegerehrung.',
   hero_cta1='Ich bin dabei →', hero_cta2='Was dich erwartet',
   st1='Judges', st2='Leute im Team', st3='Athleten', st4='Workouts an einem Tag',
@@ -226,7 +226,7 @@ C['de'] = dict(
   hj_role='Head Judge', hj_txt='Standards, Judges-Briefing und Entscheidung strittiger Situationen.',
   be_txt='Leitet den gesamten Wettkampf: Zeitsignale, Aufrufe und Wechsel.',
   sp_txt='Ruft die Heats auf, hält die Stimmung hoch und moderiert die Siegerehrung.',
-  dy_eb='Crew-Tag', dy_h='Samstag, 5.12.2026',
+  dy_eb='Crew-Tag', dy_h='Samstag, 23.1.2027',
   d1h='Treffpunkt und Aufbau', d1='Gewichte auf allen Bahnen prüfen, Timer und Ton testen.',
   d2h='Briefing und Check', d2='Letzter Durchgang der Standards, Check-in der Athleten öffnet.',
   d3h='W1 Power Grid', d3='12 Judges, 16 Athleten gleichzeitig an vier Stationen.',
