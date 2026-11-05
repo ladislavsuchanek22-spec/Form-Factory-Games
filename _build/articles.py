@@ -14,7 +14,7 @@ ARTICLES = {
     "jak-se-pripravit": dict(
         draft=True,
         title="Jak se připravit na Form Factory Games: trénink na 3 workouty",
-        desc="Form Factory Games 5. 12. 2026: jak se připravit na Power Grid, The Engine a Final Grind. Trénink, tempo, výběr kategorie Open nebo Pro a co v den závodu.",
+        desc="Form Factory Games 23. 1. 2027: jak se připravit na Power Grid, The Engine a Final Grind. Trénink, tempo, výběr kategorie Open nebo Pro a co v den závodu.",
         h1="Jak se připravit na Form Factory Games",
         lead="Tři workouty za jeden den, mezi nimi pauzy na reset. Form Factory Games nejsou o jednom maximálním výkonu, ale o tom, jak dobře zvládneš opakovaně jet naplno. Tady je, jak se na to připravit.",
         body="""
@@ -47,7 +47,7 @@ ARTICLES = {
 <p>Lekce <a href="https://hyroxtrainingclub.cz/praha/">HYROX Training Club</a> ve Form Factory jsou přesně ten typ tréninku: stanice, intervaly a práce pod únavou. Individuální přípravu nabízí <a href="https://www.ladislavsuchanek.cz/kontakt/">Ladislav Suchánek</a>.</p>
 """,
         faq=[
-            ("Kdy a kde jsou Form Factory Games?", "V sobotu 5. 12. 2026 ve Form Factory Vinohradská 190, Praha 3. Sraz v 9:30, první start v 10:00."),
+            ("Kdy a kde jsou Form Factory Games?", "V sobotu 23. 1. 2027 ve Form Factory Vinohradská 190, Praha 3. Sraz v 9:30, první start v 10:00."),
             ("Jaké workouty jsou na Form Factory Games?", "Tři: Power Grid (SkiErg, sled push, veslo, KB deadlift), The Engine (6min AMRAP s wall balls, burpees a KB swingy) a Final Grind (Echo Bike, DB thrusters, walking lunges, shuttle runy)."),
             ("Mám jít Open, nebo Pro?", "Pokud nezvládáš zátěže Pro kategorie opakovaně a pod únavou, jdi Open. Hodnotí se jen v rámci tvé kategorie."),
         ],
