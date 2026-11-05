@@ -97,7 +97,7 @@ def page(slug, a, cs_html):
 <meta property="og:image" content="{SITE}/img/hero.jpg">
 <meta property="og:locale" content="cs_CZ">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="robots" content="noindex">
 {tracking}
 {head_links}
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>

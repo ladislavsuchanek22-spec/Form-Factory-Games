@@ -1,5 +1,4 @@
+# Crawl je povolený, aby Google viděl noindex a stránky z indexu vyřadil.
 User-agent: *
 Allow: /
 Disallow: /_build/
-
-Sitemap: https://formfactorygames.cz/sitemap.xml
