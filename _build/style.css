@@ -8,7 +8,7 @@
   --muted:#A8A8A8;
   --red:#C41D3E;
   --red-hi:#E8335A;
-  --acc:#FFEB00;
+  --acc:#C41D3E;
   --light:#F0F0F0;
   --r:8px;
   --f-display:"Roboto Condensed","Arial Narrow",Arial,sans-serif;
@@ -609,3 +609,46 @@ footer{background:var(--ff-222)}
 .wod.wod-hl{box-shadow:none;border:3px solid var(--acc)}
 .wod-img img[src*="w1-row"]{object-position:center 12%}
 .wod-img img[src*="w3-lunges"]{object-position:center 22%}
+
+/* ===== FF bez žluté: jen černá, bílá, karmínová a šedé jako formfactory.cz ===== */
+:root{--acc:#C41D3E;--acc-dk:#A20F2B}
+:focus-visible{outline-color:#FFF}
+/* černý text na akcentu -> bílý */
+.btn-red,.lsw a[aria-current],.seg button[aria-pressed="true"],.cp button[aria-pressed="true"],.tips li::before{color:#FFF}
+.btn-red{background:var(--acc);border-color:var(--acc)}
+.btn-red:hover{background:var(--acc-dk);border-color:var(--acc-dk);color:#FFF}
+/* drobné akcentní texty bíle (karmínová na tmavé by byla špatně čitelná) */
+.when,.when b,.hero-side span,.cd-u small,.wod-id h3,.wt,.tips summary,.am-out strong,.ck-done,.venue dt,.formula dt,.calc-st label span,.stat strong,.wod-id .k,.team-link,.crew .role{color:#FFF}
+.hero-side b{color:#FFF}
+.hero-side span{color:#DADADA}
+.eyebrow{font-size:19px;color:var(--acc)}
+.alt .eyebrow,.calc-in .eyebrow{color:#E8E8E8}
+.wod-id h3{letter-spacing:.06em}
+.wod-id .k{color:var(--ff-a4)}
+.st .l{color:var(--acc)}
+th:nth-child(3),th:nth-child(5),td:nth-child(3),td:nth-child(5){color:#FFF}
+#zateze td.sel,#zateze th.sel{background:rgba(196,29,62,.28);color:#FFF}
+#zateze th.sel{box-shadow:inset 0 -3px 0 var(--acc)}
+.tips li::before{background:var(--acc)}
+.nav ul a:hover{color:#FFF;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--acc);text-decoration-thickness:3px}
+/* karmínový pás se statistikami */
+.stats{background:var(--acc)}
+.stat{border-color:rgba(255,255,255,.25)}
+.stat span{color:#FFE3E8}
+/* checklist a kalkulačky */
+.ck-bar i{background:var(--acc)}
+.ck input:checked{background:var(--acc);border-color:var(--acc)}
+.ck input::after{border-color:#FFF}
+.calc-out .tot span{color:#FFF}
+.calc-out .tot strong{color:var(--acc)}
+.amcalc{border-color:var(--acc)}
+.fld input:focus,.fld select:focus,.fld textarea:focus,.calc input:focus,.amcalc input:focus,.ctl input:focus{border-bottom-color:var(--acc)!important}
+/* místo: karmínová karta jako FF blok */
+.venue{background:var(--acc)}
+.venue .lbl{color:#FFD0DA}
+.venue .ev-b{color:#FFF}
+.venue dd{color:#FFE6EB}
+.venue .btn-ghost:hover{border-color:#FFF}
+/* CTA */
+.cta h2 strong{color:#FFF;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:.08em;text-underline-offset:.12em}
+.net a:hover b{color:#FFF;text-decoration:underline;text-decoration-color:var(--acc)}

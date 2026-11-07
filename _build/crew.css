@@ -61,3 +61,6 @@
 .opt input:checked+span{background:var(--acc);border-color:var(--acc);color:#000}
 .chk input{accent-color:var(--acc)}
 .crew-hero .hero-img img{object-position:center 50%}
+/* FF bez žluté */
+.opt input:checked+span{background:var(--acc);border-color:var(--acc);color:#FFF}
+.role-card .tag{color:#E8E8E8}
