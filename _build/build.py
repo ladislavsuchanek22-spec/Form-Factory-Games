@@ -176,7 +176,7 @@ def page(L):
         for k, v in LANGS.items())
     t["U_HP"] = net.url("hp", hl)
     t["U_HTC"] = net.url("htc", hl)
-    t["NET"] = net.block("ffg", hl)
+    t["NET"] = net.block("ffg", hl).replace("<a href=", "<a tabindex=\"-1\" href=")
     t["U_CREW"] = path + CREW
     t["link_main"] = C[L]["link_main"]
     body = TPL.substitute(t)
@@ -194,7 +194,7 @@ def page_crew(L):
     t["LANGLINKS"] = "".join(
         f'<a href="{v[1]}{CREW}" hreflang="{v[0]}" lang="{v[0]}"' + (' aria-current="page"' if k == L else "") + f">{v[3]}</a>"
         for k, v in LANGS.items())
-    t["NET"] = net.block("ffg", hl)
+    t["NET"] = net.block("ffg", hl).replace("<a href=", "<a tabindex=\"-1\" href=")
     body = CREW_TPL.substitute(t)
     left = re.findall(r"\$\{\w+\}", body)
     assert not left, left
