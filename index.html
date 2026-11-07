@@ -29,7 +29,7 @@
 <script>(function(){var m=location.hash.match(/^#(en|pl|de)$/i);if(m)location.replace('/'+m[1].toLowerCase()+'/');})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;800&family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;800&display=swap">
 <style>
 html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}
 /* Layout ve stylu formfactory.cz — černá, karmínový blok značky, žlutý akcent, Roboto Condensed (light + bold), zaoblení 8 px */
@@ -558,6 +558,91 @@ footer{background:#000;border-top:1px solid #1C1C1C}
 .brand{flex-shrink:0;white-space:nowrap}
 @media (max-width:1180px){.nav ul{gap:16px}.nav ul a{font-size:14px}}
 @media (max-width:1060px){.nav ul{display:none}}
+
+/* ===== FF merge v2: co nejblíž formfactory.cz (barvy, písmo, tlačítka, karty, formuláře) ===== */
+:root{--f-body:"Roboto Condensed","Arial Narrow",Arial,sans-serif;--ff-222:#222;--ff-f0:#F0F0F0;--ff-a4:#A4A4A4;--ff-crimson-dark:#A20F2B;--rc:0 8px 8px 8px}
+body{font:400 18px/1.55 var(--f-body)}
+.lead{font-size:clamp(18px,1.6vw,21px)}
+/* nadpisy: první část normálně, pointa tučně verzálkami */
+h2{font-weight:400;text-transform:none;letter-spacing:0;font-size:clamp(34px,4.6vw,60px);line-height:1.08}
+h2 strong{font-weight:700;text-transform:uppercase;letter-spacing:.01em}
+.eyebrow{font:700 17px/1.2 var(--f-display);letter-spacing:.1em;color:var(--acc)}
+.eyebrow::before{display:none}
+h3{letter-spacing:.02em}
+/* tlačítka FF: useknutý levý horní roh, 3px rámeček, verzálky */
+.btn{border-radius:var(--rc);border-width:3px;font:700 15px/1 var(--f-display);letter-spacing:.06em;padding:15px 28px}
+.btn-red{background:var(--acc);border-color:var(--acc);color:#000}
+.btn-red:hover{background:transparent;color:var(--acc);transform:none}
+.btn-ghost{background:#FFF;border-color:#FFF;color:#000}
+.btn-ghost:hover{background:transparent;color:#FFF}
+.btn-white:hover{background:transparent;color:#FFF;border-color:#FFF}
+.nav .btn{background:var(--red);border-color:var(--red);color:#FFF;padding:11px 18px}
+.nav .btn:hover{background:var(--ff-crimson-dark);border-color:var(--ff-crimson-dark);color:#FFF}
+/* hlavička jako FF: vyšší lišta, karmínový blok se zaoblenými spodními rohy */
+.nav .wrap{min-height:88px}
+.brand{border-radius:0 0 8px 8px}
+.brand-mark img{width:46px;height:46px}
+.nav ul a{font:700 16px/1 var(--f-display);color:#FFF}
+.lsw,.lsw a{border-radius:0}
+.lsw{border-radius:var(--rc)}
+/* hero */
+.hero .lead{text-transform:uppercase;letter-spacing:.05em;font-weight:400;color:#FFF}
+.when{letter-spacing:.1em}
+.hero-side{font-weight:400;letter-spacing:.05em}
+.hero-side b{font-weight:700}
+/* sekce */
+.alt{background:#111}
+.stats{background:var(--ff-222);border:0}
+.stat{border-color:#333}
+.stat strong{color:var(--acc)}
+/* workouty: karta jako FF program — fotka nahoře s přechodem do černé, žlutý prostrkaný název */
+.wod{grid-template-columns:300px 1fr;border:0;background:var(--ff-222);border-radius:8px}
+.wod.wod-hl{box-shadow:inset 0 0 0 3px var(--acc)}
+.wod-img{grid-column:1/-1;grid-row:auto;height:clamp(200px,24vw,300px);min-height:0;border-radius:8px 8px 0 0;overflow:hidden}
+.wod-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,34,34,0) 45%,var(--ff-222) 100%)}
+.wod-img img{object-position:center 30%}
+.wod-id{border-right:1px solid #333;border-bottom:0}
+.wod-id .k{color:#FFF;font:400 17px/1 var(--f-display);letter-spacing:.05em}
+.wod-id h3{color:var(--acc);letter-spacing:.1em;font-weight:700;font-size:clamp(30px,3vw,40px)}
+.wod-id .fmt span{border-radius:var(--rc);border-color:#555}
+.stations,.amrap{background:transparent}
+.st{border-color:#333}
+.tips{border-top:1px solid #333}
+@media (max-width:1100px){.wod{grid-template-columns:1fr}.wod-img{grid-row:auto}.wod-id{border-right:0;border-bottom:1px solid #333}}
+@media (max-width:700px){.wod-img{height:220px}}
+/* výběr kategorie, segmenty, karty */
+.cp button,.seg button,.ctl button{border-radius:var(--rc)}
+.catpick,.ck,.calc,.formula,.crew article,.finder,.rot-wrap,.tbl-wrap{border-radius:8px}
+.catpick{background:var(--ff-222);border:0}
+.cp button{background:#000;border-color:#000}
+.crew article,.ck{background:var(--ff-222);border:0}
+.ck label{background:#000;border-color:#000}
+.faq-list details{background:var(--ff-222);border:0}
+/* formuláře FF: černé pole, jen spodní 3px linka, zaoblené horní rohy */
+.fld input,.fld select,.fld textarea,.calc input,.amcalc input,.ctl input{background:#000!important;border:0!important;border-bottom:3px solid #FFF!important;border-radius:8px 8px 0 0!important;color:#FFF}
+.fld input:hover,.fld select:hover,.fld textarea:hover,.calc input:hover,.amcalc input:hover,.ctl input:hover{background:var(--ff-222)!important}
+.fld input:focus,.fld select:focus,.fld textarea:focus,.calc input:focus,.amcalc input:focus,.ctl input:focus{border-bottom-color:var(--acc)!important;outline:none}
+.calc-in{background:var(--ff-222)}
+.calc-out{background:#111}
+/* místo: karta jako FF event (bílá / žlutá / bílá) */
+.venue{background:var(--ff-222);border-radius:8px;gap:6px}
+.venue .lbl{color:var(--ff-a4)}
+.venue .ev-a{font:700 clamp(22px,2.2vw,28px)/1 var(--f-display);text-transform:uppercase;letter-spacing:.04em;margin-top:6px}
+.venue .ev-b{font:700 clamp(30px,3.2vw,42px)/1 var(--f-display);color:var(--acc);letter-spacing:.05em}
+.venue .ev-c{font:700 clamp(30px,3.2vw,42px)/1 var(--f-display);text-transform:uppercase;letter-spacing:.05em}
+.venue .ev-d{font:400 17px/1.4 var(--f-display);text-transform:none;letter-spacing:0;color:#DDD;margin:6px 0 10px}
+.venue dd{color:#DDD}
+.venue dt{color:var(--acc)}
+/* crew pás zůstává karmínový, CTA */
+.crew-band{border-radius:var(--rc)}
+.cta h2{color:#FFF}
+.cta h2 strong{color:var(--acc)}
+.day h2 strong{color:var(--red)}
+footer{background:var(--ff-222)}
+.hero .lead{text-transform:none;letter-spacing:0;color:#E2E2E2}
+.wod.wod-hl{box-shadow:none;border:3px solid var(--acc)}
+.wod-img img[src*="w1-row"]{object-position:center 12%}
+.wod-img img[src*="w3-lunges"]{object-position:center 22%}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SportsEvent", "@id": "https://formfactorygames.cz/#event", "name": "Form Factory Games 2026", "description": "Individuální fitness závod ve Form Factory Vinohradská v Praze, 23. 1. 2027. 3 workouty, 4 kategorie, 100 atletů.", "url": "https://formfactorygames.cz/", "inLanguage": "cs", "image": ["https://formfactorygames.cz/img/hero.jpg"], "startDate": "2027-01-23T10:00:00+01:00", "endDate": "2027-01-23T17:40:00+01:00", "doorTime": "2027-01-23T09:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "maximumAttendeeCapacity": 100, "location": {"@type": "SportsActivityLocation", "name": "Form Factory Vinohradská", "url": "https://hyroxtrainingclub.cz/", "address": {"@type": "PostalAddress", "streetAddress": "Vinohradská 190", "postalCode": "130 00", "addressLocality": "Praha 3", "addressCountry": "CZ"}}, "organizer": [{"@type": "Organization", "@id": "https://str2g.com/#org", "name": "STR2G HYROX", "url": "https://str2g.com/"}, {"@type": "Organization", "name": "Form Factory", "url": "https://www.formfactory.cz/"}]}, {"@type": "Person", "@id": "https://hyrox-prague.eu/#lada", "name": "Ladislav Suchánek", "url": "https://hyrox-prague.eu/", "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"]}]}</script>
 </head>
@@ -621,7 +706,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="concept-text">
         <p class="eyebrow">O závodě</p>
-        <h2>Tři workouty. Jeden výsledek.</h2>
+        <h2>Tři workouty. <strong>Jeden výsledek.</strong></h2>
         <p><strong>Form Factory Games je závod pro jednotlivce.</strong> Ráno silově vytrvalostní Power Grid, v poledne šestiminutové AMRAP peklo, odpoledne Final Grind. Mezi nimi vždy 38 minut na odpočinek a reset.</p>
         <p>Přihlásíš se do ženské nebo mužské kategorie a vybereš si Open nebo Pro. Kvóty nejsou. Platí jen celkový limit 100 atletů, takže kdo dřív přijde, ten startuje.</p>
         <div class="cats">
@@ -642,7 +727,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Workouty</p>
-        <h2>Síla. Motor. Hlava.</h2>
+        <h2>Síla. <strong>Motor. Hlava.</strong></h2>
         <p class="lead">Ve W1 a W3 jedeš čtyři stanoviště A → B → C → D. Na každém tři minuty naplno, pak minuta na zápis a přesun. Výsledek se zapisuje v metrech, kaloriích nebo opakováních. Víc je líp.</p>
       </div>
       <div class="catpick">
@@ -718,7 +803,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Zátěže</p>
-        <h2>Open, nebo Pro?</h2>
+        <h2>Open, nebo <strong>Pro?</strong></h2>
         <p class="lead">Kategorii si vybíráš sám. Podívej se na váhy a buď k sobě upřímný. Pro je pro lidi, kteří tyhle zátěže zvládají opakovaně a pod únavou.</p>
       </div>
       <div class="tbl-wrap">
@@ -745,7 +830,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
       <div class="wave-head">
         <div class="sec-head" style="margin:0">
           <p class="eyebrow">Jak se startuje</p>
-          <h2>Vlna po čtyřech. Každé 4 minuty.</h2>
+          <h2>Vlna po čtyřech. <strong>Každé 4 minuty.</strong></h2>
         </div>
         <p class="lead">Ve W1 a W3 má vlna nejvýš čtyři atlety. Všichni začínají na A, každý na svém místě 1–4, a číslo dráhy si drží celý workout. Další vlna nastupuje na A po čtyřech minutách. V plném provozu jede 16 lidí naráz.</p>
       </div>
@@ -806,7 +891,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
       <div>
         <div class="sec-head">
           <p class="eyebrow">Program dne</p>
-          <h2>Den závodu</h2>
+          <h2>Den <strong>závodu</strong></h2>
         </div>
         <ul class="sched">
           <li><span class="t">09:30</span><div><b>Sraz a check-in</b><p>Číslo, rozpis vln a vlastní rozcvička.</p></div></li>
@@ -828,7 +913,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Bodování</p>
-        <h2>Každý workout váží stejně.</h2>
+        <h2>Každý workout váží <strong>stejně.</strong></h2>
         <p class="lead">Metry, kalorie a opakování se nesčítají. V každé kategorii se výkon převede na pořadí a z pořadí na body. Hodnotí se jen uvnitř tvé kategorie.</p>
       </div>
       <div class="score">
@@ -876,7 +961,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Pravidla</p>
-        <h2>Jeden standard pro všechny</h2>
+        <h2>Jeden standard pro <strong>všechny</strong></h2>
       </div>
       <div class="std">
         <div><b>Signál rozhoduje</b><p>Start i stop řídí centrální zvukový signál. Počítá se jen opakování nebo metr dokončený před stopem.</p></div>
@@ -891,7 +976,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Kdo to vede</p>
-        <h2>Tým na place</h2>
+        <h2>Tým na <strong>place</strong></h2>
         <p class="lead">Dvacet lidí, z toho dvanáct judges. Poznáš je podle nápisu na zádech.</p>
       </div>
       <div class="crew">
@@ -911,7 +996,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Příprava</p>
-        <h2>Sbal se večer předem</h2>
+        <h2>Sbal se večer <strong>předem</strong></h2>
         <p class="lead">Odškrtej si, co máš. Seznam ti zůstane uložený v telefonu.</p>
       </div>
       <div class="prep-g">
@@ -922,9 +1007,11 @@ footer{background:#000;border-top:1px solid #1C1C1C}
         </div>
         <div class="venue">
           <span class="lbl">Kde to je</span>
-          <h3>Form Factory Vinohradská</h3>
-          <p>Vinohradská 190, Praha 3</p>
-          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">Otevřít v mapách ›</a>
+          <p class="ev-a">Form Factory Games</p>
+          <p class="ev-b">23. 1. 2027</p>
+          <p class="ev-c">Vinohradská</p>
+          <p class="ev-d">Vinohradská 190, Praha 3</p>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">Otevřít v mapách ›</a>
           <span class="lbl">Den v kostce</span>
           <dl>
             <dt>09:30</dt><dd>Sraz a check-in</dd>
@@ -941,7 +1028,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Časté otázky</p>
-        <h2>Než se přihlásíš</h2>
+        <h2>Než se <strong>přihlásíš</strong></h2>
       </div>
       <div class="faq-list">
         <details open><summary>Jak si vybrat mezi Open a Pro?</summary><p>Podle zátěží. Když 2 × 24 kg na deadlift nebo 9 kg wall ball pro tebe znamená boj o každé opakování, jdi Open. V Open nejde o menší výkon, jen o zátěž, se kterou můžeš jet naplno celé tři minuty.</p></details>
@@ -957,7 +1044,7 @@ footer{background:#000;border-top:1px solid #1C1C1C}
   <section class="cta" id="registrace">
     <div class="wrap">
       <p class="eyebrow">Registrace</p>
-      <h2>Sto míst.<br>Jedno je tvoje.</h2>
+      <h2>Sto míst.<br><strong>Jedno je tvoje.</strong></h2>
       <p class="lead">Sobota 23. ledna, Form Factory Vinohradská. Vyber kategorii, zaplať startovné a před závodem ti pošleme vlnu a dráhu na všechny tři workouty.</p>
       <div class="cta-row">
         <a class="btn btn-red" href="#registrace">Registrovat se <span class="ph">[ODKAZ]</span></a>

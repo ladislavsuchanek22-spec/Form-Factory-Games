@@ -358,9 +358,11 @@
         </div>
         <div class="venue">
           <span class="lbl">${ven_h}</span>
-          <h3>Form Factory Vinohradská</h3>
-          <p>${addr}</p>
-          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">${ven_map} ›</a>
+          <p class="ev-a">Form Factory Games</p>
+          <p class="ev-b">23. 1. 2027</p>
+          <p class="ev-c">Vinohradská</p>
+          <p class="ev-d">${addr}</p>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">${ven_map} ›</a>
           <span class="lbl">${ven_day}</span>
           <dl>
             <dt>09:30</dt><dd>${ven_r1}</dd>
