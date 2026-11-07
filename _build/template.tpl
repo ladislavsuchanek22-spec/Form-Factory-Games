@@ -335,7 +335,7 @@
         <article><span class="role">Speaker</span><h3>Ria Suchánek Hrušovská</h3><p>${c2}</p><a class="team-link" href="https://www.instagram.com/riahrusovskaofficial/" target="_blank" rel="noopener">@riahrusovskaofficial</a></article>
         <article><span class="role">Head Judge</span><h3>Michal Holotík</h3><p>${c3}</p></article>
       </div>
-      <p class="note">${tm_more} <a class="vh" href="${U_HTC}" target="_blank" rel="noopener" tabindex="-1">${tm_more_link}</a></p>
+      <p class="note">${tm_more} <a href="${U_HTC}" target="_blank" rel="noopener">${tm_more_link}</a></p>
       <div class="crew-band">
         <div class="crew-wide"><span><b>12</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
         <a class="btn btn-white crew-link" href="${U_CREW}">${link_main}</a>
