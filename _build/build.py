@@ -21,6 +21,7 @@ ROOT = B.parent
 sys.path.insert(0, str(B))
 from tr import T  # noqa: E402
 from tr_crew import C  # noqa: E402
+from tr_ath import A  # noqa: E402
 import net  # noqa: E402
 
 SITE = "https://formfactorygames.cz"
@@ -37,6 +38,7 @@ LASTMOD = "2026-10-16"
 STYLE = (B / "style.css").read_text(encoding="utf-8")
 TPL = Template((B / "template.tpl").read_text(encoding="utf-8"))
 FINDER = (B / "finder.js").read_text(encoding="utf-8")
+ATH = (B / "athlete.js").read_text(encoding="utf-8")
 # Stránka Judges & Crew: /crew/, /en/crew/, /pl/crew/, /de/crew/
 CREW = "crew/"
 CREW_TPL = Template((B / "crew.tpl").read_text(encoding="utf-8"))
@@ -127,7 +129,7 @@ def head(L, t, sub="", extra_css="", ld=True, hero="/img/hero.webp"):
 <link rel="preload" as="image" href="{hero}" fetchpriority="high">
 {legacy}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;800&display=swap">
 <style>
 html,body{{margin:0}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}[hidden]{{display:none!important}}
 {STYLE}{extra_css}</style>
@@ -137,8 +139,35 @@ html,body{{margin:0}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bot
 '''
 
 
+
+def ff_h2(html):
+    """Nadpisy jako na formfactory.cz: první věta normálně, druhá (nebo poslední slovo) tučně verzálkami."""
+    def one(m):
+        inner = m.group(2)
+        if "<br>" in inner and inner.count("<") == inner.count("<br>"):
+            a, z = inner.split("<br>", 1)
+            return f"{m.group(1)}{a}<br><strong>{z}</strong></h2>"
+        if "<" in inner:
+            return m.group(0)
+        txt = inner.strip()
+        mm = re.search(r"(?<=[^\d\s])[.?!] ", txt)
+        i = mm.start() if mm else -1
+        if 0 < i < len(txt) - 2:
+            a, z = txt[: i + 1], txt[i + 2 :]
+        elif re.search(r"\s\d", txt):
+            j = re.search(r"\s\d", txt).start()
+            a, z = txt[:j], txt[j + 1 :]
+        elif " " in txt:
+            a, z = txt.rsplit(" ", 1)
+        else:
+            return m.group(0)
+        return f"{m.group(1)}{a} <strong>{z}</strong></h2>"
+    return re.sub(r"(<h2[^>]*>)(.*?)</h2>", one, html, flags=re.S)
+
+
 def page(L):
     t = dict(T[L])
+    t.update(A[L])
     hl, path, _, _ = LANGS[L]
     t["L"] = L
     t["HOME"] = path
@@ -153,7 +182,7 @@ def page(L):
     body = TPL.substitute(t)
     left = re.findall(r"\$\{\w+\}", body)
     assert not left, left
-    return head(L, t) + body + FINDER + "\n</body>\n</html>\n"
+    return ff_h2(head(L, t) + body + FINDER + ATH + "\n</body>\n</html>\n")
 
 
 def page_crew(L):
@@ -169,7 +198,7 @@ def page_crew(L):
     body = CREW_TPL.substitute(t)
     left = re.findall(r"\$\{\w+\}", body)
     assert not left, left
-    return head(L, t, sub=CREW, extra_css=CREW_CSS, ld=False, hero="/img/sled.webp") + body + CREW_JS + "\n</body>\n</html>\n"
+    return ff_h2(head(L, t, sub=CREW, extra_css=CREW_CSS, ld=False, hero="/img/sled.webp") + body + CREW_JS + "\n</body>\n</html>\n")
 
 
 def sitemap(extra=()):
