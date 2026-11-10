@@ -30,3 +30,9 @@
   for = "/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+    Strict-Transport-Security = "max-age=31536000"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
