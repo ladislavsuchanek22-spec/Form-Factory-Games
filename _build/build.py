@@ -54,7 +54,7 @@ def jsonld(L, t):
             {
                 "@type": "SportsEvent",
                 "@id": SITE + "/#event",
-                "name": "Form Factory Games 2026",
+                "name": "Form Factory Games",
                 "description": t["meta"],
                 "url": SITE + path,
                 "inLanguage": hl,
@@ -62,7 +62,8 @@ def jsonld(L, t):
                 "startDate": "2027-01-23T10:00:00+01:00",
                 "endDate": "2027-01-23T17:40:00+01:00",
                 "doorTime": "2027-01-23T09:30:00+01:00",
-                "eventStatus": "https://schema.org/EventScheduled",
+                "eventStatus": "https://schema.org/EventRescheduled",
+                "previousStartDate": "2026-12-05",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "maximumAttendeeCapacity": 100,
                 "location": {
@@ -85,7 +86,7 @@ def jsonld(L, t):
             },
             {
                 "@type": "Person",
-                "@id": "https://hyrox-prague.eu/#lada",
+                "@id": "https://www.ladislavsuchanek.cz/#person",
                 "name": "Ladislav Suchánek",
                 "url": "https://hyrox-prague.eu/",
                 "sameAs": ["https://www.ladislavsuchanek.cz/", "https://www.instagram.com/22segge_coach/"],
