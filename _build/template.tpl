@@ -9,7 +9,6 @@
       <li><a href="#zateze">${nav_wt}</a></li>
       <li><a href="#vlny">${nav_wv}</a></li>
       <li><a href="#program">${nav_pg}</a></li>
-      <li><a href="#bodovani">${nav_sc}</a></li>
       <li><a href="#priprava">${prep_eb}</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
@@ -89,7 +88,7 @@
       </div>
       <div class="wods">
         <article class="wod wod-hl">
-          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="Hybrid Challenge · Wall balls" width="667" height="1000"></figure>
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="Hybrid Challenge · RowErg" width="667" height="1000"></figure>
           <div class="wod-id">
             <span class="k">Hybrid Challenge · start 10:30</span>
             <h3>5 × 4:00</h3>
@@ -224,52 +223,6 @@
     </div>
   </section>
 
-  <section class="alt" id="bodovani">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">${nav_sc}</p>
-        <h2>${sc_h}</h2>
-        <p class="lead">${sc_lead}</p>
-      </div>
-      <div class="score">
-        <div class="formula">
-          <p class="eq">${pts} = 100 × <em>(N − r)</em> / (N − 1)</p>
-          <dl>
-            <dt>N</dt><dd>${dN}</dd>
-            <dt>r</dt><dd>${dr}</dd>
-          </dl>
-          <div class="ex">
-            <span>${ex_h}</span>
-            <p>${ex}</p>
-          </div>
-        </div>
-        <div class="sum">
-          <div><b>A</b><p>SkiErg / Wall balls: ${u_cr}</p><span>0–100</span></div>
-          <div><b>B</b><p>Echo Bike / DB snatch: ${u_cr}</p><span>0–100</span></div>
-          <div><b>C</b><p>Sled: ${u_len}</p><span>0–100</span></div>
-          <div><b>D</b><p>RowErg / Burpees: ${u_cr}</p><span>0–100</span></div>
-          <div><b>E</b><p>Shuttle / Lunges: ${u_len}</p><span>0–100</span></div>
-          <div class="tot"><b>${tot}</b><p>A + B + C + D + E</p><span>max 500</span></div>
-        </div>
-      </div>
-      <p class="note">${sc_note}</p>
-      <div class="calc">
-        <div class="calc-in">
-          <p class="eyebrow">${calc_eb}</p>
-          <h3>${calc_h}</h3>
-          <p class="calc-p">${calc_p}</p>
-          <label class="calc-n"><span>${calc_n}</span><input type="number" min="2" max="40" value="20" data-c="n" inputmode="numeric"></label>
-          <div class="calc-g"><b>Hybrid Challenge</b><small>${calc_st}</small><div class="calc-st calc-st5"><label><span>A</span><input type="number" min="1" value="5" data-c="1" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="8" data-c="1" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="3" data-c="1" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="6" data-c="1" inputmode="numeric"></label><label><span>E</span><input type="number" min="1" value="4" data-c="1" inputmode="numeric"></label></div></div>
-        </div>
-        <div class="calc-out" aria-live="polite">
-          <div><span>${calc_avg}</span><strong data-r="a">0</strong></div>
-          <div class="tot"><span>${tot}</span><strong data-r="t">0</strong><small>/ 500</small></div>
-          <p>${calc_note}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section>
     <div class="wrap">
       <div class="sec-head">
@@ -299,7 +252,6 @@
       </div>
       <p class="note">${tm_more} <a href="${U_HTC}" target="_blank" rel="noopener">${tm_more_link}</a></p>
       <div class="crew-band">
-        <div class="crew-wide"><span><b>5</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
         <a class="btn btn-white crew-link" href="${U_CREW}">${link_main}</a>
       </div>
     </div>
