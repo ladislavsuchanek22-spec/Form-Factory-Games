@@ -655,3 +655,31 @@ th:nth-child(3),th:nth-child(5),td:nth-child(3),td:nth-child(5){color:#FFF}
 
 /* odkazy na naše weby: v kódu zůstávají, na stránce nejsou vidět */
 .vh,footer .net{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;padding:0!important;margin:-1px!important}
+
+/* ===== Form Factory Hybrid Games 5. 12. 2026: 5 stanovišť ===== */
+.st5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.st5 .st{border-right:1px solid #333}
+.st5 .st:last-child{border-right:0}
+.st ul{list-style:none;margin:6px 0 2px;padding:0;display:grid;gap:6px}
+.st li{font:700 19px/1.12 var(--f-display);text-transform:uppercase;color:#FFF}
+.st li i{font-style:normal;color:var(--acc);margin-right:4px;white-space:nowrap}
+.st .sc{font:500 13px/1.3 var(--f-display);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+@media (max-width:860px){.st5{grid-template-columns:1fr 1fr}.st5 .st{border-top:1px solid #333}.st5 .st:nth-child(2n){border-right:0}.st5 .st:nth-child(-n+2){border-top:0}.st5 .st:last-child{grid-column:1/-1}}
+.wod-id .t{color:#DADADA}
+.rot5{grid-template-columns:120px repeat(5,1fr);min-width:640px}
+.rot5 div:nth-child(5n){border-right:1px solid var(--line)}
+.rot5 div:nth-child(6n){border-right:0}
+.xmas{margin-top:22px;border-radius:var(--rc);background:var(--red);padding:20px 24px;display:grid;gap:6px;color:#FFF}
+.xmas b{font:800 24px/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.xmas p{color:#FFE3E8;font-size:16px}
+.calc-st5{grid-template-columns:repeat(5,minmax(0,80px))}
+@media (max-width:600px){.calc-st5{grid-template-columns:repeat(5,1fr)}}
+.fo.fo-h{background:#111}
+/* delší název „Hybrid Games“ v hlavičce: užší menu, ať se lišta vejde */
+.brand-t i{letter-spacing:.16em}
+@media (max-width:1440px){.nav ul{gap:14px}.nav ul a{font-size:14px;letter-spacing:.05em}}
+@media (max-width:1300px){.nav ul{display:none}}
+@media (max-width:1640px){.nav ul li:nth-child(n+6){display:none}}
+@media (max-width:420px){.brand{padding-right:10px}.brand-t i{letter-spacing:.06em;font-size:11px}.lsw a{padding:8px 6px}.nav-r{gap:8px}}
+@media (max-width:380px){.brand-t b{font-size:15px}.brand-t{margin-left:8px}.brand-mark img{width:36px;height:36px}.lsw a{padding:7px 5px;font-size:12px}}
+.sum div{grid-template-columns:120px 1fr auto}

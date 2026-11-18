@@ -2,7 +2,7 @@
   <div class="wrap">
     <a class="brand" href="${HOME}">
       <span class="brand-mark"><img src="/img/ff-logo.jpg" alt="Form Factory" width="40" height="40"></span>
-      <span class="brand-t"><b>Form Factory</b><i>Games · Crew</i></span>
+      <span class="brand-t"><b>Form Factory</b><i>Hybrid Games · Crew</i></span>
     </a>
     <ul>
       <li><a href="${HOME}">${nav_back}</a></li>
@@ -33,10 +33,10 @@
 
   <div class="stats">
     <div class="wrap">
-      <div class="stat"><strong>12</strong><span>${st1}</span></div>
-      <div class="stat"><strong>20</strong><span>${st2}</span></div>
-      <div class="stat"><strong>100</strong><span>${st3}</span></div>
-      <div class="stat"><strong>3</strong><span>${st4}</span></div>
+      <div class="stat"><strong>5</strong><span>${st1}</span></div>
+      <div class="stat"><strong>40</strong><span>${st2}</span></div>
+      <div class="stat"><strong>5</strong><span>${st3}</span></div>
+      <div class="stat"><strong>2 h</strong><span>${st4}</span></div>
     </div>
   </div>
 
@@ -80,13 +80,13 @@
           <h2>${dy_h}</h2>
         </div>
         <ul class="sched">
-          <li><span class="t">08:30</span><div><b>${d1h}</b><p>${d1}</p></div></li>
-          <li><span class="t">09:15</span><div><b>${d2h}</b><p>${d2}</p></div></li>
-          <li class="key"><span class="t">10:00–11:52</span><div><b>${d3h}</b><p>${d3}</p></div></li>
-          <li class="key"><span class="t">12:30–14:12</span><div><b>${d4h}</b><p>${d4}</p></div></li>
-          <li class="key"><span class="t">14:50–16:42</span><div><b>${d5h}</b><p>${d5}</p></div></li>
-          <li><span class="t">17:20–17:40</span><div><b>${d6h}</b><p>${d6}</p></div></li>
-          <li><span class="t">17:40–18:05</span><div><b>${d7h}</b><p>${d7}</p></div></li>
+          <li><span class="t">08:45</span><div><b>${d1h}</b><p>${d1}</p></div></li>
+          <li><span class="t">09:40</span><div><b>${d2h}</b><p>${d2}</p></div></li>
+          <li class="key"><span class="t">10:30–11:45</span><div><b>${d3h}</b><p>${d3}</p></div></li>
+          <li><span class="t">11:46–11:52</span><div><b>${d4h}</b><p>${d4}</p></div></li>
+          <li class="key"><span class="t">11:52–12:00</span><div><b>${d5h}</b><p>${d5}</p></div></li>
+          <li><span class="t">12:00–12:20</span><div><b>${d6h}</b><p>${d6}</p></div></li>
+          <li><span class="t">12:20</span><div><b>${d7h}</b><p>${d7}</p></div></li>
         </ul>
         <p class="note">${dy_note}</p>
       </div>
@@ -225,7 +225,7 @@
 <footer>
   <div class="wrap">
     ${NET}
-    <span>Form Factory Games · Form Factory × STR2G · ${addr}</span>
+    <span>Form Factory Hybrid Games · Form Factory × STR2G · ${addr}</span>
     <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a></span>
   </div>
 </footer>

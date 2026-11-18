@@ -2,7 +2,7 @@
   <div class="wrap">
     <a class="brand" href="${HOME}">
       <span class="brand-mark"><img src="/img/ff-logo.jpg" alt="Form Factory" width="40" height="40"></span>
-      <span class="brand-t"><b>Form Factory</b><i>Games</i></span>
+      <span class="brand-t"><b>Form Factory</b><i>Hybrid Games</i></span>
     </a>
     <ul>
       <li><a href="#workouty">${nav_wo}</a></li>
@@ -26,13 +26,13 @@
     <div class="wrap hero-grid">
       <div class="hero-main">
       <p class="when"><b>Form Factory Vinohradská</b> <span>·</span> <b>${when_date}</b> <span>·</span> <span>${when_time}</span></p>
-      <h1><span class="h1-s">Form Factory</span><span class="h1-l">Games</span></h1>
+      <h1><span class="h1-s">Form Factory Hybrid</span><span class="h1-l">Games</span></h1>
       <p class="lead">${hero_lead}</p>
       <div class="hero-cta">
         <a class="btn btn-red" href="#registrace">${hero_cta1}</a>
         <a class="btn btn-ghost" href="#workouty">${hero_cta2} ›</a>
       </div>
-      <div class="cdown" data-t="2027-01-23T09:30:00+01:00" hidden>
+      <div class="cdown" data-t="2026-12-05T10:00:00+01:00" hidden>
         <span class="lbl">${cd_h}</span>
         <div class="cd-u"><b data-u="d">00</b><small>${cd_d}</small></div>
         <div class="cd-u"><b data-u="h">00</b><small>${cd_hh}</small></div>
@@ -40,16 +40,16 @@
         <div class="cd-u"><b data-u="s">00</b><small>${cd_s}</small></div>
       </div>
       </div>
-      <p class="hero-side"><b>Form Factory</b><span>Vinohradská</span><span>${when_date}</span><span>100 × Open · Pro</span></p>
+      <p class="hero-side"><b>Form Factory Hybrid Games</b><span>Vinohradská</span><span>${when_date}</span><span>40 × Hybrid Challenge</span></p>
     </div>
   </section>
 
   <div class="stats">
     <div class="wrap">
-      <div class="stat"><strong>100</strong><span>${st1}</span></div>
-      <div class="stat"><strong>3</strong><span>${st2}</span></div>
-      <div class="stat"><strong>4</strong><span>${st3}</span></div>
-      <div class="stat"><strong>300</strong><span>${st4}</span></div>
+      <div class="stat"><strong>40</strong><span>${st1}</span></div>
+      <div class="stat"><strong>5</strong><span>${st2}</span></div>
+      <div class="stat"><strong>4:00</strong><span>${st3}</span></div>
+      <div class="stat"><strong>2 h</strong><span>${st4}</span></div>
     </div>
   </div>
 
@@ -61,10 +61,8 @@
         <p>${ab_p1}</p>
         <p>${ab_p2}</p>
         <div class="cats">
-          <div><span>${cat_w}</span><b>Women Open</b></div>
-          <div><span>${cat_w}</span><b>Women Pro</b></div>
-          <div><span>${cat_m}</span><b>Men Open</b></div>
-          <div><span>${cat_m}</span><b>Men Pro</b></div>
+          <div><span>${cat_w}</span><b>Women</b></div>
+          <div><span>${cat_m}</span><b>Men</b></div>
         </div>
       </div>
       <figure>
@@ -78,73 +76,34 @@
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">${nav_wo}</p>
-        <h2>${wo_h}</h2>
+        <h2>Hybrid<br>Challenge</h2>
         <p class="lead">${wo_lead}</p>
       </div>
       <div class="catpick">
         <span class="lbl" id="cp-l">${cp_lbl}</span>
         <div class="cp" role="group" aria-labelledby="cp-l">
-          <button type="button" data-cat="0" aria-pressed="false">Women Open</button>
-          <button type="button" data-cat="1" aria-pressed="false">Women Pro</button>
-          <button type="button" data-cat="2" aria-pressed="false">Men Open</button>
-          <button type="button" data-cat="3" aria-pressed="false">Men Pro</button>
+          <button type="button" data-cat="0" aria-pressed="false">Women</button>
+          <button type="button" data-cat="1" aria-pressed="false">Men</button>
         </div>
         <small>${cp_hint}</small>
       </div>
       <div class="wods">
-        <article class="wod">
-          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w1-row.webp" alt="Power Grid · RowErg" width="667" height="1000"></figure>
-          <div class="wod-id">
-            <span class="k">W1 · 10:00</span>
-            <h3>Power Grid</h3>
-            <div class="fmt"><span>${f_work}</span><span>${f_move}</span><span>${f_four}</span></div>
-          </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>SkiErg</b><span>${u_m}</span></div>
-            <div class="st"><span class="l">B</span><b>Sled Push</b><span>${u_m}</span><em class="wt" data-w="100 kg|150 kg|150 kg|200 kg"></em></div>
-            <div class="st"><span class="l">C</span><b>RowErg</b><span>${u_m}</span></div>
-            <div class="st"><span class="l">D</span><b>KB Deadlifts</b><span>${u_r}</span><em class="wt" data-w="2 × 16 kg|2 × 24 kg|2 × 24 kg|2 × 32 kg"></em></div>
-          </div>
-          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w1t1}</li><li>${w1t2}</li><li>${w1t3}</li><li>${w1t4}</li></ul></div></details>
-        </article>
         <article class="wod wod-hl">
-          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="The Engine · Wall balls" width="667" height="1000"></figure>
+          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="Hybrid Challenge · Wall balls" width="667" height="1000"></figure>
           <div class="wod-id">
-            <span class="k">W2 · 12:30</span>
-            <h3>The Engine</h3>
-            <div class="fmt"><span>6 min AMRAP</span><span>${f_eight}</span></div>
-          </div>
-          <div class="amrap">
-            <div class="chain" aria-label="20 wall balls, 10 burpees, 20 KB swings">
-              <div><strong>20</strong><b>Wall balls</b><em class="wt" data-w="4 kg|6 kg|6 kg|9 kg"></em></div><i>→</i>
-              <div><strong>10</strong><b>Burpees</b></div><i>→</i>
-              <div><strong>20</strong><b>KB swings</b><em class="wt" data-w="12 kg|16 kg|16 kg|20 kg"></em></div><i>↻</i>
-            </div>
-            <p>${amrap_p}</p>
-          </div>
-          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w2t1}</li><li>${w2t2}</li><li>${w2t3}</li><li>${w2t4}</li></ul>
-            <div class="amcalc">
-              <b>${am_h}</b>
-              <label>${am_r}<input type="number" class="am-r" min="0" max="12" value="3" inputmode="numeric"></label>
-              <label>${am_x}<input type="number" class="am-x" min="0" max="49" value="12" inputmode="numeric"></label>
-              <div class="am-out"><span>${am_s}</span><strong class="am-s">162</strong></div>
-              <div class="am-out"><span>${am_p}</span><strong class="am-p">1:51</strong></div>
-            </div></div></details>
-        </article>
-        <article class="wod">
-          <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w3-lunges.webp" alt="Final Grind · Walking lunges" width="667" height="1000"></figure>
-          <div class="wod-id">
-            <span class="k">W3 · 14:50</span>
-            <h3>Final Grind</h3>
+            <span class="k">Hybrid Challenge · start 10:30</span>
+            <h3>5 × 4:00</h3>
             <div class="fmt"><span>${f_work}</span><span>${f_move}</span><span>${f_four}</span></div>
+            <p class="t">${wod_t}</p>
           </div>
-          <div class="stations">
-            <div class="st"><span class="l">A</span><b>Echo Bike</b><span>${u_cal}</span></div>
-            <div class="st"><span class="l">B</span><b>DB Thrusters</b><span>${u_r}</span><em class="wt" data-w="2 × 10 kg|2 × 15 kg|2 × 15 kg|2 × 20 kg"></em></div>
-            <div class="st"><span class="l">C</span><b>Walking Lunges</b><span>${u_mw}</span><em class="wt" data-w="10 kg|20 kg|20 kg|30 kg"></em></div>
-            <div class="st"><span class="l">D</span><b>Shuttle Runs</b><span>${u_m}</span></div>
+          <div class="stations st5">
+            <div class="st"><span class="l">A</span><b>SkiErg / Wall balls</b><ul><li><i class="wn" data-w="10|12">10/12</i>cal SkiErg</li><li><i>15</i>Wall balls</li></ul><em class="wt" data-w="Wall ball 4 kg|Wall ball 6 kg"></em><span class="sc">${sc_cr}</span></div>
+            <div class="st"><span class="l">B</span><b>Echo Bike / DB Snatch</b><ul><li><i class="wn" data-w="7|10">7/10</i>cal Echo Bike</li><li><i>15</i>Alt. DB snatch</li></ul><em class="wt" data-w="DB 12,5 kg|DB 15 kg"></em><span class="sc">${sc_cr}</span></div>
+            <div class="st"><span class="l">C</span><b>Sled</b><ul><li><i>12,5 m</i>Sled push</li><li><i>12,5 m</i>Sled pull</li></ul><em class="wt" data-w="150 kg|200 kg"></em><span class="sc">${sc_len}</span></div>
+            <div class="st"><span class="l">D</span><b>RowErg / Burpees</b><ul><li><i class="wn" data-w="10|12">10/12</i>cal RowErg</li><li><i>15</i>Burpees over rower</li></ul><span class="sc">${sc_cr}</span></div>
+            <div class="st"><span class="l">E</span><b>Shuttle / Lunges</b><ul><li><i>6 ×</i>12,5 m shuttle run</li><li><i>2 ×</i>12,5 m sandbag walking lunges</li></ul><em class="wt" data-w="Sandbag 10 kg|Sandbag 20 kg"></em><span class="sc">${sc_len8}</span></div>
           </div>
-          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${w3t1}</li><li>${w3t2}</li><li>${w3t3}</li><li>${w3t4}</li></ul></div></details>
+          <details class="tips"><summary>${tip_h}</summary><div class="tips-in"><ul><li>${t1}</li><li>${t2}</li><li>${t3}</li><li>${t4}</li><li>${t5}</li><li>${t6}</li></ul></div></details>
         </article>
       </div>
     </div>
@@ -160,15 +119,17 @@
       <div class="tbl-wrap">
         <table>
           <thead>
-            <tr><th>${th_ex}</th><th class="cat">Women Open</th><th class="cat">Women Pro</th><th class="cat">Men Open</th><th class="cat">Men Pro</th></tr>
+            <tr><th>${th_ex}</th><th class="cat">Women</th><th class="cat">Men</th></tr>
           </thead>
           <tbody>
-            <tr><td>Sled Push</td><td>100 kg</td><td>150 kg</td><td>150 kg</td><td>200 kg</td></tr>
-            <tr><td>KB Deadlift</td><td>2 × 16 kg</td><td>2 × 24 kg</td><td>2 × 24 kg</td><td>2 × 32 kg</td></tr>
-            <tr><td>Wall Balls</td><td>4 kg</td><td>6 kg</td><td>6 kg</td><td>9 kg</td></tr>
-            <tr><td>KB Swings</td><td>12 kg</td><td>16 kg</td><td>16 kg</td><td>20 kg</td></tr>
-            <tr><td>DB Thrusters</td><td>2 × 10 kg</td><td>2 × 15 kg</td><td>2 × 15 kg</td><td>2 × 20 kg</td></tr>
-            <tr><td>Walking Lunges</td><td>10 kg</td><td>20 kg</td><td>20 kg</td><td>30 kg</td></tr>
+            <tr><td>SkiErg</td><td>10 cal</td><td>12 cal</td></tr>
+            <tr><td>Wall Balls</td><td>15 × 4 kg</td><td>15 × 6 kg</td></tr>
+            <tr><td>Echo Bike</td><td>7 cal</td><td>10 cal</td></tr>
+            <tr><td>Alt. DB Snatch</td><td>15 × 12,5 kg</td><td>15 × 15 kg</td></tr>
+            <tr><td>Sled Push</td><td>150 kg</td><td>200 kg</td></tr>
+            <tr><td>Sled Pull</td><td>150 kg</td><td>200 kg</td></tr>
+            <tr><td>RowErg</td><td>10 cal</td><td>12 cal</td></tr>
+            <tr><td>Sandbag Walking Lunges</td><td>10 kg</td><td>20 kg</td></tr>
           </tbody>
         </table>
       </div>
@@ -186,21 +147,22 @@
         <p class="lead">${wv_lead}</p>
       </div>
       <div class="rot-wrap">
-        <div class="rot">
-          <div class="h">${rot_min}</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div>
-          <div>0:00–3:00</div><div class="w1">${wave} 1</div><div></div><div></div><div></div>
-          <div>4:00–7:00</div><div class="wx">${wave} 2</div><div class="w1">${wave} 1</div><div></div><div></div>
-          <div>8:00–11:00</div><div class="wx">${wave} 3</div><div class="wx">${wave} 2</div><div class="w1">${wave} 1</div><div></div>
-          <div class="last">12:00–15:00</div><div class="wx last">${wave} 4</div><div class="wx last">${wave} 3</div><div class="wx last">${wave} 2</div><div class="w1 last">${wave} 1</div>
+        <div class="rot rot5">
+          <div class="h">${rot_min}</div><div class="h l">A</div><div class="h l">B</div><div class="h l">C</div><div class="h l">D</div><div class="h l">E</div>
+          <div>0:00–4:00</div><div class="w1">${wave} 1</div><div></div><div></div><div></div><div></div>
+          <div>5:30–9:30</div><div class="wx">${wave} 2</div><div class="w1">${wave} 1</div><div></div><div></div><div></div>
+          <div>11:00–15:00</div><div class="wx">${wave} 3</div><div class="wx">${wave} 2</div><div class="w1">${wave} 1</div><div></div><div></div>
+          <div>16:30–20:30</div><div class="wx">${wave} 4</div><div class="wx">${wave} 3</div><div class="wx">${wave} 2</div><div class="w1">${wave} 1</div><div></div>
+          <div class="last">22:00–26:00</div><div class="wx last">${wave} 5</div><div class="wx last">${wave} 4</div><div class="wx last">${wave} 3</div><div class="wx last">${wave} 2</div><div class="w1 last">${wave} 1</div>
         </div>
       </div>
       <p class="note">${wv_note}</p>
 
       <div class="cd-row">
-        <div class="cd"><span class="t">−8 min</span><b>Call-up</b><p>${cd1}</p></div>
+        <div class="cd"><span class="t">−6 min</span><b>Call-up</b><p>${cd1}</p></div>
         <div class="cd"><span class="t">${cd2t}</span><b>${cd2h}</b><p>${cd2}</p></div>
         <div class="cd"><span class="t">${cd3t}</span><b>${cd3h}</b><p>${cd3}</p></div>
-        <div class="cd"><span class="t">+1 min</span><b>${cd4h}</b><p>${cd4}</p></div>
+        <div class="cd"><span class="t">+1:30</span><b>${cd4h}</b><p>${cd4}</p></div>
       </div>
 
       <div class="finder" data-wave-word="${wave}">
@@ -210,7 +172,7 @@
             <label for="wave">${fd_wave}</label>
             <div class="ctl">
               <button type="button" class="wm" aria-label="−1">−</button>
-              <input id="wave" class="wi" type="number" min="1" max="25" value="1" inputmode="numeric">
+              <input id="wave" class="wi" type="number" min="1" max="10" value="1" inputmode="numeric">
               <button type="button" class="wp" aria-label="+1">+</button>
             </div>
           </div>
@@ -224,13 +186,16 @@
             </div>
           </div>
           <small>${fd_small}</small>
-          <button type="button" class="btn btn-ghost ics" data-sraz="${ics_sraz}" data-lane-word="${fd_lane}" data-addr="Form Factory Vinohradská, ${addr}">${ics_btn}</button>
+          <button type="button" class="btn btn-ghost ics" data-sraz="${ics_sraz}" data-lane-word="${lane_w}" data-addr="Form Factory Vinohradská, ${addr}">${ics_btn}</button>
           <small>${ics_small}</small>
         </div>
         <div class="finder-out" aria-live="polite">
-          <div class="fo"><span class="w">W1<small>Power Grid</small></span><div><span>Call-up</span><strong data-o="c1">09:52</strong></div><div><span>Start</span><strong data-o="s1" class="hi">10:00</strong></div></div>
-          <div class="fo"><span class="w">W2<small data-o="w2n">${wave} 1</small></span><div><span>Call-up</span><strong data-o="c2">12:22</strong></div><div><span>Start</span><strong data-o="s2" class="hi">12:30</strong></div></div>
-          <div class="fo"><span class="w">W3<small>Final Grind</small></span><div><span>Call-up</span><strong data-o="c3">14:42</strong></div><div><span>Start</span><strong data-o="s3" class="hi">14:50</strong></div></div>
+          <div class="fo fo-h"><span class="w"><em data-o="wv" style="font-style:normal">${wave} 1</em><small data-o="wn">${lane_w} 1</small></span><div><span>Call-up</span><strong data-o="c">10:24</strong></div><div><span>${fd_fin}</span><strong data-o="f">10:56</strong></div></div>
+          <div class="fo"><span class="w">A<small>SkiErg / Wall balls</small></span><div><span>Start</span><strong data-o="s0" class="hi">10:30</strong></div><div><span>Stop</span><strong data-o="e0">10:34</strong></div></div>
+          <div class="fo"><span class="w">B<small>Echo Bike / Snatch</small></span><div><span>Start</span><strong data-o="s1" class="hi">10:35:30</strong></div><div><span>Stop</span><strong data-o="e1">10:39:30</strong></div></div>
+          <div class="fo"><span class="w">C<small>Sled</small></span><div><span>Start</span><strong data-o="s2" class="hi">10:41</strong></div><div><span>Stop</span><strong data-o="e2">10:45</strong></div></div>
+          <div class="fo"><span class="w">D<small>RowErg / Burpees</small></span><div><span>Start</span><strong data-o="s3" class="hi">10:46:30</strong></div><div><span>Stop</span><strong data-o="e3">10:50:30</strong></div></div>
+          <div class="fo"><span class="w">E<small>Shuttle / Lunges</small></span><div><span>Start</span><strong data-o="s4" class="hi">10:52</strong></div><div><span>Stop</span><strong data-o="e4">10:56</strong></div></div>
         </div>
       </div>
     </div>
@@ -245,16 +210,15 @@
           <h2>${pg_h}</h2>
         </div>
         <ul class="sched">
-          <li><span class="t">09:30</span><div><b>${s1h}</b><p>${s1}</p></div></li>
-          <li><span class="t">09:45</span><div><b>Briefing</b><p>${s2}</p></div></li>
-          <li class="key"><span class="t">10:00–11:52</span><div><b>W1 Power Grid</b><p>${s3}</p></div></li>
-          <li class="brk"><span class="t">11:52–12:30</span><div><b>${s4h}</b><p>${s4}</p></div></li>
-          <li class="key"><span class="t">12:30–14:12</span><div><b>W2 The Engine</b><p>${s5}</p></div></li>
-          <li class="brk"><span class="t">14:12–14:50</span><div><b>${s6h}</b><p>${s6}</p></div></li>
-          <li class="key"><span class="t">14:50–16:42</span><div><b>W3 Final Grind</b><p>${s7}</p></div></li>
-          <li><span class="t">16:42–17:10</span><div><b>${s8h}</b><p>${s8}</p></div></li>
-          <li class="key"><span class="t">17:20–17:40</span><div><b>${s9h}</b><p>${s9}</p></div></li>
+          <li><span class="t">10:00</span><div><b>${s1h}</b><p>${s1}</p></div></li>
+          <li><span class="t">10:10</span><div><b>Briefing</b><p>${s2}</p></div></li>
+          <li><span class="t">10:15–10:30</span><div><b>${s3h}</b><p>${s3}</p></div></li>
+          <li class="key"><span class="t">10:30–11:45</span><div><b>Hybrid Challenge</b><p>${s4}</p></div></li>
+          <li><span class="t">10:45–10:55</span><div><b>${s5h}</b><p>${s5}</p></div></li>
+          <li><span class="t">11:46–11:52</span><div><b>${s6h}</b><p>${s6}</p></div></li>
+          <li class="key"><span class="t">11:52–12:00</span><div><b>${s7h}</b><p>${s7}</p></div></li>
         </ul>
+        <div class="xmas"><b>${xm_h}</b><p>${xm_p} <span class="ph">${xm_ph}</span></p></div>
         <p class="note">${pg_note}</p>
       </div>
     </div>
@@ -280,10 +244,12 @@
           </div>
         </div>
         <div class="sum">
-          <div><b>W1</b><p>${sum1}</p><span>0–100</span></div>
-          <div><b>W2</b><p>${sum2}</p><span>0–100</span></div>
-          <div><b>W3</b><p>${sum3}</p><span>0–100</span></div>
-          <div class="tot"><b>${tot}</b><p>W1 + W2 + W3</p><span>max 300</span></div>
+          <div><b>A</b><p>SkiErg / Wall balls: ${u_cr}</p><span>0–100</span></div>
+          <div><b>B</b><p>Echo Bike / DB snatch: ${u_cr}</p><span>0–100</span></div>
+          <div><b>C</b><p>Sled: ${u_len}</p><span>0–100</span></div>
+          <div><b>D</b><p>RowErg / Burpees: ${u_cr}</p><span>0–100</span></div>
+          <div><b>E</b><p>Shuttle / Lunges: ${u_len}</p><span>0–100</span></div>
+          <div class="tot"><b>${tot}</b><p>A + B + C + D + E</p><span>max 500</span></div>
         </div>
       </div>
       <p class="note">${sc_note}</p>
@@ -292,16 +258,12 @@
           <p class="eyebrow">${calc_eb}</p>
           <h3>${calc_h}</h3>
           <p class="calc-p">${calc_p}</p>
-          <label class="calc-n"><span>${calc_n}</span><input type="number" min="2" max="100" value="25" data-c="n" inputmode="numeric"></label>
-          <div class="calc-g"><b>W1 Power Grid</b><small>${calc_st}</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="5" data-c="1" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="8" data-c="1" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="3" data-c="1" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="6" data-c="1" inputmode="numeric"></label></div></div>
-          <div class="calc-g"><b>W2 The Engine</b><small>${calc_rk}</small><div class="calc-st"><label><span>#</span><input type="number" min="1" value="7" data-c="2" inputmode="numeric"></label></div></div>
-          <div class="calc-g"><b>W3 Final Grind</b><small>${calc_st}</small><div class="calc-st"><label><span>A</span><input type="number" min="1" value="4" data-c="3" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="6" data-c="3" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="9" data-c="3" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="5" data-c="3" inputmode="numeric"></label></div></div>
+          <label class="calc-n"><span>${calc_n}</span><input type="number" min="2" max="40" value="20" data-c="n" inputmode="numeric"></label>
+          <div class="calc-g"><b>Hybrid Challenge</b><small>${calc_st}</small><div class="calc-st calc-st5"><label><span>A</span><input type="number" min="1" value="5" data-c="1" inputmode="numeric"></label><label><span>B</span><input type="number" min="1" value="8" data-c="1" inputmode="numeric"></label><label><span>C</span><input type="number" min="1" value="3" data-c="1" inputmode="numeric"></label><label><span>D</span><input type="number" min="1" value="6" data-c="1" inputmode="numeric"></label><label><span>E</span><input type="number" min="1" value="4" data-c="1" inputmode="numeric"></label></div></div>
         </div>
         <div class="calc-out" aria-live="polite">
-          <div><span>W1</span><strong data-r="1">0</strong></div>
-          <div><span>W2</span><strong data-r="2">0</strong></div>
-          <div><span>W3</span><strong data-r="3">0</strong></div>
-          <div class="tot"><span>${calc_tot}</span><strong data-r="t">0</strong><small>/ 300</small></div>
+          <div><span>${calc_avg}</span><strong data-r="a">0</strong></div>
+          <div class="tot"><span>${tot}</span><strong data-r="t">0</strong><small>/ 500</small></div>
           <p>${calc_note}</p>
         </div>
       </div>
@@ -337,7 +299,7 @@
       </div>
       <p class="note">${tm_more} <a href="${U_HTC}" target="_blank" rel="noopener">${tm_more_link}</a></p>
       <div class="crew-band">
-        <div class="crew-wide"><span><b>12</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
+        <div class="crew-wide"><span><b>5</b> ${cw1}</span><span><b>1</b> ${cw2}</span><span><b>1</b> ${cw3}</span><span><b>DJ</b>, ${cw4}</span></div>
         <a class="btn btn-white crew-link" href="${U_CREW}">${link_main}</a>
       </div>
     </div>
@@ -358,17 +320,17 @@
         </div>
         <div class="venue">
           <span class="lbl">${ven_h}</span>
-          <p class="ev-a">Form Factory Games</p>
-          <p class="ev-b">23. 1. 2027</p>
+          <p class="ev-a">Form Factory Hybrid Games</p>
+          <p class="ev-b">5. 12. 2026</p>
           <p class="ev-c">Vinohradská</p>
           <p class="ev-d">${addr}</p>
           <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">${ven_map} ›</a>
           <span class="lbl">${ven_day}</span>
           <dl>
-            <dt>09:30</dt><dd>${ven_r1}</dd>
-            <dt>09:45</dt><dd>${ven_r2}</dd>
-            <dt>10:00</dt><dd>${ven_r3}</dd>
-            <dt>17:20</dt><dd>${ven_r4}</dd>
+            <dt>10:00</dt><dd>${ven_r1}</dd>
+            <dt>10:30</dt><dd>${ven_r2}</dd>
+            <dt>11:52</dt><dd>${ven_r3}</dd>
+            <dt>12:00</dt><dd>${ven_r4}</dd>
           </dl>
         </div>
       </div>
@@ -408,7 +370,7 @@
 <footer>
   <div class="wrap">
     ${NET}
-    <span>Form Factory Games · Form Factory × STR2G · ${addr}</span>
+    <span>Form Factory Hybrid Games · Form Factory × STR2G · ${addr}</span>
     <span><a href="https://www.formfactory.cz/hyrox/" target="_blank" rel="noopener">formfactory.cz/hyrox</a> · <a href="https://www.instagram.com/hyroxprague/" target="_blank" rel="noopener">@hyroxprague</a> · <a href="#" onclick="window.cookieSettings&&cookieSettings();return false">Cookies</a></span>
   </div>
 </footer>

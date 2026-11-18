@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vygeneruje web Form Factory Games ve čtyřech jazycích.
+"""Vygeneruje web Form Factory Hybrid Games ve čtyřech jazycích.
 
 Použití (z kořene repozitáře):  python3 _build/build.py
 
@@ -33,7 +33,7 @@ LANGS = {
     "de": ("de", "/de/", "de_DE", "DE"),
 }
 VERIFY = "abf25QrYbQI8uNUvQ5bWpJksa7UN_hBxoRfm9DcwIHs"
-LASTMOD = "2026-10-16"
+LASTMOD = "2026-11-18"
 
 STYLE = (B / "style.css").read_text(encoding="utf-8")
 TPL = Template((B / "template.tpl").read_text(encoding="utf-8"))
@@ -54,18 +54,17 @@ def jsonld(L, t):
             {
                 "@type": "SportsEvent",
                 "@id": SITE + "/#event",
-                "name": "Form Factory Games",
+                "name": "Form Factory Hybrid Games",
                 "description": t["meta"],
                 "url": SITE + path,
                 "inLanguage": hl,
                 "image": [SITE + "/img/hero.jpg"],
-                "startDate": "2027-01-23T10:00:00+01:00",
-                "endDate": "2027-01-23T17:40:00+01:00",
-                "doorTime": "2027-01-23T09:30:00+01:00",
-                "eventStatus": "https://schema.org/EventRescheduled",
-                "previousStartDate": "2026-12-05",
+                "startDate": "2026-12-05T10:00:00+01:00",
+                "endDate": "2026-12-05T12:00:00+01:00",
+                "doorTime": "2026-12-05T10:00:00+01:00",
+                "eventStatus": "https://schema.org/EventScheduled",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                "maximumAttendeeCapacity": 100,
+                "maximumAttendeeCapacity": 40,
                 "location": {
                     "@type": "SportsActivityLocation",
                     "name": "Form Factory Vinohradská",

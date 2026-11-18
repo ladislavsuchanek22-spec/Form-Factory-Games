@@ -1,6 +1,6 @@
-# Form Factory Games
+# Form Factory Hybrid Games
 
-Web závodu Form Factory Games, 23. 1. 2027, Form Factory Vinohradská (Form Factory × STR2G).
+Web závodu Form Factory Hybrid Games (Hybrid Challenge, 40 atletů), sobota 5. 12. 2026, 10:00–12:00, Form Factory Vinohradská (Form Factory × STR2G).
 Statický web na Netlify, každý push do `main` se nasadí na https://formfactorygames.cz.
 
 ## Jazyky (CZ / EN / PL / DE)
