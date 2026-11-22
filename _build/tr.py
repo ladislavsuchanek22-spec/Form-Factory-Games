@@ -85,7 +85,7 @@ ck5='Ručník', ck6='Magnézium na DB snatch a sled', ck7='Oblečení na vánoč
 ven_h='Kde to je', ven_map='Otevřít v mapách', ven_day='Den v kostce',
 ven_r1='Sraz a check-in', ven_r2='Start první vlny', ven_r3='Vyhlášení', ven_r4='Vánoční večírek',
 fq_eb='Časté otázky', fq_h='Než se přihlásíš',
-q1='Pro koho je Hybrid Challenge?', a1='Pro každého, kdo trénuje HYROX, CrossFit nebo funkční trénink a chce si to zkusit pod časem. Každé stanoviště je AMRAP, takže nikdo nezůstane viset. Jedeš svým tempem a sbíráš opakování.',
+q1='Pro koho je Hybrid Challenge?', a1='Pro každého, kdo trénuje HYROX, CrossFit nebo funkční trénink a chce si to zkusit pod časem. Každé stanoviště je AMRAP, takže nikdo nezůstane viset. Jedeš svým tempem a sbíráš opakování. Jak se připravit, rozepisuju v článku <a href="/jak-se-pripravit/">Jak se připravit na Hybrid Games</a>.',
 q2='Jak dlouho tam budu?', a2='Sraz je v 10:00, vyhlášení končí ve 12:00. Samotný workout ti zabere 26 minut. Pak navazuje vánoční večírek.',
 q3='Kolik stojí startovné?', a3='Startovné je 349 Kč a platí se při registraci. Kapacita je 40 atletů celkem.',
 q4='Kdy se dozvím svou vlnu?', a4='Po uzavření registrace ti pošleme e-mailem vlnu a dráhu. Svůj přesný čas si pak najdeš v sekci Vlny.',

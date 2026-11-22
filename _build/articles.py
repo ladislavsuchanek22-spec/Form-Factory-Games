@@ -12,44 +12,54 @@ SITE = "https://formfactorygames.cz"
 
 ARTICLES = {
     "jak-se-pripravit": dict(
-        draft=True,
-        title="Jak se připravit na Form Factory Games: trénink na 3 workouty",
-        desc="Form Factory Games 23. 1. 2027: jak se připravit na Power Grid, The Engine a Final Grind. Trénink, tempo, výběr kategorie Open nebo Pro a co v den závodu.",
-        h1="Jak se připravit na Form Factory Games",
-        lead="Tři workouty za jeden den, mezi nimi pauzy na reset. Form Factory Games nejsou o jednom maximálním výkonu, ale o tom, jak dobře zvládneš opakovaně jet naplno. Tady je, jak se na to připravit.",
+        draft=False,
+        title="Jak se připravit na Form Factory Hybrid Games: 5 × 4 minuty",
+        desc="Form Factory Hybrid Games 5. 12. 2026: jak se připravit na Hybrid Challenge. Pět stanovišť po 4 minutách, tempo, trénink na AMRAP, sled a shuttle runy a co v den závodu.",
+        h1="Jak se připravit na Form Factory Hybrid Games",
+        lead="Pět stanovišť, na každém čtyři minuty naplno. Hybrid Challenge netestuje jeden maximální výkon, ale jestli udržíš tempo i na pátém stanovišti. Tady je, jak se na to připravit za dva týdny, které zbývají.",
         body="""
 <h2>Co tě čeká</h2>
+<p>Jedeš stanoviště A až E. Na každém je AMRAP na 4:00: opakuješ dvojici cviků dokola, dokud nezazní signál. Pak máš 1:30 na zápis a přesun. Celý workout ti zabere 26 minut.</p>
 <ul>
-<li><strong>W1 Power Grid (10:00):</strong> 4 stanoviště po 3 minutách naplno: SkiErg, sled push, veslo, KB deadlifty. Mezi nimi minuta na zápis a přesun.</li>
-<li><strong>W2 The Engine (12:30):</strong> 6 minut AMRAP: 20 wall balls, 10 burpees, 20 KB swingů a znovu.</li>
-<li><strong>W3 Final Grind (14:50):</strong> 4 × 3 minuty: Echo Bike, DB thrusters, walking lunges se zátěží, shuttle runy.</li>
+<li><strong>A:</strong> SkiErg (10/12 cal) a 15 wall balls (4/6 kg)</li>
+<li><strong>B:</strong> Echo Bike (7/10 cal) a 15 střídavých DB snatchů (12,5/15 kg)</li>
+<li><strong>C:</strong> sled push a sled pull po 12,5 m (150/200 kg včetně saní)</li>
+<li><strong>D:</strong> RowErg (10/12 cal) a 15 burpees přes veslo</li>
+<li><strong>E:</strong> 6 × 12,5 m shuttle run a 2 × 12,5 m walking lunges se sandbagem (10/20 kg)</li>
 </ul>
-<p>Každý workout váží stejně a hodnotí se pořadí uvnitř tvé kategorie. Celá pravidla, zátěže a bodování jsou na <a href="/">hlavní stránce závodu</a>.</p>
-<h2>Open, nebo Pro?</h2>
-<p>Podívej se na zátěže a buď k sobě upřímný. Pro je pro lidi, kteří zvládnou sled push 150/200 kg, thrustery 2 × 15/2 × 20 kg a wall ball 6/9 kg opakovaně a pod únavou. Pokud si nejsi jistý, jdi Open. Hodnotí se jen v rámci kategorie, takže v Open budeš bojovat s lidmi na stejné úrovni.</p>
-<h2>Jak trénovat na 3minutové intervaly</h2>
-<p>Tři minuty jsou zrádná délka. Moc dlouhé na sprint, moc krátké na šetření. Trénuj přesně tenhle formát:</p>
+<p>První číslo platí pro ženy, druhé pro muže. Na každém stanovišti se počítá jedno číslo a víc je líp. Celý rozpis, vlny a program dne najdeš na <a href="/">hlavní stránce závodu</a>.</p>
+<h2>Tempo: na A nejeď naplno</h2>
+<p>Dvacet minut práce v pěti blocích je dlouhá doba. Kdo přepálí první stanoviště, zaplatí to na sledu a na shuttle runech. Jeď prvních 30 vteřin každého bloku o kousek pomaleji, než máš chuť, a zrychluj ke konci. Poslední minuta na stanovišti E má být ta nejrychlejší, ne ta, kde stojíš.</p>
+<h2>Jak trénovat za dva týdny</h2>
+<p>Na velkou formu už není čas. Jde o to naučit se formát a nezničit se před závodem.</p>
 <ol>
-<li><strong>4 × 3 min / 1 min:</strong> dvakrát týdně, střídej stroje (SkiErg, veslo, bike) a silové cviky (deadlift, thrustery).</li>
-<li><strong>Rovnoměrné tempo:</strong> první minutu nejeď naplno. Kdo přepálí start, ve třetí minutě ztratí víc, než získal.</li>
-<li><strong>Zapisuj výsledky:</strong> metry, kalorie, opakování. Na závodě budeš vědět, jaké číslo je tvoje.</li>
+<li><strong>Jedna simulace:</strong> 5 × 4 min AMRAP s 1:30 pauzou, stejné dvojice cviků nebo co nejbližší náhrada. Zapiš si čísla z každého bloku. Na závodě budeš vědět, kde máš strop.</li>
+<li><strong>Intervaly 4 min / 1:30:</strong> jednou týdně na ergech (SkiErg, veslo, bike), tempo, které udržíš celé čtyři minuty.</li>
+<li><strong>Technika na slabá místa:</strong> střídání rukou u DB snatche, burpee přes veslo a obrátky na shuttle runech. To jsou místa, kde se ztrácí nejvíc času.</li>
+<li><strong>Poslední týden:</strong> méně objemu, krátké svižné tréninky, víc spánku. Nic nového.</li>
 </ol>
-<h2>Jak trénovat The Engine</h2>
-<p>6minutový AMRAP s wall balls, burpees a swingy je o rytmu. Vyzkoušej si ho celý aspoň dvakrát před závodem a měj plán: kolik wall balls dáš bez pauzy a kde se nadechneš. Počítá se každé platné opakování, takže krátké pauzy jsou lepší než no-repy.</p>
-<h2>Den se třemi starty</h2>
+<h2>Na co se zaměřit na stanovištích</h2>
 <ul>
-<li><strong>Jez mezi workouty.</strong> Máš na to přes půl hodiny. Něco malého a vyzkoušeného: banán, rýžový chlebíček, iontový nápoj.</li>
-<li><strong>Zůstaň v teple.</strong> Mikina na pauzy, krátká rozcvička před každým blokem.</li>
-<li><strong>Hlava.</strong> Špatný první workout nic neznamená. Každý workout se boduje zvlášť, takže máš vždycky šanci to dohnat.</li>
-<li><strong>Přijď včas.</strong> Sraz je v 9:30, briefing v 9:45. Čas a dráhu své vlny dostaneš e-mailem.</li>
+<li><strong>Wall balls a burpees si rozděl předem.</strong> Naplánovaná pauza je vždycky kratší než vynucená.</li>
+<li><strong>DB snatch:</strong> drž rytmus a činku odkládej co nejméně. Každé položení stojí čas.</li>
+<li><strong>Sled:</strong> nízko, ruce natažené, krátké rychlé kroky. Když se zasekne, nestůj a hned ho znovu rozjeď. Pull jdi pozpátku celým tělem.</li>
+<li><strong>Shuttle runy:</strong> obrátky jsou čas. U čáry jdi nízko a hned zpátky. Lunges kratším krokem a stálým tempem.</li>
+<li><strong>Minuta a půl na přesun je i na dech.</strong> Napij se a dýchej, ať další blok nezačínáš v dluhu.</li>
+</ul>
+<h2>Den závodu</h2>
+<ul>
+<li><strong>Přijď v 10:00.</strong> Check-in, číslo, vlna a dráha. V 10:10 je briefing se standardy.</li>
+<li><strong>Rozcvičíš se s trenérem.</strong> Vlny 1–5 v 10:15, vlny 6–10 v 10:45. Čas své vlny dostaneš e-mailem po uzavření registrace.</li>
+<li><strong>Sbal se večer předem:</strong> boty na běh i na sled, pití, náhradní triko, ručník, magnézium na DB snatch a sled a oblečení na vánoční večírek.</li>
+<li><strong>Vyhlášení je v 11:52</strong>, pak společně končíme rok na vánočním večírku.</li>
 </ul>
 <h2>Chceš se připravit s námi?</h2>
 <p>Lekce <a href="https://hyroxtrainingclub.cz/praha/">HYROX Training Club</a> ve Form Factory jsou přesně ten typ tréninku: stanice, intervaly a práce pod únavou. Individuální přípravu nabízí <a href="https://www.ladislavsuchanek.cz/kontakt/">Ladislav Suchánek</a>.</p>
 """,
         faq=[
-            ("Kdy a kde jsou Form Factory Games?", "V sobotu 23. 1. 2027 ve Form Factory Vinohradská 190, Praha 3. Sraz v 9:30, první start v 10:00."),
-            ("Jaké workouty jsou na Form Factory Games?", "Tři: Power Grid (SkiErg, sled push, veslo, KB deadlift), The Engine (6min AMRAP s wall balls, burpees a KB swingy) a Final Grind (Echo Bike, DB thrusters, walking lunges, shuttle runy)."),
-            ("Mám jít Open, nebo Pro?", "Pokud nezvládáš zátěže Pro kategorie opakovaně a pod únavou, jdi Open. Hodnotí se jen v rámci tvé kategorie."),
+            ("Kdy a kde jsou Form Factory Hybrid Games?", "V sobotu 5. 12. 2026 ve Form Factory Vinohradská 190, Praha 3. Sraz v 10:00, první vlna startuje v 10:30, vyhlášení je v 11:52."),
+            ("Jaký workout je na Form Factory Hybrid Games?", "Jeden workout, Hybrid Challenge: pět stanovišť po 4 minutách AMRAP (SkiErg a wall balls, Echo Bike a DB snatch, sled push a pull, veslo a burpees, shuttle runy a lunges se sandbagem). Mezi stanovišti je 1:30 na přesun."),
+            ("Jak se na Hybrid Challenge připravit za dva týdny?", "Udělej jednu simulaci 5 × 4 minuty, natrénuj techniku DB snatche, burpees přes veslo a obrátek na shuttle runech a poslední týden uber objem."),
         ],
     ),
 }
