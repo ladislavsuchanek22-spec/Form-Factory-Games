@@ -31,7 +31,7 @@
         <a class="btn btn-red" href="#registrace">${hero_cta1}</a>
         <a class="btn btn-ghost" href="#workouty">${hero_cta2} ›</a>
       </div>
-      <div class="cdown" data-t="2026-12-05T10:00:00+01:00" hidden>
+      <div class="cdown" data-t="2026-12-05T09:00:00+01:00" hidden>
         <span class="lbl">${cd_h}</span>
         <div class="cd-u"><b data-u="d">00</b><small>${cd_d}</small></div>
         <div class="cd-u"><b data-u="h">00</b><small>${cd_hh}</small></div>
@@ -90,7 +90,7 @@
         <article class="wod wod-hl">
           <figure class="wod-img"><img loading="lazy" decoding="async" src="/img/w2-wallball.webp" alt="Hybrid Challenge · RowErg" width="667" height="1000"></figure>
           <div class="wod-id">
-            <span class="k">Hybrid Challenge · start 10:30</span>
+            <span class="k">Hybrid Challenge · start 9:30</span>
             <h3>5 × 4:00</h3>
             <div class="fmt"><span>${f_work}</span><span>${f_move}</span><span>${f_four}</span></div>
             <p class="t">${wod_t}</p>
@@ -189,12 +189,12 @@
           <small>${ics_small}</small>
         </div>
         <div class="finder-out" aria-live="polite">
-          <div class="fo fo-h"><span class="w"><em data-o="wv" style="font-style:normal">${wave} 1</em><small data-o="wn">${lane_w} 1</small></span><div><span>Call-up</span><strong data-o="c">10:24</strong></div><div><span>${fd_fin}</span><strong data-o="f">10:56</strong></div></div>
-          <div class="fo"><span class="w">A<small>SkiErg / Wall balls</small></span><div><span>Start</span><strong data-o="s0" class="hi">10:30</strong></div><div><span>Stop</span><strong data-o="e0">10:34</strong></div></div>
-          <div class="fo"><span class="w">B<small>Echo Bike / Snatch</small></span><div><span>Start</span><strong data-o="s1" class="hi">10:35:30</strong></div><div><span>Stop</span><strong data-o="e1">10:39:30</strong></div></div>
-          <div class="fo"><span class="w">C<small>Sled</small></span><div><span>Start</span><strong data-o="s2" class="hi">10:41</strong></div><div><span>Stop</span><strong data-o="e2">10:45</strong></div></div>
-          <div class="fo"><span class="w">D<small>RowErg / Burpees</small></span><div><span>Start</span><strong data-o="s3" class="hi">10:46:30</strong></div><div><span>Stop</span><strong data-o="e3">10:50:30</strong></div></div>
-          <div class="fo"><span class="w">E<small>Shuttle / Lunges</small></span><div><span>Start</span><strong data-o="s4" class="hi">10:52</strong></div><div><span>Stop</span><strong data-o="e4">10:56</strong></div></div>
+          <div class="fo fo-h"><span class="w"><em data-o="wv" style="font-style:normal">${wave} 1</em><small data-o="wn">${lane_w} 1</small></span><div><span>Call-up</span><strong data-o="c">9:24</strong></div><div><span>${fd_fin}</span><strong data-o="f">9:56</strong></div></div>
+          <div class="fo"><span class="w">A<small>SkiErg / Wall balls</small></span><div><span>Start</span><strong data-o="s0" class="hi">9:30</strong></div><div><span>Stop</span><strong data-o="e0">9:34</strong></div></div>
+          <div class="fo"><span class="w">B<small>Echo Bike / Snatch</small></span><div><span>Start</span><strong data-o="s1" class="hi">9:35:30</strong></div><div><span>Stop</span><strong data-o="e1">9:39:30</strong></div></div>
+          <div class="fo"><span class="w">C<small>Sled</small></span><div><span>Start</span><strong data-o="s2" class="hi">9:41</strong></div><div><span>Stop</span><strong data-o="e2">9:45</strong></div></div>
+          <div class="fo"><span class="w">D<small>RowErg / Burpees</small></span><div><span>Start</span><strong data-o="s3" class="hi">9:46:30</strong></div><div><span>Stop</span><strong data-o="e3">9:50:30</strong></div></div>
+          <div class="fo"><span class="w">E<small>Shuttle / Lunges</small></span><div><span>Start</span><strong data-o="s4" class="hi">9:52</strong></div><div><span>Stop</span><strong data-o="e4">9:56</strong></div></div>
         </div>
       </div>
     </div>
@@ -209,13 +209,13 @@
           <h2>${pg_h}</h2>
         </div>
         <ul class="sched">
-          <li><span class="t">10:00</span><div><b>${s1h}</b><p>${s1}</p></div></li>
-          <li><span class="t">10:10</span><div><b>Briefing</b><p>${s2}</p></div></li>
-          <li><span class="t">10:15–10:30</span><div><b>${s3h}</b><p>${s3}</p></div></li>
-          <li class="key"><span class="t">10:30–11:45</span><div><b>Hybrid Challenge</b><p>${s4}</p></div></li>
-          <li><span class="t">10:45–10:55</span><div><b>${s5h}</b><p>${s5}</p></div></li>
-          <li><span class="t">11:46–11:52</span><div><b>${s6h}</b><p>${s6}</p></div></li>
-          <li class="key"><span class="t">11:52–12:00</span><div><b>${s7h}</b><p>${s7}</p></div></li>
+          <li><span class="t">09:00</span><div><b>${s1h}</b><p>${s1}</p></div></li>
+          <li><span class="t">09:10</span><div><b>Briefing</b><p>${s2}</p></div></li>
+          <li><span class="t">09:15–09:30</span><div><b>${s3h}</b><p>${s3}</p></div></li>
+          <li class="key"><span class="t">09:30–10:45</span><div><b>Hybrid Challenge</b><p>${s4}</p></div></li>
+          <li><span class="t">09:45–09:55</span><div><b>${s5h}</b><p>${s5}</p></div></li>
+          <li><span class="t">10:46–10:52</span><div><b>${s6h}</b><p>${s6}</p></div></li>
+          <li class="key"><span class="t">10:52–11:00</span><div><b>${s7h}</b><p>${s7}</p></div></li>
         </ul>
         <div class="xmas"><b>${xm_h}</b><p>${xm_p} <span class="ph">${xm_ph}</span></p></div>
         <p class="note">${pg_note}</p>
@@ -279,10 +279,10 @@
           <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Form+Factory+Vinohradsk%C3%A1+190+Praha" target="_blank" rel="noopener">${ven_map} ›</a>
           <span class="lbl">${ven_day}</span>
           <dl>
-            <dt>10:00</dt><dd>${ven_r1}</dd>
-            <dt>10:30</dt><dd>${ven_r2}</dd>
-            <dt>11:52</dt><dd>${ven_r3}</dd>
-            <dt>12:00</dt><dd>${ven_r4}</dd>
+            <dt>09:00</dt><dd>${ven_r1}</dd>
+            <dt>09:30</dt><dd>${ven_r2}</dd>
+            <dt>10:52</dt><dd>${ven_r3}</dd>
+            <dt>11:00</dt><dd>${ven_r4}</dd>
           </dl>
         </div>
       </div>

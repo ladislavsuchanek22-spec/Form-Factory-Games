@@ -5,9 +5,9 @@
   var pad=function(n){return (n<10?'0':'')+n;};
   var LANG=document.documentElement.lang;
 
-  /* Hybrid Challenge 5. 12. 2026: první vlna 10:30, nová vlna každých 5:30, 4:00 práce, call-up 6 min před startem */
+  /* Hybrid Challenge 5. 12. 2026: první vlna 9:30, nová vlna každých 5:30, 4:00 práce, call-up 6 min před startem */
   function fmt(s){var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return pad(h)+':'+pad(m)+(x?':'+pad(x):'');}
-  var FIRST=10*3600+30*60, GAP=330, WORK=240, CALL=360, WAVES=10;
+  var FIRST=9*3600+30*60, GAP=330, WORK=240, CALL=360, WAVES=10;
 
   /* kdy startuju */
   document.querySelectorAll('.finder').forEach(function(f){
@@ -43,7 +43,7 @@
       var esc=function(t){return t.replace(/[,;\\]/g,function(c){return '\\'+c;});};
       var loc=esc(btn.dataset.addr), ln=laneWord+' '+lane;
       var ev=[
-        [btn.dataset.sraz,36000,36900,''],
+        [btn.dataset.sraz,32400,33300,''],
         ['Hybrid Challenge',st-CALL,st+4*GAP+WORK,'Call-up '+fmt(st-CALL)+' · Start '+fmt(st)+' · '+word+' '+n+' · '+ln]
       ];
       var now=new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z';

@@ -80,13 +80,13 @@
           <h2>${dy_h}</h2>
         </div>
         <ul class="sched">
-          <li><span class="t">08:45</span><div><b>${d1h}</b><p>${d1}</p></div></li>
-          <li><span class="t">09:40</span><div><b>${d2h}</b><p>${d2}</p></div></li>
-          <li class="key"><span class="t">10:30–11:45</span><div><b>${d3h}</b><p>${d3}</p></div></li>
-          <li><span class="t">11:46–11:52</span><div><b>${d4h}</b><p>${d4}</p></div></li>
-          <li class="key"><span class="t">11:52–12:00</span><div><b>${d5h}</b><p>${d5}</p></div></li>
-          <li><span class="t">12:00–12:20</span><div><b>${d6h}</b><p>${d6}</p></div></li>
-          <li><span class="t">12:20</span><div><b>${d7h}</b><p>${d7}</p></div></li>
+          <li><span class="t">07:45</span><div><b>${d1h}</b><p>${d1}</p></div></li>
+          <li><span class="t">08:40</span><div><b>${d2h}</b><p>${d2}</p></div></li>
+          <li class="key"><span class="t">09:30–10:45</span><div><b>${d3h}</b><p>${d3}</p></div></li>
+          <li><span class="t">10:46–10:52</span><div><b>${d4h}</b><p>${d4}</p></div></li>
+          <li class="key"><span class="t">10:52–11:00</span><div><b>${d5h}</b><p>${d5}</p></div></li>
+          <li><span class="t">11:00–11:20</span><div><b>${d6h}</b><p>${d6}</p></div></li>
+          <li><span class="t">11:20</span><div><b>${d7h}</b><p>${d7}</p></div></li>
         </ul>
         <p class="note">${dy_note}</p>
       </div>

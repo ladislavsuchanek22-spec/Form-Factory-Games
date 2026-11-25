@@ -49,7 +49,7 @@ C['cz'] = dict(
   f_area='Kde bys chtěl(a) pomáhat', f_area_hint='Pro crew. Můžeš vybrat víc možností.',
   a1='Check-in a registrace', a2='Call-up a přesuny', a3='Reset zátěží a přestavba', a4='Stavba a úklid', a5='Foto a video', a6='Zdravotník (mám kvalifikaci)',
   f_exp='Zkušenost', e0='Žádná, ale chci se naučit', e1='Trénuju HYROX nebo funkční fitness', e2='Už jsem dělal(a) judge na závodech', e3='Mám judge kurz',
-  f_time='Kdy můžeš', t1='Celý den (08:30–18:05)', t2='Jen část dne (napíšu do poznámky)',
+  f_time='Kdy můžeš', t1='Celý den (07:30–18:05)', t2='Jen část dne (napíšu do poznámky)',
   f_size='Velikost trička', f_size_hint='Pro případ týmového oblečení.',
   f_lang='Jazyky, kterými se domluvíš',
   f_note='Poznámka', f_note_ph='Cokoliv, co bychom měli vědět',
@@ -115,7 +115,7 @@ C['en'] = dict(
   f_area='Where you\'d like to help', f_area_hint='For crew. Pick as many as you like.',
   a1='Check-in and registration', a2='Call-ups and transitions', a3='Weight resets and changeovers', a4='Setup and pack-down', a5='Photo and video', a6='Medic (I\'m qualified)',
   f_exp='Experience', e0='None, but keen to learn', e1='I train HYROX or functional fitness', e2='I\'ve judged at races before', e3='I have a judge course',
-  f_time='When you can be there', t1='All day (08:30–18:05)', t2='Part of the day (I\'ll explain in the note)',
+  f_time='When you can be there', t1='All day (07:30–18:05)', t2='Part of the day (I\'ll explain in the note)',
   f_size='T-shirt size', f_size_hint='In case there is crew clothing.',
   f_lang='Languages you speak',
   f_note='Note', f_note_ph='Anything we should know',
@@ -181,7 +181,7 @@ C['pl'] = dict(
   f_area='Gdzie chcesz pomagać', f_area_hint='Dla ekipy. Możesz wybrać kilka opcji.',
   a1='Check-in i rejestracja', a2='Wywoływanie i przejścia', a3='Reset obciążeń i przebudowa', a4='Montaż i sprzątanie', a5='Foto i wideo', a6='Ratownik (mam kwalifikacje)',
   f_exp='Doświadczenie', e0='Brak, ale chcę się nauczyć', e1='Trenuję HYROX lub fitness funkcjonalny', e2='Sędziowałem/am już na zawodach', e3='Mam kurs sędziego',
-  f_time='Kiedy możesz', t1='Cały dzień (08:30–18:05)', t2='Część dnia (napiszę w uwagach)',
+  f_time='Kiedy możesz', t1='Cały dzień (07:30–18:05)', t2='Część dnia (napiszę w uwagach)',
   f_size='Rozmiar koszulki', f_size_hint='Na wypadek ubrania dla ekipy.',
   f_lang='Języki, w których się dogadasz',
   f_note='Uwagi', f_note_ph='Wszystko, co powinniśmy wiedzieć',
@@ -247,7 +247,7 @@ C['de'] = dict(
   f_area='Wo du helfen möchtest', f_area_hint='Für die Crew. Mehrfachauswahl möglich.',
   a1='Check-in und Anmeldung', a2='Aufrufe und Wechsel', a3='Gewichte-Reset und Umbau', a4='Aufbau und Abbau', a5='Foto und Video', a6='Sanitäter (mit Qualifikation)',
   f_exp='Erfahrung', e0='Keine, aber ich will es lernen', e1='Ich trainiere HYROX oder Functional Fitness', e2='Ich war schon Judge bei Wettkämpfen', e3='Ich habe einen Judge-Kurs',
-  f_time='Wann du kannst', t1='Ganzer Tag (08:30–18:05)', t2='Nur ein Teil des Tages (schreibe ich in die Notiz)',
+  f_time='Wann du kannst', t1='Ganzer Tag (07:30–18:05)', t2='Nur ein Teil des Tages (schreibe ich in die Notiz)',
   f_size='T-Shirt-Größe', f_size_hint='Falls es Team-Kleidung gibt.',
   f_lang='Sprachen, in denen du dich verständigst',
   f_note='Notiz', f_note_ph='Alles, was wir wissen sollten',
@@ -299,7 +299,7 @@ C['de'].update(
 )
 
 
-# ---- Form Factory Hybrid Games 5. 12. 2026 (Hybrid Challenge, 40 atletů, 10:00–12:00)
+# ---- Form Factory Hybrid Games 5. 12. 2026 (Hybrid Challenge, 40 atletů, 9:00–11:00)
 C['cz'].update(
   title='Judges a dobrovolníci · Form Factory Hybrid Games 5. 12. 2026',
   meta='Přihlas se jako judge nebo dobrovolník na Form Factory Hybrid Games, 5. 12. 2026 ve Form Factory Vinohradská v Praze.',
@@ -316,8 +316,8 @@ C['cz'].update(
   d6h='Úklid', d6='Za 20 minut je hala zpátky ve stavu jako ráno.',
   d7h='Vánoční večírek', d7='Celý tým je zvaný.',
   dy_note='Judges stojí celý závod na jednom stanovišti. Mezi vlnami je vždy 1:30 na zápis a reset.',
-  t1='Celé dopoledne (08:45–12:20)',
-  a_q2='U crew ano, napiš to do poznámky. Judges potřebujeme na celý závod od 10:30 do 11:45.',
+  t1='Celé dopoledne (07:45–11:20)',
+  a_q2='U crew ano, napiš to do poznámky. Judges potřebujeme na celý závod od 9:30 do 10:45.',
   a_q3='Ne. Judges stojí na stanovišti celý závod a atleti se musí soustředit na svůj start.',
 )
 C['en'].update(
@@ -336,8 +336,8 @@ C['en'].update(
   d6h='Pack-down', d6='In 20 minutes the gym is back the way it was in the morning.',
   d7h='Christmas party', d7='The whole crew is invited.',
   dy_note='Judges stay on one station for the whole race. There is always 1:30 between heats for logging and resets.',
-  t1='The whole morning (08:45–12:20)',
-  a_q2='For crew, yes, just say so in the note. Judges are needed for the whole race, 10:30 to 11:45.',
+  t1='The whole morning (07:45–11:20)',
+  a_q2='For crew, yes, just say so in the note. Judges are needed for the whole race, 9:30 to 10:45.',
   a_q3='No. Judges stay on their station for the whole race and athletes need to focus on their start.',
 )
 C['pl'].update(
@@ -356,8 +356,8 @@ C['pl'].update(
   d6h='Sprzątanie', d6='W 20 minut sala wraca do stanu z rana.',
   d7h='Impreza świąteczna', d7='Cała ekipa jest zaproszona.',
   dy_note='Sędziowie stoją przez całe zawody na jednym stanowisku. Między falami zawsze jest 1:30 na zapis i reset.',
-  t1='Całe przedpołudnie (08:45–12:20)',
-  a_q2='W ekipie tak, napisz to w uwagach. Sędziów potrzebujemy na całe zawody, od 10:30 do 11:45.',
+  t1='Całe przedpołudnie (07:45–11:20)',
+  a_q2='W ekipie tak, napisz to w uwagach. Sędziów potrzebujemy na całe zawody, od 9:30 do 10:45.',
   a_q3='Nie. Sędziowie stoją na stanowisku przez całe zawody, a zawodnicy muszą skupić się na swoim starcie.',
 )
 C['de'].update(
@@ -376,7 +376,7 @@ C['de'].update(
   d6h='Abbau', d6='In 20 Minuten ist die Halle wieder wie am Morgen.',
   d7h='Weihnachtsfeier', d7='Das ganze Team ist eingeladen.',
   dy_note='Judges bleiben den ganzen Wettkampf an einer Station. Zwischen den Heats gibt es immer 1:30 zum Eintragen und Zurücksetzen.',
-  t1='Den ganzen Vormittag (08:45–12:20)',
-  a_q2='Bei der Crew ja, schreib es in die Notiz. Judges brauchen wir für den ganzen Wettkampf, 10:30 bis 11:45.',
+  t1='Den ganzen Vormittag (07:45–11:20)',
+  a_q2='Bei der Crew ja, schreib es in die Notiz. Judges brauchen wir für den ganzen Wettkampf, 9:30 bis 10:45.',
   a_q3='Nein. Judges stehen den ganzen Wettkampf an ihrer Station und Athleten müssen sich auf ihren Start konzentrieren.',
 )

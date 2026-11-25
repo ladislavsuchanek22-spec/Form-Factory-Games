@@ -48,16 +48,16 @@ ARTICLES = {
 </ul>
 <h2>Den závodu</h2>
 <ul>
-<li><strong>Přijď v 10:00.</strong> Check-in, číslo, vlna a dráha. V 10:10 je briefing se standardy.</li>
-<li><strong>Rozcvičíš se s trenérem.</strong> Vlny 1–5 v 10:15, vlny 6–10 v 10:45. Čas své vlny dostaneš e-mailem po uzavření registrace.</li>
+<li><strong>Přijď v 9:00.</strong> Check-in, číslo, vlna a dráha. V 9:10 je briefing se standardy.</li>
+<li><strong>Rozcvičíš se s trenérem.</strong> Vlny 1–5 v 9:15, vlny 6–10 v 9:45. Čas své vlny dostaneš e-mailem po uzavření registrace.</li>
 <li><strong>Sbal se večer předem:</strong> boty na běh i na sled, pití, náhradní triko, ručník, magnézium na DB snatch a sled a oblečení na vánoční večírek.</li>
-<li><strong>Vyhlášení je v 11:52</strong>, pak společně končíme rok na vánočním večírku.</li>
+<li><strong>Vyhlášení je v 10:52</strong>, pak společně končíme rok na vánočním večírku.</li>
 </ul>
 <h2>Chceš se připravit s námi?</h2>
 <p>Lekce <a href="https://hyroxtrainingclub.cz/praha/">HYROX Training Club</a> ve Form Factory jsou přesně ten typ tréninku: stanice, intervaly a práce pod únavou. Individuální přípravu nabízí <a href="https://www.ladislavsuchanek.cz/kontakt/">Ladislav Suchánek</a>.</p>
 """,
         faq=[
-            ("Kdy a kde jsou Form Factory Hybrid Games?", "V sobotu 5. 12. 2026 ve Form Factory Vinohradská 190, Praha 3. Sraz v 10:00, první vlna startuje v 10:30, vyhlášení je v 11:52."),
+            ("Kdy a kde jsou Form Factory Hybrid Games?", "V sobotu 5. 12. 2026 ve Form Factory Vinohradská 190, Praha 3. Sraz v 9:00, první vlna startuje v 9:30, vyhlášení je v 10:52."),
             ("Jaký workout je na Form Factory Hybrid Games?", "Jeden workout, Hybrid Challenge: pět stanovišť po 4 minutách AMRAP (SkiErg a wall balls, Echo Bike a DB snatch, sled push a pull, veslo a burpees, shuttle runy a lunges se sandbagem). Mezi stanovišti je 1:30 na přesun."),
             ("Jak se na Hybrid Challenge připravit za dva týdny?", "Udělej jednu simulaci 5 × 4 minuty, natrénuj techniku DB snatche, burpees přes veslo a obrátek na shuttle runech a poslední týden uber objem."),
         ],
