@@ -96,11 +96,11 @@ textarea{width:100%;min-height:260px;background:#000;border:1px solid #444;borde
 
   <section id="casomira" hidden>
     <h2>Časomíra <strong>na TV</strong></h2>
-    <p class="hint">TV odpočítává od startu vlny 1 na stanovišti A: 4:00 práce, 1:30 přesun, nová vlna každých 5:30. Plán je 9:30. Když se start posune, zmáčkni „Start teď“ přesně při startovním signálu, nebo čas uprav tlačítky.</p>
+    <p class="hint">TV odpočítává od startu vlny 1 na stanovišti A: 4:00 práce, 1:30 přesun, nová vlna každých 5:30. Plán je 9:30. Když se start posune, zmáčkni „Start za 15 s“: TV začne odpočítávat 15 s a na 10–9–8… 3-2-1 GO odstartuje vlna 1. Nebo čas uprav tlačítky.</p>
     <div class="tm">
       <div class="tm-now"><small>Na TV teď</small><b id="tmPh">–</b><span id="tmBig">–:––</span><em id="tmInfo"></em></div>
       <div class="tm-set"><small>Start vlny 1</small><b id="tmT0">–</b>
-        <div class="row2"><button class="btn red" type="button" id="tmGo">Start teď</button><button class="btn" type="button" data-d="-60">−1 min</button><button class="btn" type="button" data-d="-10">−10 s</button><button class="btn" type="button" data-d="10">+10 s</button><button class="btn" type="button" data-d="60">+1 min</button></div>
+        <div class="row2"><button class="btn red" type="button" id="tmGo">Start za 15 s</button><button class="btn" type="button" data-d="-60">−1 min</button><button class="btn" type="button" data-d="-10">−10 s</button><button class="btn" type="button" data-d="10">+10 s</button><button class="btn" type="button" data-d="60">+1 min</button></div>
         <div class="row2"><input class="fld" id="tmIn" type="time" step="1" aria-label="Čas startu" style="letter-spacing:.02em;font-size:20px;width:180px"><button class="btn" type="button" id="tmSet">Nastavit čas</button><button class="btn" type="button" id="tmPlan">Zpět na plán 9:30</button></div>
         <p class="msg" id="tmMsg"></p>
       </div>
@@ -187,7 +187,7 @@ function tm(){
     $('tmInfo').textContent=R.phase==='pre'||R.phase==='done'?'':'Blok '+(R.n+1)+' z '+(R.waves+4)+(R.prep?' · připraví se vlna '+R.prep:'')},250);
 }
 async function setT0(t0,label){const m=$('tmMsg');try{S=await api({action:'timer',t0});m.className='msg ok';m.textContent=label+' Start vlny 1: '+HG.hhmm(S.timer.t0)+'.';tm();toast('Časomíra upravena')}catch(err){m.className='msg';m.textContent=err.message}}
-$('tmGo').onclick=()=>setT0(HG.now(),'Odstartováno.');
+$('tmGo').onclick=()=>setT0(Math.ceil((HG.now()+15000)/1000)*1000,'Odpočet běží, GO za 15 s.');
 document.querySelectorAll('#casomira [data-d]').forEach(b=>b.onclick=()=>setT0(S.timer.t0+(+b.dataset.d)*1000,'Posunuto.'));
 $('tmSet').onclick=()=>{const v=$('tmIn').value;if(!v)return;const [h,m,x]=v.split(':').map(Number);const d=new Date(S.timer.t0);d.setHours(h,m,x||0,0);setT0(d.getTime(),'Nastaveno.')};
 $('tmPlan').onclick=()=>setT0('plan','Vráceno na plán.');

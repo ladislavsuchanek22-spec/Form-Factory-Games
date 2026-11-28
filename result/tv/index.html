@@ -219,7 +219,7 @@ async function tick(){
   catch(e){$('dot').classList.add('off')}
 }
 setInterval(drawClock,200);
-setInterval(tick,5000);
+setInterval(tick,2000);
 setInterval(()=>{pageI++;fresh=null;drawRes()},10000);
 addEventListener('resize',drawRes);
 $('snd').onclick=()=>setSound(!soundOn);
