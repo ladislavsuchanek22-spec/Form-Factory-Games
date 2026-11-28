@@ -1,10 +1,12 @@
 // Výsledky Form Factory Hybrid Games: soupiska + skóre z karet vln.
 // GET  /api/results  -> veřejný stav (soupiska, zapsaná kola/navíc)
 // POST /api/results  -> zápis, chráněný PINem (env RESULTS_PIN), hlavička x-pin
+// timer.t0 = start vlny 1 na stanovišti A (ms), časomíra na TV se počítá z něj
 import { getStore } from "@netlify/blobs";
 
 const KEY = "state";
-const empty = () => ({ athletes: [], scores: {}, lastWave: null, updated: null });
+const PLAN_T0 = Date.parse("2026-12-05T09:30:00+01:00");
+const empty = () => ({ athletes: [], scores: {}, lastWave: null, updated: null, timer: { t0: PLAN_T0 } });
 const json = (o, status = 200) =>
   new Response(JSON.stringify(o), {
     status,
@@ -15,9 +17,13 @@ const int = (v, min, max) => Number.isInteger(v) && v >= min && v <= max;
 
 export default async (req) => {
   const store = getStore({ name: "hybrid-games", consistency: "strong" });
-  const load = async () => (await store.get(KEY, { type: "json" })) || empty();
+  const load = async () => {
+    const s = (await store.get(KEY, { type: "json" })) || empty();
+    if (!s.timer || !Number.isFinite(s.timer.t0)) s.timer = { t0: PLAN_T0 };
+    return s;
+  };
 
-  if (req.method === "GET") return json(await load());
+  if (req.method === "GET") return json({ ...(await load()), now: Date.now() });
   if (req.method !== "POST") return json({ error: "Metoda není povolená." }, 405);
 
   const pin = (globalThis.Netlify?.env?.get("RESULTS_PIN")) || process.env.RESULTS_PIN;
@@ -52,6 +58,10 @@ export default async (req) => {
       s.scores[no] = r.map((x) => ({ k: x.k, x: x.x }));
     }
     s.lastWave = int(body.wave, 1, 99) ? body.wave : s.lastWave;
+  } else if (body.action === "timer") {
+    const t0 = body.t0 === "plan" ? PLAN_T0 : body.t0;
+    if (!Number.isFinite(t0) || Math.abs(t0 - Date.now()) > 400 * 864e5) return json({ error: "Neplatný čas startu." }, 400);
+    s.timer = { t0: Math.round(t0) };
   } else if (body.action === "reset") {
     s.scores = {}; s.lastWave = null;
   } else {
@@ -60,7 +70,7 @@ export default async (req) => {
 
   s.updated = new Date().toISOString();
   await store.setJSON(KEY, s);
-  return json(s);
+  return json({ ...s, now: Date.now() });
 };
 
 export const config = { path: "/api/results" };

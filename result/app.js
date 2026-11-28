@@ -59,11 +59,35 @@ window.HG = (function () {
     });
   }
 
+  /* rozdíl hodin TV a serveru, aby všechny obrazovky ukazovaly stejný čas */
+  let skew = 0;
   async function load() {
+    const t1 = Date.now();
     const r = await fetch('/api/results', { cache: 'no-store' });
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    return r.json();
+    const j = await r.json();
+    if (j.now) skew = j.now - (t1 + Date.now()) / 2;
+    return j;
   }
+  const now = () => Date.now() + skew;
 
-  return { ST, esc, f1, score, rank, boards, load };
+  /* časomíra: vlny po 5:30, na stanovišti 4:00 práce + 1:30 přesun, 5 stanovišť A–E */
+  const GAP = 330, WORK = 240;
+  function race(state, t) {
+    const waves = Math.max(10, ...state.athletes.map((a) => a.wave));
+    const t0 = state.timer && state.timer.t0;
+    const e = (t - t0) / 1000;
+    const startOf = (w) => t0 + (w - 1) * GAP * 1000;
+    if (e < 0) return { phase: 'pre', left: -e, n: -1, waves, prep: 1, prepIn: -e, startOf, st: [null, null, null, null, null] };
+    const n = Math.floor(e / GAP), inB = e - n * GAP;
+    if (n >= waves + 4) return { phase: 'done', left: 0, n, waves, prep: null, startOf, st: [null, null, null, null, null] };
+    const st = [0, 1, 2, 3, 4].map((s) => { const w = n - s + 1; return w >= 1 && w <= waves ? w : null; });
+    const work = inB < WORK;
+    const prep = n + 2 <= waves ? n + 2 : null;
+    return { phase: work ? 'work' : 'move', left: work ? WORK - inB : GAP - inB, frac: work ? inB / WORK : (inB - WORK) / (GAP - WORK), n, waves, st, prep, prepIn: prep ? (startOf(prep) - t) / 1000 : 0, startOf };
+  }
+  const mmss = (s) => { s = Math.max(0, Math.ceil(s)); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
+  const hhmm = (ms) => { const d = new Date(ms); return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') + (d.getSeconds() ? ':' + String(d.getSeconds()).padStart(2, '0') : ''); };
+
+  return { ST, esc, f1, score, rank, boards, load, now, race, mmss, hhmm, GAP, WORK };
 })();
