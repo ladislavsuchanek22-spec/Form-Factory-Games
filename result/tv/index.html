@@ -16,7 +16,7 @@
 [hidden]{display:none!important}
 html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);overflow:hidden}
 body{font:400 calc(var(--u)*1.4)/1.3 var(--f)}
-.tv{height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;gap:calc(var(--u)*1.2);padding:calc(var(--u)*1.4)}
+.tv{height:100vh;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:auto 1fr;gap:calc(var(--u)*1.2);padding:calc(var(--u)*1.4)}
 /* hlavička přes celou šířku */
 .top{grid-column:1/-1;display:flex;align-items:center;gap:calc(var(--u)*2)}
 .lg{display:flex;flex-direction:column;align-items:flex-start;width:calc(var(--u)*11)}
@@ -52,18 +52,18 @@ body{font:400 calc(var(--u)*1.4)/1.3 var(--f)}
 
 /* pravá polovina */
 .right{grid-row:2;min-width:0;display:grid;grid-template-rows:auto 1fr;gap:calc(var(--u)*1.2);min-height:0}
-.prep{background:var(--red);border-radius:0 10px 10px 10px;padding:calc(var(--u)*1.5) calc(var(--u)*1.8)}
+.prep{background:var(--red);border-radius:0 10px 10px 10px;padding:calc(var(--u)*1.2) calc(var(--u)*1.5)}
 .prep .h{display:flex;justify-content:space-between;align-items:baseline;gap:1em}
-.prep .h b{font:800 calc(var(--u)*1.2)/1 var(--f);letter-spacing:.16em;text-transform:uppercase;color:#FFE1E7}
-.prep .h span{font:700 calc(var(--u)*1.2)/1 var(--f);letter-spacing:.06em;text-transform:uppercase;color:#FFE1E7;font-variant-numeric:tabular-nums}
+.prep .h b{font:800 calc(var(--u)*1)/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:#FFE1E7}
+.prep .h span{white-space:nowrap;font:700 calc(var(--u)*1)/1 var(--f);letter-spacing:.06em;text-transform:uppercase;color:#FFE1E7;font-variant-numeric:tabular-nums}
 .prep .w{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5em;margin:.15em 0 .35em}
-.prep .w strong{font:800 calc(var(--u)*4.4)/1 var(--f);text-transform:uppercase}
-.prep .w em{white-space:nowrap;font:800 calc(var(--u)*3)/1 var(--f);font-style:normal;font-variant-numeric:tabular-nums;margin-left:auto}
+.prep .w strong{font:800 calc(var(--u)*3.6)/1 var(--f);text-transform:uppercase}
+.prep .w em{white-space:nowrap;font:800 calc(var(--u)*2.6)/1 var(--f);font-style:normal;font-variant-numeric:tabular-nums;margin-left:auto}
 .prep .w em small{font:700 calc(var(--u)*.9)/1 var(--f);letter-spacing:.12em;text-transform:uppercase;color:#FFE1E7;margin-right:.5em;vertical-align:middle}
 .lanes{display:grid;grid-template-columns:1fr;gap:calc(var(--u)*.3)}
 .lanes div{display:flex;align-items:baseline;gap:.8em;border-top:1px solid rgba(255,255,255,.3);padding-top:.3em;min-width:0}
 .lanes i{min-width:5.5em;font:700 calc(var(--u)*.85)/1 var(--f);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:#FFE1E7;white-space:nowrap}
-.lanes b{font:800 calc(var(--u)*1.55)/1.1 var(--f);text-transform:uppercase;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lanes b{font:800 calc(var(--u)*1.3)/1.1 var(--f);text-transform:uppercase;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lanes b small{font-weight:400;color:#FFD5DE;margin-right:.4em}
 .prep.calm{background:var(--p2)}
 .prep.calm .h b,.prep.calm .h span{color:var(--mut)}
@@ -73,13 +73,13 @@ body{font:400 calc(var(--u)*1.4)/1.3 var(--f)}
 .res .h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:calc(var(--u)*.6)}
 .res .h b{font:800 calc(var(--u)*1.2)/1 var(--f);letter-spacing:.16em;text-transform:uppercase}
 .res .h span{font:700 calc(var(--u)*.9)/1 var(--f);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
-.cols{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*1.2);min-height:0}
+.cols{flex:1;display:grid;grid-template-columns:1fr;grid-template-rows:1fr 1fr;gap:calc(var(--u)*1.2);min-height:0}
 .col{min-height:0;display:flex;flex-direction:column}
 .col .ch{background:var(--red);padding:.35em .6em;border-radius:0 6px 0 0;display:flex;justify-content:space-between;align-items:baseline}
 .col .ch b{font:800 calc(var(--u)*1.4)/1 var(--f);text-transform:uppercase;letter-spacing:.04em}
 .col .ch span{font:700 calc(var(--u)*.8)/1 var(--f);letter-spacing:.1em;color:#FFE1E7}
 .list{flex:1;min-height:0;overflow:hidden}
-.r{display:grid;grid-template-columns:2.1em 1fr auto;align-items:center;gap:.5em;height:var(--rh,2.2em);border-bottom:1px solid #262626;font-size:calc(var(--u)*1.25);font-variant-numeric:tabular-nums}
+.r{display:grid;grid-template-columns:2.1em 1fr auto;align-items:center;gap:.5em;height:var(--rh,2.2em);border-bottom:1px solid #262626;font-size:calc(var(--rh,2.2em)*.52);font-variant-numeric:tabular-nums}
 .r .pos{font-weight:800;text-align:center}
 .r.top .pos{background:var(--red);height:100%;display:grid;place-items:center}
 .r .n{font-weight:700;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -157,7 +157,7 @@ function drawPrep(R,t){
   if(!R.prep){el.className='prep calm';el.innerHTML='<div class="h"><b>Příprava</b><span></span></div><p class="note">'+(R.phase==='done'?'Díky všem! Vyhlášení za chvíli.':'Všechny vlny už odstartovaly.')+'</p>';return}
   const L=S.athletes.filter(a=>a.wave===R.prep).sort((p,q)=>p.lane-q.lane);
   el.className='prep';
-  el.innerHTML='<div class="h"><b>Připraví se na start · stanoviště A</b><span>Start '+HG.hhmm(R.startOf(R.prep))+'</span></div>'+
+  el.innerHTML='<div class="h"><b>Připraví se · start na A</b><span>Start '+HG.hhmm(R.startOf(R.prep))+'</span></div>'+
     '<div class="w"><strong>Vlna '+R.prep+'</strong><em><small>start za</small>'+(R.prepIn>3600?far(R.prepIn):HG.mmss(R.prepIn))+'</em></div>'+
     '<div class="lanes">'+(L.length?L.map(a=>'<div><i>Dráha '+a.lane+'</i><b><small>'+a.no+'</small>'+esc(a.name)+'</b></div>').join(''):'<div><b>Soupiska se připravuje</b></div>')+'</div>';
 }
@@ -173,7 +173,7 @@ function drawRes(){
     cols.appendChild(c);
     const list=c.querySelector('.list');
     if(!rows.length){list.innerHTML='<p class="empty">Čeká na první vlnu</p>';return}
-    const h=list.clientHeight, rh=Math.max(26,Math.min(54,h/Math.min(rows.length,10)));
+    const h=list.clientHeight, rh=Math.max(40,Math.min(56,h/Math.min(rows.length,10)));
     const per=Math.max(1,Math.floor(h/rh)), pages=Math.ceil(rows.length/per), pi=pageI%pages;
     list.style.setProperty('--rh',rh+'px');
     list.innerHTML=rows.slice(pi*per,pi*per+per).map(r=>'<div class="r'+(r.pos<=3?' top':'')+(fresh&&r.a.wave===fresh?' new':'')+'"><span class="pos">'+r.pos+'</span><span class="n"><small>'+r.a.no+'</small>'+esc(r.a.name)+'</span><span class="t">'+HG.f1(r.t)+'</span></div>').join('');
